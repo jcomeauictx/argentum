@@ -31,56 +31,58 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 80640 * 12;
+        //consensus.nSubsidyHalvingInterval = 80640 * 12;
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 20);
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
-        consensus.nPowTargetSpacingV1 = 30; // target time for block spacing across all algorithms
-        consensus.nPowTargetSpacingV2 = 60; // new target time for block spacing across all algorithms
+        consensus.nPowTargetSpacingV1 = 45; // target time for block spacing across all algorithms
+        //consensus.nPowTargetSpacingV2 = 90; // new target time for block spacing across all algorithms
         consensus.nAveragingInterval = 10; // number of blocks to take the timespan of
         consensus.fPowAllowMinDifficultyBlocks = false;
         
         // Allow AuxPow blocks from this height
-        consensus.nStartAuxPow = 1402000;
-        consensus.nAuxpowChainId = 0x005A; 
-        consensus.fStrictChainId = false;
+        consensus.nStartAuxPow = 1825000;
+        consensus.nAuxpowChainId = 0x004A3; 
+        consensus.fStrictChainId = true;
         
         consensus.nBlockTimeWarpPreventStart1 = 740500; // block where time warp 1 prevention starts
         consensus.nBlockTimeWarpPreventStart2 = 766000; // block where time warp 2 prevention starts
         consensus.nBlockTimeWarpPreventStart3 = 1048320; // block where time warp 3 prevention starts
-        consensus.Phase2Timespan_Start = 1401000; // block where 60 second target time kicks in
-        consensus.nBlockDiffAdjustV2 = 766000; // block where difficulty adjust V2 starts
+        consensus.nMultiAlgo = 1930000; // block where 60 second target time kicks in // Argentum DGW3_startBlock
+        consensus.nBlockDiffAdjustV2 = 766000; // block where difficulty adjust V2 starts // Argentum DGW3_startBlock
+        consensus.nLocalDifficultyAdjustment = 12 // 12%
+        consensus.nMaxAdjustDown = 22; //22% adjustment down
+        consensus.nMaxAdjustUp = 14; // 14% adjustment up
+        //consensus.nMaxAdjustUpV2 = 4; // 4% adjustment up     
         
-        consensus.nMaxAdjustDown = 4; // 4% adjustment down
-        consensus.nMaxAdjustUpV1 = 2; // 2% adjustment up
-        consensus.nMaxAdjustUpV2 = 4; // 4% adjustment up     
-        
-        consensus.nBlockSequentialAlgoRuleStart1 = 740000; // block where sequential algo rule starts
-        consensus.nBlockSequentialAlgoRuleStart2 = 766000; // block where sequential algo rule starts
-        consensus.nBlockSequentialAlgoMaxCount1 = 6; // maximum sequential blocks of same algo
-        consensus.nBlockSequentialAlgoMaxCount2 = 3; // maximum sequential blocks of same algo
-        consensus.nBlockSequentialAlgoMaxCount3 = 6; // maximum sequential blocks of same algo
+        consensus.nBlockSequentialAlgoRuleStart1 = 1930000; // block where sequential algo rule starts
+        consensus.nBlockSequentialAlgoRuleStart2 = 3032000; // block where sequential algo rule starts
+        consensus.nBlockSequentialAlgoMaxCount1 = 3; // maximum sequential blocks of same algo
+        consensus.nBlockSequentialAlgoMaxCount2 = 6; // maximum sequential blocks of same algo
+        //consensus.nBlockSequentialAlgoMaxCount3 = 6; // maximum sequential blocks of same algo
         
         consensus.nBlockAlgoWorkWeightStart = 142000; // block where algo work weighting starts
         consensus.nBlockAlgoNormalisedWorkStart = 740000; // block where algo combined weight starts
         consensus.nBlockAlgoNormalisedWorkDecayStart1 = 866000; // block where weight decay starts
         consensus.nBlockAlgoNormalisedWorkDecayStart2 = 932000; // block where weight decay starts
-        consensus.nGeoAvgWork_Start = 1400000;
+        //consensus.nGeoAvgWork_Start = 3000000; // TODO
         consensus.nFork1MinBlock = 1764000; // minimum block height where fork 1 takes effect (algo switch, seq algo count change)
+        consensus.DGW3_Start_Block = 1635000;
+        consensus.nMultiAlgoFork = 1930000;
         
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xaf;
-        pchMessageStart[1] = 0x45;
-        pchMessageStart[2] = 0x76;
-        pchMessageStart[3] = 0xee;
+        pchMessageStart[0] = 0xfb;
+        pchMessageStart[1] = 0xc1;
+        pchMessageStart[2] = 0xb8;
+        pchMessageStart[3] = 0xdc;
         vAlertPubKey = ParseHex("04a82e43bebee0af77bb6d4f830c5b2095b7479a480e91bbbf3547fb261c5e6d1be2c27e3c57503f501480f5027371ec62b2be1b6f00fc746e4b3777259e7f6a78");
-        nDefaultPort = 10888;
+        nDefaultPort = 13580;
         nMinerThreads = 0;
         nMaxTipAge = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
@@ -187,7 +189,7 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 16);
         
-        consensus.nStartAuxPow = 150;
+        consensus.nStartAuxPow = 1825000;
         consensus.nAuxpowChainId = 0x005A; 
         consensus.fStrictChainId = false;
         
@@ -197,15 +199,15 @@ public:
         consensus.Phase2Timespan_Start = 150; // block where 60 second target time kicks in
         consensus.nBlockDiffAdjustV2 = 150; // block where difficulty adjust V2 starts
         
-        consensus.nMaxAdjustDown = 4; // 4% adjustment down
-        consensus.nMaxAdjustUpV1 = 2; // 2% adjustment up
-        consensus.nMaxAdjustUpV2 = 4; // 4% adjustment up     
+        consensus.nMaxAdjustDown = 22; // 22% adjustment down
+        consensus.nMaxAdjustUp = 14; // 14% adjustment up
+        //consensus.nMaxAdjustUpV2 = 4; // 4% adjustment up     
         
-        consensus.nBlockSequentialAlgoRuleStart1 = 200; // block where sequential algo rule starts
-        consensus.nBlockSequentialAlgoRuleStart2 = 250; // block where sequential algo rule starts
-        consensus.nBlockSequentialAlgoMaxCount1 = 6; // maximum sequential blocks of same algo
-        consensus.nBlockSequentialAlgoMaxCount2 = 3; // maximum sequential blocks of same algo
-        consensus.nBlockSequentialAlgoMaxCount3 = 6; // maximum sequential blocks of same algo
+        consensus.nBlockSequentialAlgoRuleStart1 = 1930000; // block where sequential algo rule starts
+        consensus.nBlockSequentialAlgoRuleStart2 = 2032000; // block where sequential algo rule starts
+        consensus.nBlockSequentialAlgoMaxCount1 = 3; // maximum sequential blocks of same algo
+        consensus.nBlockSequentialAlgoMaxCount2 = 6; // maximum sequential blocks of same algo
+        //consensus.nBlockSequentialAlgoMaxCount3 = 6; // maximum sequential blocks of same algo
         
         consensus.nBlockAlgoWorkWeightStart = 0; // block where algo work weighting starts
         consensus.nBlockAlgoNormalisedWorkStart = 0; // block where algo combined weight starts
@@ -213,6 +215,7 @@ public:
         consensus.nBlockAlgoNormalisedWorkDecayStart2 = 0; // block where weight decay starts
         consensus.nGeoAvgWork_Start = 150;
         consensus.nFork1MinBlock = 300;
+        consensus.nMultiAlgoFork = 1930000;
 
         pchMessageStart[0] = 0x01;
         pchMessageStart[1] = 0xf5;

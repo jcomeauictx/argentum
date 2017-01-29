@@ -26,25 +26,28 @@ struct Params {
     int64_t nPowTargetSpacingV2;
     int64_t nPowTargetTimespan;
     int64_t nAveragingInterval;
+    int64_t nLocalDifficultyAdjustment;
     int64_t nBlockTimeWarpPreventStart1;
     int64_t nBlockTimeWarpPreventStart2;
     int64_t nBlockTimeWarpPreventStart3;
     int64_t Phase2Timespan_Start;
     int64_t nBlockDiffAdjustV2;
     int64_t nMaxAdjustDown;
-    int64_t nMaxAdjustUpV1;
-    int64_t nMaxAdjustUpV2;
+    int64_t nMaxAdjustUp;
+    //int64_t nMaxAdjustUpV2;
     int64_t nBlockSequentialAlgoRuleStart1;
     int64_t nBlockSequentialAlgoRuleStart2;
     int nBlockSequentialAlgoMaxCount1;
     int nBlockSequentialAlgoMaxCount2;
-    int nBlockSequentialAlgoMaxCount3;
+    //int nBlockSequentialAlgoMaxCount3;
     int64_t nBlockAlgoWorkWeightStart;
     int64_t nBlockAlgoNormalisedWorkStart;
     int64_t nBlockAlgoNormalisedWorkDecayStart1;
     int64_t nBlockAlgoNormalisedWorkDecayStart2;
     int64_t nGeoAvgWork_Start;
     int64_t nFork1MinBlock;
+    int64_t nMultiAlgoFork;
+    int64_t DGW3_Start_Block;
     
     int64_t DifficultyAdjustmentInterval() const { return nPowTargetTimespan / nPowTargetSpacingV1; }
     
