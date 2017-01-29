@@ -9,22 +9,13 @@
  * network protocol versioning
  */
 
-static const int PROTOCOL_VERSION = 70004;
+static const int PROTOCOL_VERSION = 1060000;
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
 
-//! In this version, 'getheaders' was introduced.
-static const int GETHEADERS_VERSION = 31800;
-
-//! AUX-POW on SHA256D and Scrypt algorithim starts with this version
-static const int AUX_POW_SHA_SCRYPT_VERSION = 70003;
-
-//! Switch algo Qubit to Yescrypt starts with this version
-static const int QUBIT_TO_YESCRYPT_VERSION = 70004;
-
 //! disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION = QUBIT_TO_YESCRYPT_VERSION;
+static const int MIN_PEER_PROTO_VERSION = 1040000;
 
 //! nTime field added to CAddress, starting with this version;
 //! if possible, avoid requesting addresses nodes older than this

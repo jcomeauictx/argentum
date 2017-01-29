@@ -36,7 +36,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 20);
-        consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
+        consensus.nPowTargetTimespan = 7 * 7 * 45 * 45; // 27.5 hrs; network hashrate average from the last 37.5 mins
         consensus.nPowTargetSpacingV1 = 45; // target time for block spacing across all algorithms
         //consensus.nPowTargetSpacingV2 = 90; // new target time for block spacing across all algorithms
         consensus.nAveragingInterval = 10; // number of blocks to take the timespan of
@@ -46,12 +46,7 @@ public:
         consensus.nStartAuxPow = 1825000;
         consensus.nAuxpowChainId = 0x004A3; 
         consensus.fStrictChainId = true;
-        
-        consensus.nBlockTimeWarpPreventStart1 = 740500; // block where time warp 1 prevention starts
-        consensus.nBlockTimeWarpPreventStart2 = 766000; // block where time warp 2 prevention starts
-        consensus.nBlockTimeWarpPreventStart3 = 1048320; // block where time warp 3 prevention starts
         consensus.nMultiAlgo = 1930000; // block where 60 second target time kicks in // Argentum DGW3_startBlock
-        consensus.nBlockDiffAdjustV2 = 766000; // block where difficulty adjust V2 starts // Argentum DGW3_startBlock
         consensus.nLocalDifficultyAdjustment = 12 // 12%
         consensus.nMaxAdjustDown = 22; //22% adjustment down
         consensus.nMaxAdjustUp = 14; // 14% adjustment up
@@ -68,7 +63,6 @@ public:
         consensus.nBlockAlgoNormalisedWorkDecayStart1 = 866000; // block where weight decay starts
         consensus.nBlockAlgoNormalisedWorkDecayStart2 = 932000; // block where weight decay starts
         //consensus.nGeoAvgWork_Start = 3000000; // TODO
-        consensus.nFork1MinBlock = 1764000; // minimum block height where fork 1 takes effect (algo switch, seq algo count change)
         consensus.DGW3_Start_Block = 1635000;
         consensus.nMultiAlgoFork = 1930000;
         
@@ -81,10 +75,10 @@ public:
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb8;
         pchMessageStart[3] = 0xdc;
-        vAlertPubKey = ParseHex("04a82e43bebee0af77bb6d4f830c5b2095b7479a480e91bbbf3547fb261c5e6d1be2c27e3c57503f501480f5027371ec62b2be1b6f00fc746e4b3777259e7f6a78");
+        vAlertPubKey = ParseHex("04d4da7a5dae4db797d9b0644d57a5cd50e05a70f36091cd62e2fc41c98ded06340be5a43a35e185690cd9cde5d72da8f6d065b499b06f51dcfba14aad859f443a");
         nDefaultPort = 13580;
         nMinerThreads = 0;
-        nMaxTipAge = 24 * 60 * 60;
+        nMaxTipAge = 24 * 60 * 60; // Maximum tip age in seconds to consider node in initial block download
         nPruneAfterHeight = 100000;
 
         /**
@@ -98,40 +92,36 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0x5F1DF16B2B704C8A578D0B)
          *   vMerkleTree: 4a5e1e
          */
-        const char* pszTimestamp = "2014-02-23 FT - G20 aims to add $2tn to global economy";
+        const char* pszTimestamp = "Edward Snowden says he's behind NSA leaks - CNN - June 10 2013";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 1000 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04e941763c7750969e751bee1ffbe96a651a0feb131db046546c219ea40bff40b95077dc9ba1c05af991588772d8daabbda57386c068fb9bc7477c5e28702d5eb9") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa589ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock.SetNull();
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
-        genesis.nVersion = 2;
-        genesis.nTime    = 1393164995;
-        genesis.nBits    = 0x1e0fffff;
-        genesis.nNonce   = 2092903596;
+        genesis.nVersion = 1;
+        genesis.nTime    = 1369199888;
+        genesis.nBits    = 0x1e0ffff0;
+        genesis.nNonce   = 12786092;
+
 
         consensus.hashGenesisBlock = genesis.GetHash();
         
-        assert(consensus.hashGenesisBlock == uint256S("0x00000ffde4c020b5938441a0ea3d314bf619eff0b38f32f78f7583cffa1ea485"));
-        assert(genesis.hashMerkleRoot == uint256S("0x3f75db3c18e92f46c21530dc1222e1fddf4ccebbf88e289a6c9dc787fd6469da"));
+        assert(consensus.hashGenesisBlock == uint256S("0x88c667bc63167685e4e4da058fffdfe8e007e5abffd6855de52ad59df7bb0bb2"));
+        assert(genesis.hashMerkleRoot == uint256S("0xc7e4af4190d3eb28d4e61261fb1b47e13d7efd6d7279c75ae6a91c2987d43d53"));
 
-        vSeeds.push_back(CDNSSeedData("seed1.myriadcoin.org", "seed1.myriadcoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed2.myriadcoin.org", "seed2.myriadcoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed3.myriadcoin.org", "seed3.myriadcoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed4.myriadcoin.org", "seed4.myriadcoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed5.myriadcoin.org", "seed5.myriadcoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed6.myriadcoin.org", "seed6.myriadcoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed7.myriadcoin.org", "seed7.myriadcoin.org"));
-        vSeeds.push_back(CDNSSeedData("seed8.myriadcoin.org", "seed8.myriadcoin.org"));
+        //vSeeds.push_back(CDNSSeedData("x.x", "x.x"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,9);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,178);
+
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,23);   // 0x17
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);    // 0x5
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,151);  // 0x97
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x8000002D).convert_to_container<std::vector<unsigned char> >(); // Argentum BIP 44 index is 45
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -144,33 +134,26 @@ public:
 
         checkpointData = (Checkpoints::CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x00000ffde4c020b5938441a0ea3d314bf619eff0b38f32f78f7583cffa1ea485"))
-        (   9646, uint256S("0x0000000000000b0f1372211861f226a3ec06a27d0a5bf36e4244a982da077e8f"))
-        (  27255, uint256S("0x00000000000005112a0debf53703eb3dc4ec2d8d68599c90db71423ea14489b7"))
-        (  70623, uint256S("0x00000000000004767ff6e509d00772af5c4bedaa82c38c1e95c33adbf5ff84f5"))
-        ( 112567, uint256S("0x000000000000018c0621bf32ab33d3ca871509f406f08be6dd20facea747b099"))
-        ( 141845, uint256S("0x00000000000000f62d14d55c2bc3ec0ba94e4f2b3868bbe7be9cb5b681fcc0fb"))
-        ( 149540, uint256S("0x000000000000061b8f5b8653fe13b5e453347d9386d43d09445ee5e26a8222bb"))
-        ( 348178, uint256S("0x0000000000000a410c6aff939087769e757132098fa0b0ce89f11d68f935077d"))
-        ( 431747, uint256S("0x000000000000065616abeccd681f7b4d6d7bed06deef0e1a6e70c905edae3692"))
-        ( 490168, uint256S("0x000000000000155ce9845e501617f152127e32c2c468edc643809f9988d30327"))
-        ( 557719, uint256S("0x0000000000000851f690d42129b34408697c88316879debd413049959517d7c6"))
-        ( 740001, uint256S("0x00000000000002c7aaa3ad688eb5af7d2779f4aa1d9a1b9a5c3cfb4ccad56caa"))
-        ( 740576, uint256S("0x00000000000043dc047538e724f17a388146f22dd2ecf66f3c88253799912f4d"))
-        ( 766081, uint256S("0x00000000000001e604a7acc2dd539ff8bd51224a7aac8647736d1af10160427d"))
-        (1007712, uint256S("0x00000000000013e0fb1ec8ba2ce0b04b1547d9ae7d9c9e5a2691aeca87559a12"))
-        (1077647, uint256S("0x00000000000038b85361a79dd4a04b1f01ec2cc60f4176185363aa4522aab12d"))
-        (1177283, uint256S("0x000000000000359b1fb371d92db45de64b449ea72863a51fa78fea6b7ff3989f"))
-		(1336174, uint256S("0x00000000000001eafb1051fda69eb842577a0e48e4f0682bd7f33677373d0807"))
-        (1402167, uint256S("0x8215cd9feb2db9bf74514361a9d4b4440f054101079df8bb6bf629065db3ab29"))
-        (1449500, uint256S("0xef19939e314f239999b9959ac908b20a43b165719d1c35dcfe38ba2566d20765"))
-        (1681927, uint256S("0x9be88de17bccfa3ceb43d158652189af2c3038460dcf91732320a73557fe6a2e"))
-        (1764003, uint256S("0xf969487c0ba2426bf767a5cb83c6bb7f3f9a19cccdcfc50cf5db0b39032aae55"))
-        (1863106, uint256S("0xc2a2012bac1de0e0039efb958e3465390eb7dcd439d83be077dc1c1006d0ebd6")),
-        1479049763, // * UNIX timestamp of last checkpoint block
-        4666063,    // * total number of transactions between genesis and last checkpoint
+            (        0, uint256S("0x88c667bc63167685e4e4da058fffdfe8e007e5abffd6855de52ad59df7bb0bb2"))
+            (        1, uint256S("0xdf0a20b6609b206448778428648f42a592dea10884a3fca1ce3a4c2ce12caf2f"))
+            (        2, uint256S("0xa10fd82c25b5ddcbcb9077cf9a70b47502a449663655a5d9cec09c19556c6d43"))
+            (    50000, uint256S("0xa8b62a4dd6c8aa28e2bf68c521e01da0638214f2def124a551f1a90df8402b6d"))
+            (   124415, uint256S("0x6d5a842bea984df8088f910d27f81af72ccfeef2bde21e100db036a51e17d6f8"))
+            (   224414, uint256S("0x2df7b26aea2376760533552baa54a61044d13f2c6f44ff017e855e9593aa0216"))
+            (   624415, uint256S("0x4651a604984d4494d09d1bb8c9f1c951e9bb214b5c930af4d0ad0bff7c513057"))
+            (   824404, uint256S("0x91456228171e75954e44e44b740ba075d179c11c31fc0d403843a582316a9e21"))
+            (  1024406, uint256S("0xf70a1dbf9c54f114690dfc7d6ac03366034e2c7a4dcd4fb71cf25f079c46c859"))
+            (  1224406, uint256S("0xa55d78df58fca4aec78e658614f004c2ad5930779e512447a0d96c5bb427cbe7"))
+            (  1424405, uint256S("0x820d255f359325f8c1792d776bef999bc8c54ab2cfb0d9f0b5d2281b759bccb3"))
+            (  1624406, uint256S("0xe58f3416b69542699b3e9662ea0a36318166753080b49e06e8b0a884efcb581b"))
+            (  1826401, uint256S("0x37c0d97ef3e0a24753b3e0eebe93588ad21b302f66c78b1046cbadeedd52c196"))
+            (  1924401, uint256S("0x2267dd4753f9e8fa088cdc4d257355b0a118ccd43a2f366c68de1aa260c4ba22"))
+            (  1934707, uint256S("0xe4527742cb236f24b355156213775e44da0e728ea453fae712fa672b18ce5f84"))
+            (  2050260, uint256S("0xbc55838e026131fab334f1c87de9fea3218d076f4de03dc19f94d4f12da7d6c1")),
+        1477330596, // * UNIX timestamp of last checkpoint block
+        2263089,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        2880        // * estimated number of transactions per day after checkpoint
+        2000        // * estimated number of transactions per day after checkpoint
         };
     }
 };
@@ -214,33 +197,32 @@ public:
         consensus.nBlockAlgoNormalisedWorkDecayStart1 = 0; // block where weight decay starts
         consensus.nBlockAlgoNormalisedWorkDecayStart2 = 0; // block where weight decay starts
         consensus.nGeoAvgWork_Start = 150;
-        consensus.nFork1MinBlock = 300;
         consensus.nMultiAlgoFork = 1930000;
 
-        pchMessageStart[0] = 0x01;
-        pchMessageStart[1] = 0xf5;
-        pchMessageStart[2] = 0x55;
-        pchMessageStart[3] = 0xa4;
-        vAlertPubKey = ParseHex("044adf046e6bc86fb83ef92f261fa3feff9176bd029c5ad4afb5c52ac21f9851f2b2eb861cdbf2c09e0cb97dbf75c6ca5ff6c5df88cfb244c72dba1d44b5a47655");
-        nDefaultPort = 20888;
+        pchMessageStart[0] = 0xfc;
+        pchMessageStart[1] = 0xc1;
+        pchMessageStart[2] = 0xb7;
+        pchMessageStart[3] = 0xdc;
+        vAlertPubKey = ParseHex("042756726da3c7ef515d89212ee1705023d14be389e25fe15611585661b9a20021908b2b80a3c7200a0139dd2b26946606aab0eef9aa7689a6dc2c7eee237fa834");
+        nDefaultPort = 40555;
         nMinerThreads = 0;
         nMaxTipAge = 0x7fffffff;
         nPruneAfterHeight = 1000;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1392876393;
-        genesis.nNonce = 416875379;
+        genesis.nTime = 123456;
+        genesis.nNonce = 123456;
         consensus.hashGenesisBlock = genesis.GetHash();
         
-        assert(consensus.hashGenesisBlock == uint256S("0x0000017ce2a79c8bddafbbe47c004aa92b20678c354b34085f62b762084b9788"));
-
+        //assert(consensus.hashGenesisBlock == uint256S("0x0000017ce2a79c8bddafbbe47c004aa92b20678c354b34085f62b762084b9788"));
+// TODO
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("testseed1.myriadcoin.org", "testseed1.myriadcoin.org"));
+        //vSeeds.push_back(CDNSSeedData("x.com", "x.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,88);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,188);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,86);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,186);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,237);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
 
@@ -253,13 +235,13 @@ public:
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
 
-        checkpointData = (Checkpoints::CCheckpointData) {
+        /*checkpointData = (Checkpoints::CCheckpointData) { TODO
             boost::assign::map_list_of
-            ( 0, uint256S("0x0000017ce2a79c8bddafbbe47c004aa92b20678c354b34085f62b762084b9788")),
-            1392876393,
-            1,
-            10
-        };
+            ( 0, uint256S("0x")),
+            0, // * UNIX timestamp of last checkpoint block
+            0, // * total number of transactions between genesis and last checkpoint
+            0  // * estimated number of transactions per day after checkpoint
+        }; */
 
     }
 };
@@ -278,18 +260,18 @@ public:
         consensus.nMajorityWindow = 1000;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 1);
         pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0x0f;
-        pchMessageStart[2] = 0xa5;
-        pchMessageStart[3] = 0x5a;
+        pchMessageStart[1] = 0xbf;
+        pchMessageStart[2] = 0xb5;
+        pchMessageStart[3] = 0xda;
         nMinerThreads = 1;
         nMaxTipAge = 24 * 60 * 60;
         genesis.nTime = 1296688602;
         genesis.nBits = 0x207fffff;
-        genesis.nNonce = 4;
+        genesis.nNonce = 2;
         consensus.hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18444;
         
-        assert(consensus.hashGenesisBlock == uint256S("0x63b92987ddc93808aa33dddc80b3e52948bdfffaf2420bf4cd9c5137b54ea37c"));
+        // TODO assert(consensus.hashGenesisBlock == uint256S("0x3d2160a3b5dc4a9d62e7e66a295f70313ac808440ef7400d6c0772171ce973a5"));
         nPruneAfterHeight = 1000;
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
@@ -304,7 +286,7 @@ public:
 
         checkpointData = (Checkpoints::CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x63b92987ddc93808aa33dddc80b3e52948bdfffaf2420bf4cd9c5137b54ea37c")),
+            ( 0, uint256S("0x3d2160a3b5dc4a9d62e7e66a295f70313ac808440ef7400d6c0772171ce973a5")),
             0,
             0,
             0
