@@ -16,8 +16,8 @@ class uint256;
 class arith_uint256;
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params&, int algo);
-unsigned int DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock *pblock, int algo)
-unsigned int StabilX(const CBlockIndex* pindexPrev, const CBlockIndex* pindexFirst, const Consensus::Params& params, int algo, int64_t nActualTimespan, int nHeight);
+unsigned int DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock *pblock, int algo);
+unsigned int StabilX(const CBlockIndex* pindexPrev, const CBlockIndex* pindexFirst, const Consensus::Params& params, int algo, int nHeight, int64_t nActualTimespan);
 //unsigned int CalculateNextWorkRequiredV2(const CBlockIndex* pindexPrev, const CBlockIndex* pindexFirst, const Consensus::Params& params, int algo, int64_t nActualTimespan);
 
 /** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */

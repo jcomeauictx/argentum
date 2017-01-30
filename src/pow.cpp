@@ -333,7 +333,7 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
     return bnNew.GetCompact();
 }
 
-unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockIndex* pindexFirst, const Consensus::Params& params, int algo, int nHeight)
+unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockIndex* pindexFirst, const Consensus::Params& params, int algo, int nHeight, int64_t nActualTimespan)
 {
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
