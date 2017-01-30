@@ -37,16 +37,15 @@ public:
         consensus.nMajorityWindow = 1000;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 20);
         consensus.nPowTargetTimespan = 7 * 7 * 45 * 45; // 27.5 hrs; network hashrate average from the last 37.5 mins
-        consensus.nPowTargetSpacingV1 = 45; // target time for block spacing across all algorithms
-        //consensus.nPowTargetSpacingV2 = 90; // new target time for block spacing across all algorithms
+        consensus.nPowTargetSpacingV1 = 32; // target time for block spacing across all algorithms
+        consensus.nPowTargetSpacingV2 = 45; // new target time for block spacing across all algorithms
         consensus.nAveragingInterval = 10; // number of blocks to take the timespan of
         consensus.fPowAllowMinDifficultyBlocks = false;
         
         // Allow AuxPow blocks from this height
-        consensus.nStartAuxPow = 1825000;
+        consensus.nStartAuxPow = 1825000; // 
         consensus.nAuxpowChainId = 0x004A3; 
         consensus.fStrictChainId = true;
-        consensus.nMultiAlgo = 1930000; // block where 60 second target time kicks in // Argentum DGW3_startBlock
         consensus.nLocalDifficultyAdjustment = 12 // 12%
         consensus.nMaxAdjustDown = 22; //22% adjustment down
         consensus.nMaxAdjustUp = 14; // 14% adjustment up
@@ -58,13 +57,13 @@ public:
         consensus.nBlockSequentialAlgoMaxCount2 = 6; // maximum sequential blocks of same algo
         //consensus.nBlockSequentialAlgoMaxCount3 = 6; // maximum sequential blocks of same algo
         
-        consensus.nBlockAlgoWorkWeightStart = 142000; // block where algo work weighting starts
-        consensus.nBlockAlgoNormalisedWorkStart = 740000; // block where algo combined weight starts
-        consensus.nBlockAlgoNormalisedWorkDecayStart1 = 866000; // block where weight decay starts
-        consensus.nBlockAlgoNormalisedWorkDecayStart2 = 932000; // block where weight decay starts
-        //consensus.nGeoAvgWork_Start = 3000000; // TODO
-        consensus.DGW3_Start_Block = 1635000;
-        consensus.nMultiAlgoFork = 1930000;
+        //consensus.nBlockAlgoWorkWeightStart = 142000; // block where algo work weighting starts
+        //consensus.nBlockAlgoNormalisedWorkStart = 740000; // block where algo combined weight starts
+        //consensus.nBlockAlgoNormalisedWorkDecayStart1 = 866000; // block where weight decay starts
+        //consensus.nBlockAlgoNormalisedWorkDecayStart2 = 932000; // block where weight decay starts
+        //consensus.nGeoAvgWork_Start = 4000000; // TODO
+        consensus.DGW3_Start_Block = 1635000; 
+        consensus.nMultiAlgoFork = 1930000; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
         
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
@@ -254,7 +253,6 @@ class CRegTestParams : public CTestNetParams {
 public:
     CRegTestParams() {
         strNetworkID = "regtest";
-        consensus.nSubsidyHalvingInterval = 150;
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
