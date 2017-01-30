@@ -17,7 +17,7 @@ static const int64_t nTargetTimespan = 32 * 250; // Argentum: every 250 blocks
 static const int64_t nTargetSpacing = 32; // Argentum: 32 sec
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock *pblock, int algo, int nHeight)
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo, int nHeight)
 {
         if (nHeight >= params.nMultiAlgoFork) {
             return StabilX(pindexLast, pblock, algo);
@@ -120,7 +120,7 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
     return bnNew.GetCompact();
 }
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
+/* unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
 {
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
@@ -271,7 +271,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     {
         return StabilX(pindexPrev, pindexFirst, params, algo, nActualTimespan, pindexLast->nHeight);
     }
-}
+} */
 
 unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock *pblock, const Consensus::Params& params, int algo) {
     /* current difficulty formula, darkcoin - DarkGravity v3, written by Evan Duffield - evan@darkcoin.io */
@@ -337,7 +337,7 @@ unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockIndex* pindexFir
 {
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
-    int64_t nTargetSpacingPerAlgo = params.nPowTargetSpacingV1 * NUM_ALGOS; // 45 * 2 = 90s per algo
+    int64_t nTargetSpacingPerAlgo = params.nPowTargetSpacingV2 * NUM_ALGOS; // 45 * 2 = 90s per algo
     int64_t nAveragingTargetTimespan = params.nAveragingInterval * nTargetSpacingPerAlgo; // 10 * 90 = 900s, 15 minutes
     int64_t nMinActualTimespanV2 = nAveragingTargetTimespan * (100 - params.nMaxAdjustUp) / 100;
     int64_t nMaxActualTimespanV2 = nAveragingTargetTimespan * (100 + params.nMaxAdjustDown) / 100;
@@ -351,7 +351,7 @@ unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockIndex* pindexFir
     // find first block in averaging interval
     // Go back by what we want to be nAveragingInterval blocks per algo
     const CBlockIndex* pindexFirst = pindexLast;
-    for (int i = 0; pindexFirst && i < NUM_ALGOS*nAveragingInterval; i++)
+    for (int i = 0; pindexFirst && i < NUM_ALGOS*params.nAveragingInterval; i++)
     {
         pindexFirst = pindexFirst->pprev;
     }
@@ -508,7 +508,7 @@ arith_uint256 GetBlockProofBase(const CBlockIndex& block)
     return (~bnTarget / (bnTarget + 1)) + 1;
 }
 
-int GetAlgoWorkFactor(int algo)
+/*int GetAlgoWorkFactor(int algo)
 {
     if (!TestNet() && (nHeight < params.nMultiAlgoFork))
     {
@@ -523,7 +523,7 @@ int GetAlgoWorkFactor(int algo)
             return 1024 * 4;
         default:
             return 1;
-}
+}*/
 
 arith_uint256 GetPrevWorkForAlgo(const CBlockIndex& block, int algo)
 {
@@ -539,7 +539,7 @@ arith_uint256 GetPrevWorkForAlgo(const CBlockIndex& block, int algo)
     return UintToArith256(Params().GetConsensus().powLimit);
 }
 
-arith_uint256 GetPrevWorkForAlgoWithDecay(const CBlockIndex& block, int algo)
+/*arith_uint256 GetPrevWorkForAlgoWithDecay(const CBlockIndex& block, int algo)
 {
     int nDistance = 0;
     arith_uint256 nWork;
@@ -563,9 +563,9 @@ arith_uint256 GetPrevWorkForAlgoWithDecay(const CBlockIndex& block, int algo)
         nDistance++;
     }
     return UintToArith256(Params().GetConsensus().powLimit);
-}
+}*/
 
-arith_uint256 GetPrevWorkForAlgoWithDecay2(const CBlockIndex& block, int algo)
+/*arith_uint256 GetPrevWorkForAlgoWithDecay2(const CBlockIndex& block, int algo)
 {
     int nDistance = 0;
     arith_uint256 nWork;
@@ -587,9 +587,9 @@ arith_uint256 GetPrevWorkForAlgoWithDecay2(const CBlockIndex& block, int algo)
         nDistance++;
     }
     return arith_uint256(0);
-}
+} */
     
-arith_uint256 GetPrevWorkForAlgoWithDecay3(const CBlockIndex& block, int algo)
+/*arith_uint256 GetPrevWorkForAlgoWithDecay3(const CBlockIndex& block, int algo)
 {
     int nDistance = 0;
     arith_uint256 nWork;
@@ -611,9 +611,9 @@ arith_uint256 GetPrevWorkForAlgoWithDecay3(const CBlockIndex& block, int algo)
         nDistance++;
     }
     return arith_uint256(0);
-}
+}*/
 
-arith_uint256 GetGeometricMeanPrevWork(const CBlockIndex& block)
+/*arith_uint256 GetGeometricMeanPrevWork(const CBlockIndex& block) // TODO Argentum
 {
     //arith_uint256 bnRes;
     arith_uint256 nBlockWork = GetBlockProofBase(block);
@@ -634,11 +634,11 @@ arith_uint256 GetGeometricMeanPrevWork(const CBlockIndex& block)
     CBigNum bnRes = bnBlockWork.nthRoot(NUM_ALGOS);
     
     // Scale to roughly match the old work calculation
-    bnRes <<= 8;
+    bnRes <<= 7;
     
     //return bnRes;
     return UintToArith256(bnRes.getuint256());
-}
+}*/
 
 arith_uint256 GetBlockProof(const CBlockIndex& block)
 {
@@ -648,39 +648,22 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
     int nHeight = block.nHeight;
     int nAlgo = block.GetAlgo();
     
-    if (nHeight >= chainparams.GetConsensus().nGeoAvgWork_Start)
+    /*if (nHeight >= chainparams.GetConsensus().nGeoAvgWork_Start) // TODO Argentum
     {
         bnTarget = GetGeometricMeanPrevWork(block);
-    }
-    else if (nHeight >= chainparams.GetConsensus().nBlockAlgoNormalisedWorkStart)
+    }*/
+    if (nHeight >= chainparams.GetConsensus().nMultiAlgoFork)
     {
         arith_uint256 nBlockWork = GetBlockProofBase(block);
         for (int algo = 0; algo < NUM_ALGOS; algo++)
         {
             if (algo != nAlgo)
-            {
-                if (nHeight >= chainparams.GetConsensus().nBlockAlgoNormalisedWorkDecayStart2)
-                {
-                    nBlockWork += GetPrevWorkForAlgoWithDecay2(block, algo);
-                }
-                else
-                {
-                    if (nHeight >= chainparams.GetConsensus().nBlockAlgoNormalisedWorkDecayStart1)
-                    {
-                        nBlockWork += GetPrevWorkForAlgoWithDecay(block, algo);
-                    }
-                    else
-                    {
-                        nBlockWork += GetPrevWorkForAlgo(block, algo);
-                    }
-                }
+            {     
+                nBlockWork += GetPrevWorkForAlgo(block, algo);
             }
+            
         }
         bnTarget = nBlockWork / NUM_ALGOS;
-    }
-    else if (nHeight >= chainparams.GetConsensus().nBlockAlgoWorkWeightStart)
-    {
-        bnTarget = GetBlockProofBase(block) * GetAlgoWorkFactor(nAlgo);
     }
     else
     {
