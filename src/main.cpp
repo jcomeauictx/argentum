@@ -37,7 +37,7 @@
 using namespace std;
 
 #if defined(NDEBUG)
-# error "Myriad cannot be compiled without assertions."
+# error "Argentum cannot be compiled without assertions."
 #endif
 
 /**
@@ -89,7 +89,7 @@ static void CheckBlockIndex();
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Myriadcoin Signed Message:\n";
+const string strMessageMagic = "Argentum Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1299,19 +1299,52 @@ bool ReadBlockHeaderFromDisk(CBlockHeader& block, const CBlockIndex* pindex)
     return ReadBlockOrHeader(block, pindex);
 }
 
-CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
+int static generateMTRandom(unsigned int s, int range)
 {
-    int halvings = nHeight / consensusParams.nSubsidyHalvingInterval;
-    // Force block reward to zero when right shift is undefined.
-    // if (halvings >= 64)
-        // return 0;
+    boost::mt19937 gen(s);
+    boost::uniform_int<> dist(1, range);
+    return dist(gen);
+}
 
-    CAmount nSubsidy = 1000 * COIN;
-    // Subsidy is cut in half every 967680 blocks.
-    nSubsidy >>= halvings;
-    if(nSubsidy < 1 * COIN)
+CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
+{
+
+if(nHeight <= params.nStartAuxPow)
+{
+
+    int64_t nSubsidy = 0 * COIN;
+
+    std::string cseed_str = prevHash.ToString().substr(8,7);
+    const char* cseed = cseed_str.c_str();
+    long seed = hex2long(cseed);
+
+    int rand = generateMTRandom(seed, 100000);
+
+    if(rand < 20000)        
         nSubsidy = 1 * COIN;
+    else if(rand < 40000)   
+        nSubsidy = 2 * COIN;
+    else if(rand < 60000)   
+        nSubsidy = 3 * COIN;
+    else if(rand < 80000)   
+        nSubsidy = 4 * COIN;
+    else if(rand < 100001)  
+        nSubsidy = 5 * COIN;
+    
+    if(nHeight == 1)   
+        nSubsidy = 200000 * COIN;
+    else if(nHeight < 500)
+        nSubsidy = 0 * COIN;
+    else if(nHeight < 1000)
+        nSubsidy = 1 * COIN;
+    else if(nHeight < 1500)
+        nSubsidy = 2 * COIN;
+
     return nSubsidy;
+} 
+else 
+    {return (3 * COIN);}
+
 }
 
 bool IsInitialBlockDownload()
@@ -1858,7 +1891,7 @@ void PartitionCheck(bool (*initialDownloadCheck)(), CCriticalSection& cs, const 
 
     // Aim for one false-positive about every fifty years of normal running:
 /*
-    // disable these warnings for myriad as they pretty much always come up.
+    // disable these warnings for argentum as they pretty much always come up.
     
     const int FIFTY_YEARS = 50*365*24*60*60;
     double alertThreshold = 1.0 / (FIFTY_YEARS / SPAN_SECONDS);
@@ -1950,26 +1983,27 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes during their
     // initial block download.
-    // bool fEnforceBIP30 = (!pindex->phashBlock) || // Enforce on CreateNewBlock invocations which don't have a hash.
+    // Always enforce BIP30
+    bool fEnforceBIP30 = true; // Enforce on CreateNewBlock invocations which don't have a hash.
                           // !((pindex->nHeight==91842 && pindex->GetBlockHash() == uint256S("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
                            // (pindex->nHeight==91880 && pindex->GetBlockHash() == uint256S("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
-    // if (fEnforceBIP30) {
-    // Always enforce BIP30
+    if (fEnforceBIP30) {
     BOOST_FOREACH(const CTransaction& tx, block.vtx) {
         const CCoins* coins = view.AccessCoins(tx.GetHash());
         if (coins && !coins->IsPruned())
             return state.DoS(100, error("ConnectBlock(): tried to overwrite transaction"),
                              REJECT_INVALID, "bad-txns-BIP30");
+        }
     }
-    // }
 
     // BIP16 didn't become active until Apr 1 2012
     // Always enforce BIP16
     
     // int64_t nBIP16SwitchTime = 1333238400;
-    // bool fStrictPayToScriptHash = (pindex->GetBlockTime() >= nBIP16SwitchTime);
+    // BIP16 was always active in Argentum
+    bool fStrictPayToScriptHash = true;
 
-    // unsigned int flags = fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE;
+    unsigned int flags = fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE;
     unsigned int flags = SCRIPT_VERIFY_P2SH;
     
     // Start enforcing the DERSIG (BIP66) rules, for block.nVersion=3 blocks, when 75% of the network has upgraded:
@@ -2060,11 +2094,17 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime1 = GetTimeMicros(); nTimeConnect += nTime1 - nTimeStart;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs-1), nTimeConnect * 0.000001);
 
-    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
+    uint256 prevHash = 0;
+    if(pindex->pprev)
+    {
+        prevHash = pindex->pprev->GetBlockHash();
+    }
+
+    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus(), prevHash);
     if (block.vtx[0].GetValueOut() > blockReward)
         return state.DoS(100,
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
-                               block.vtx[0].GetValueOut(), blockReward),
+                               block.vtx[0].GetValueOut(), blockReward, prevHash),
                                REJECT_INVALID, "bad-cb-amount");
 
     if (!control.Wait())
@@ -2945,22 +2985,6 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
     if (block.GetBlockTime() <= pindexPrev->GetMedianTimePast())
         return state.Invalid(error("%s: block's timestamp is too early", __func__),
                              REJECT_INVALID, "time-too-old");
-
-    // Check for algo switch 1
-    // Active when fork block reached
-    bool bAlgoSwitch1 = (nHeight >= consensusParams.nFork1MinBlock);
-    if (bAlgoSwitch1)
-    {
-        if (algo == ALGO_QUBIT)
-            return state.Invalid(error("%s: invalid QUBIT block", __func__),
-                                 REJECT_INVALID, "invalid-algo");
-    }
-    else
-    {
-        if (algo == ALGO_YESCRYPT)
-            return state.Invalid(error("%s: invalid YESCRYPT block", __func__),
-                                 REJECT_INVALID, "invalid-algo");
-    }
 
     if(fCheckpointsEnabled)
     {
@@ -4263,33 +4287,15 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             pfrom->cleanSubVer = SanitizeString(pfrom->strSubVer);
             
             if (
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.1/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.2/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.3/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.4/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.5/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.6/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.7/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.8/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.9/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.10/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.11/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.8.99.12/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.1/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.2/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.3/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.4/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.5/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.6/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.7/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.8/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.9/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.10/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.11/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.12/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.13/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.14/") ||
-                 (pfrom->cleanSubVer == "/Satoshi:0.9.2.15/")
+                (pfrom->cleanSubVer == "/Argetoshi:1.8.3/") || 
+                (pfrom->cleanSubVer == "/Argetoshi:2.0.0/") || 
+                (pfrom->cleanSubVer == "/Argetoshi:2.1.0/") ||
+                (pfrom->cleanSubVer == "/Argetoshi:2.2.0/") ||
+                (pfrom->cleanSubVer == "/Argetoshi:2.3.0/") ||
+                (pfrom->cleanSubVer == "/Argetoshi:2.3.1/") ||
+                (pfrom->cleanSubVer == "/Argetoshi:2.3.2/") ||
+                (pfrom->cleanSubVer == "/Argetoshi:2.3.3/") ||
+                (pfrom->cleanSubVer == "/Argetoshi:2.4.0/") 
                )
             {
                 // disconnect from peers older than this proto version
