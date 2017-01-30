@@ -16,7 +16,7 @@ static const int COINBASE_MATURITY = 30;
 /** Flags for LockTime() */
 enum {
     /* Use GetMedianTimePast() instead of nTime for end point timestamp. */
-    LOCKTIME_MEDIAN_TIME_PAST = (1 << 1), // TODO
+    LOCKTIME_MEDIAN_TIME_PAST = (1 << 1), 
 };
 
 /** Used as the flags parameter to CheckFinalTx() in non-consensus code */
