@@ -338,7 +338,7 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, int algo)
         LogPrintf("CreateNewBlock(): total size %u\n", nBlockSize);
 
         // Compute final coinbase transaction.
-        txNew.vout[0].nValue = nFees + GetBlockSubsidy(nHeight, chainparams.GetConsensus());
+        txNew.vout[0].nValue = nFees + GetBlockSubsidy(nHeight, chainparams.GetConsensus(), pindexPrev->GetBlockHash());
         txNew.vin[0].scriptSig = CScript() << nHeight << OP_0;
         pblock->vtx[0] = txNew;
         pblocktemplate->vTxFees[0] = -nFees;
@@ -480,7 +480,7 @@ static bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& rese
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("MyriadMiner: generated block is stale");
+            return error("ArgentumMiner: generated block is stale");
     }
 
     // Remove key from key pool
@@ -495,7 +495,7 @@ static bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& rese
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock, true, NULL))
-        return error("MyriadMiner: ProcessNewBlock, block not accepted");
+        return error("ArgentumMiner: ProcessNewBlock, block not accepted");
 
     return true;
 }
@@ -533,13 +533,13 @@ void static BitcoinMiner(CWallet *pwallet)
         auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, ALGO_SHA256D));
         if (!pblocktemplate.get())
         {
-            LogPrintf("Error in MyriadMiner[SHA256d]: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
+            LogPrintf("Error in ArgentumMiner[SHA256d]: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
             return;
         }
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        LogPrintf("Running MyriadMiner[SHA256d] with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running ArgentumMiner[SHA256d] with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -560,7 +560,7 @@ void static BitcoinMiner(CWallet *pwallet)
                     assert(hash == pblock->GetHash());
 
                     SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                    LogPrintf("MyriadMiner[SHA256d]:\n");
+                    LogPrintf("ArgentumMiner[SHA256d]:\n");
                     LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                     ProcessBlockFound(pblock, *pwallet, reservekey);
                     SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -630,13 +630,13 @@ void static ScryptMiner(CWallet *pwallet)
         auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, ALGO_SCRYPT));
         if (!pblocktemplate.get())
         {
-            LogPrintf("Error in MyriadMiner[Scrypt]: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
+            LogPrintf("Error in ArgentumMiner[Scrypt]: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
             return;
         }
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        LogPrintf("Running MyriadMiner[Scrypt] with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running ArgentumMiner[Scrypt] with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -658,7 +658,7 @@ void static ScryptMiner(CWallet *pwallet)
                     assert(hash == pblock->GetPoWHash(ALGO_SCRYPT));
 
                     SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                    LogPrintf("MyriadMiner[Scrypt]:\n");
+                    LogPrintf("ArgentumMiner[Scrypt]:\n");
                     LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                     ProcessBlockFound(pblock, *pwallet, reservekey);
                     SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -727,13 +727,13 @@ void static GenericMiner(CWallet *pwallet, int algo)
         auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey, algo));
         if (!pblocktemplate.get())
         {
-            LogPrintf("Error in MyriadMiner[Generic]: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
+            LogPrintf("Error in ArgentumMiner[Generic]: Keypool ran out, please call keypoolrefill before restarting the mining thread\n");
             return;
         }
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        LogPrintf("Running MyriadMiner[Generic] with %u transactions in block (%u bytes)\n",
+        LogPrintf("Running ArgentumMiner[Generic] with %u transactions in block (%u bytes)\n",
                pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
@@ -742,14 +742,14 @@ void static GenericMiner(CWallet *pwallet, int algo)
         //
         int64_t nStart = GetTime();
         arith_uint256 hashTarget = arith_uint256().SetCompact(pblock->nBits);
-        LogPrintf("MyriadMiner[Generic] target hash: %s\n", hashTarget.GetHex());
+        LogPrintf("ArgentumMiner[Generic] target hash: %s\n", hashTarget.GetHex());
         uint256 hash;
         while(true)
         {
             hash = pblock->GetPoWHash(algo);
             if (UintToArith256(hash) <= hashTarget){
                 SetThreadPriority(THREAD_PRIORITY_NORMAL);
-                LogPrintf("MyriadMiner[Generic]:\n");
+                LogPrintf("ArgentumMiner[Generic]:\n");
                 LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
                 ProcessBlockFound(pblock, *pwallet, reservekey);
                 SetThreadPriority(THREAD_PRIORITY_LOWEST);
@@ -788,46 +788,46 @@ void static GenericMiner(CWallet *pwallet, int algo)
 void static ThreadMiner(CWallet *pwallet)
 {
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("bitcoin-miner");
+    RenameThread("argentum-miner");
 
     try
     {
         switch (miningAlgo)
         {
             case ALGO_SHA256D:
-                LogPrintf("MyriadMiner[SHA256d] miner started\n");
+                LogPrintf("ArgentumMiner[SHA256d] miner started\n");
                 BitcoinMiner(pwallet);
                 break;
             case ALGO_SCRYPT:
-                LogPrintf("MyriadMiner[Scrypt] miner started\n");
+                LogPrintf("ArgentumMiner[Scrypt] miner started\n");
                 ScryptMiner(pwallet);
                 break;
-            case ALGO_GROESTL:
-                LogPrintf("MyriadMiner[Groestl] miner started\n");
+/*            case ALGO_GROESTL:
+                LogPrintf("ArgentumMiner[Groestl] miner started\n");
                 GenericMiner(pwallet, ALGO_GROESTL);
                 break;
             case ALGO_SKEIN:
-                LogPrintf("MyriadMiner[Skein] miner started\n");
+                LogPrintf("ArgentumMiner[Skein] miner started\n");
                 GenericMiner(pwallet, ALGO_SKEIN);
                 break;
             case ALGO_QUBIT:
-                LogPrintf("MyriadMiner[Qubit] miner started\n");
+                LogPrintf("ArgentumMiner[Qubit] miner started\n");
                 GenericMiner(pwallet, ALGO_QUBIT);
                 break;
             case ALGO_YESCRYPT:
-                LogPrintf("MyriadMiner[Yescrypt] miner started\n");
+                LogPrintf("ArgentumMiner[Yescrypt] miner started\n");
                 GenericMiner(pwallet, ALGO_YESCRYPT); // could be replaced with a decent yescrypt miner in the style of scrypt, but how much need?
-                break;
+                break; */
         }
     }
     catch (boost::thread_interrupted)
     {
-        LogPrintf("MyriadMiner miner terminated\n");
+        LogPrintf("ArgentumMiner miner terminated\n");
         throw;
     }
     catch (const std::runtime_error &e)
     {
-        LogPrintf("MyriadMiner runtime error: %s\n", e.what());
+        LogPrintf("ArgentumMiner runtime error: %s\n", e.what());
         return;
     }
 }
