@@ -84,7 +84,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
         pblock->hashMerkleRoot = pblock->BuildMerkleTree();
         pblock->nNonce = blockinfo[i].nonce;
         CValidationState state;
-        /* MYRIAD: TEST REMOVED
+        /* ARGENTUM: TEST REMOVED
         BOOST_CHECK(ProcessNewBlock(state, NULL, pblock, true, NULL));
         BOOST_CHECK(state.IsValid());
         */
@@ -257,7 +257,7 @@ BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
     //BOOST_CHECK(CheckFinalTx(tx2));
 
     BOOST_CHECK(pblocktemplate = CreateNewBlock(scriptPubKey, ALGO_SHA256D));
-    /* MYRIAD: TEST REMOVED
+    /* ARGENTUM: TEST REMOVED
     BOOST_CHECK_EQUAL(pblocktemplate->block.vtx.size(), 2);
     */
     delete pblocktemplate;

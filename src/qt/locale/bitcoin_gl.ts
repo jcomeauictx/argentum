@@ -62,12 +62,12 @@
         <translation>Direccións para recibir</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estas son as túas direccións Myriad para enviar pagos. Revisa sempre a cantidade e a dirección receptora antes de enviar moedas.</translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estas son as túas direccións Argentum para enviar pagos. Revisa sempre a cantidade e a dirección receptora antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estas son as túas direccións Myriad para recibir pagos. Recoméndase empregar unha nova dirección de recepción por cada transacción.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estas son as túas direccións Argentum para recibir pagos. Recoméndase empregar unha nova dirección de recepción por cada transacción.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -152,8 +152,8 @@
         <translation>Confirmar encriptación de moedeiro</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
-        <translation>Precaución: Se encriptas o teu moedeiro e perdes o teu contrasinal, ti &lt;b&gt;PERDERÁS TÓDOLOS TEUS MYRIADS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
+        <translation>Precaución: Se encriptas o teu moedeiro e perdes o teu contrasinal, ti &lt;b&gt;PERDERÁS TÓDOLOS TEUS ARGENTUMS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -267,8 +267,8 @@
         <translation>Reindexando bloques no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Enviar moedas a unha dirección Myriad</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Enviar moedas a unha dirección Argentum</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -291,8 +291,8 @@
         <translation>&amp;Verificar mensaxe...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -319,12 +319,12 @@
         <translation>Encriptar as claves privadas que pertencen ao teu moedeiro</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Asina mensaxes coas túas direccións Myriad para probar que te pertencen</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Asina mensaxes coas túas direccións Argentum para probar que te pertencen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Verificar mensaxes para asegurar que foron asinados con direccións Myriad dadas.</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Verificar mensaxes para asegurar que foron asinados con direccións Argentum dadas.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -343,16 +343,16 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Core de Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Core de Argentum</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Solicitar pagos (xenera códigos QR e myriad: URIs)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Solicitar pagos (xenera códigos QR e argentum: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>&amp;Sobre Myriad Core</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>&amp;Sobre Argentum Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -363,8 +363,8 @@
         <translation>Amosar a listaxe de etiquetas e direccións para recibir empregadas</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Abrir un myriad: URI ou solicitude de pago</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>Abrir un argentum: URI ou solicitude de pago</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -632,8 +632,8 @@
         <translation>A dirección introducida "%1" xa está no libro de direccións.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>A dirección introducida '%1' non é unha dirección Myriad válida.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>A dirección introducida '%1' non é unha dirección Argentum válida.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -670,16 +670,16 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Core de Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Core de Argentum</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versión</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Sobre Myriad core</translation>
+        <source>About Argentum Core</source>
+        <translation>Sobre Argentum core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -709,8 +709,8 @@
         <translation>Empregar un directorio de datos personalizado</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Core de Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Core de Argentum</translation>
     </message>
     <message>
         <source>Error</source>
@@ -763,8 +763,8 @@
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente o porto do cliente Myriad no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente o porto do cliente Argentum no router. Esto so funciona se o teu router soporta UPnP e está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -842,8 +842,8 @@
         <translation>Formulario</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede Myriad despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>A información amosada por estar desactualizada. O teu moedeiro sincronízase automáticamente coa rede Argentum despois de que se estableza unha conexión, pero este proceso non está todavía rematado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1285,8 +1285,8 @@
         <translation>O total sobrepasa o teu balance cando se inclúe a tarifa de transacción %1.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Atención:  Enderezo Myriad non válido</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>Atención:  Enderezo Argentum non válido</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1402,8 +1402,8 @@
         <translation>Copiar a sinatura actual ao portapapeis do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
-        <translation>Asina a mensaxe para probar que posees esta dirección Myriad</translation>
+        <source>Sign the message to prove you own this Argentum address</source>
+        <translation>Asina a mensaxe para probar que posees esta dirección Argentum</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1422,8 +1422,8 @@
         <translation>&amp;Verificar Mensaxe</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección Myriad especificada</translation>
+        <source>Verify the message to ensure it was signed with the specified Argentum address</source>
+        <translation>Verificar a mensaxe para asegurar que foi asinada coa dirección Argentum especificada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1489,12 +1489,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Core de Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Core de Argentum</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Os desarrolladores de Myriad Core</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Os desarrolladores de Argentum Core</translation>
     </message>
     <message>
         <source>[testnet]</source>

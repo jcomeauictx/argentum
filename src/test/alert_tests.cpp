@@ -124,7 +124,7 @@ BOOST_AUTO_TEST_CASE(AlertApplies)
     SetMockTime(11);
     
     /*
-    // Alert Tests disabled for Myriad.
+    // Alert Tests disabled for Argentum.
     
     const std::vector<unsigned char>& alertKey = Params(CBaseChainParams::MAIN).AlertKey();
 
@@ -168,7 +168,7 @@ BOOST_AUTO_TEST_CASE(AlertNotify)
 {
     SetMockTime(11);
     /*
-    // Alert Tests disabled for Myriad.
+    // Alert Tests disabled for Argentum.
     const std::vector<unsigned char>& alertKey = Params(CBaseChainParams::MAIN).AlertKey();
 
     boost::filesystem::path temp = GetTempPath() /
@@ -206,7 +206,7 @@ static bool falseFunc() { return false; }
 BOOST_AUTO_TEST_CASE(PartitionAlert)
 {
     /*
-    // Alert Tests disabled for Myriad.
+    // Alert Tests disabled for Argentum.
     
     // Test PartitionCheck
     CCriticalSection csDummy;

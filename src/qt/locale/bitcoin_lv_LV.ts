@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Izvēlies adresi uz kuru sūtīt myriads</translation>
+        <translation>Izvēlies adresi uz kuru sūtīt argentums</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Izvēlies adresi ar kuru saņemt myriads</translation>
+        <translation>Izvēlies adresi ar kuru saņemt argentums</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -144,8 +144,8 @@
         <translation>Apstiprināt maciņa šifrēšanu</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
-        <translation>Brīdinājums: Ja tu nošifrē savu maciņu un pazaudē paroli, tu &lt;b&gt;PAZAUDĒSI VISAS SAVAS MYRIADS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
+        <translation>Brīdinājums: Ja tu nošifrē savu maciņu un pazaudē paroli, tu &lt;b&gt;PAZAUDĒSI VISAS SAVAS ARGENTUMS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -263,8 +263,8 @@
         <translation>Atvērt &amp;URI...</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Myriad Core klients</translation>
+        <source>Argentum Core client</source>
+        <translation>Argentum Core klients</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -275,8 +275,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Nosūtīt bitkoinus uz Myriad adresi</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Nosūtīt bitkoinus uz Argentum adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -299,8 +299,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -315,8 +315,8 @@
         <translation>&amp;Saņemt</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Parādīt informāciju par Myriad Core</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Parādīt informāciju par Argentum Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -331,12 +331,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Myriad adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām Argentum adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Myriad adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Argentum adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -355,20 +355,20 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un myriad: URIs)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un argentum: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>Par &amp;Myriad Core</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>Par &amp;Argentum Core</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Atvērt myriad URI vai maksājuma pieprasījumu</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>Atvērt argentum URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -644,8 +644,8 @@
         <translation>Nupat ierakstītā adrese "%1" jau atrodas adrešu grāmatā.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Ierakstītā adrese "%1" nav derīga Myriad adrese.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>Ierakstītā adrese "%1" nav derīga Argentum adrese.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -678,8 +678,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -690,8 +690,8 @@
         <translation>(%1-biti)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Par Myriad Core</translation>
+        <source>About Argentum Core</source>
+        <translation>Par Argentum Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -709,8 +709,8 @@
         <translation>Sveiciens</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Sveicināts Myriad Core</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>Sveicināts Argentum Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -721,8 +721,8 @@
         <translation>Izmantot pielāgotu datu mapi:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -808,15 +808,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt myriad &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt argentum &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Myriad klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt Argentum klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -868,7 +868,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Myriad kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt Argentum kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -902,8 +902,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Myriad tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Argentum tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -949,8 +949,8 @@
         <translation>Maksājumu pieprasījuma kļūda</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>Nevar palaist Myriad: nospied-lai-maksātu apstrādātāju</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>Nevar palaist Argentum: nospied-lai-maksātu apstrādātāju</translation>
     </message>
     <message>
         <source>Refund from %1</source>
@@ -1286,7 +1286,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Myriad Kontroles Funkcijas</translation>
+        <translation>Argentum Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1417,8 +1417,8 @@
         <translation>Transakcijas izveidošana neizdevās!</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Brīdinājums: Nederīga Myriad adrese</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>Brīdinājums: Nederīga Argentum adrese</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1491,8 +1491,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>Myriad Core tiek izslēgta...</translation>
+        <source>Argentum Core is shutting down...</source>
+        <translation>Argentum Core tiek izslēgta...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1538,8 +1538,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Myriad adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this Argentum address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Argentum adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1621,12 +1621,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Myriad Core izstrādātāji</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Argentum Core izstrādātāji</translation>
     </message>
     <message>
         <source>[testnet]</source>

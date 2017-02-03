@@ -66,12 +66,12 @@
         <translation>Адреси для отримання</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваші Myriad-адреси для відправлення платежів. Перед відправленням монет завжди перевіряйте суму та адресу прийому.</translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Це ваші Argentum-адреси для відправлення платежів. Перед відправленням монет завжди перевіряйте суму та адресу прийому.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Це ваша нова Myriad адреса для отримання платежів. Рекомендовано використовувати нову адресу для кожної транзакції.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Це ваша нова Argentum адреса для отримання платежів. Рекомендовано використовувати нову адресу для кожної транзакції.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -160,7 +160,7 @@
         <translation>Підтвердити шифрування гаманця</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>УВАГА: Якщо ви зашифруєте гаманець і забудете пароль, ви &lt;b&gt;ВТРАТИТЕ ВСІ СВОЇ БІТКОІНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -168,8 +168,8 @@
         <translation>Ви дійсно хочете зашифрувати свій гаманець?</translation>
     </message>
     <message>
-        <source>Myriad Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriads from being stolen by malware infecting your computer.</source>
-        <translation>Клієнт «Myriad Core» буде закрито для завершення процесу шифрування. Пам'ятайте, що шифрування гаманця не зможе повністю захистити ваші біткоїни від крадіжки якщо ваш комп'ютер буде інфіковано шкідливими програмами.</translation>
+        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Клієнт «Argentum Core» буде закрито для завершення процесу шифрування. Пам'ятайте, що шифрування гаманця не зможе повністю захистити ваші біткоїни від крадіжки якщо ваш комп'ютер буде інфіковано шкідливими програмами.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,8 +295,8 @@
         <translation>Відкрити &amp;URI</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Клієнт «Myriad Core»</translation>
+        <source>Argentum Core client</source>
+        <translation>Клієнт «Argentum Core»</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,7 +307,7 @@
         <translation>Переіндексація блоків на диску ...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
+        <source>Send coins to a Argentum address</source>
         <translation>Відправити монети на вказану адресу</translation>
     </message>
     <message>
@@ -331,8 +331,8 @@
         <translation>П&amp;еревірити повідомлення...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Отримати</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Показати інформацію про Myriad Core</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Показати інформацію про Argentum Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -363,12 +363,12 @@
         <translation>Зашифрувати закриті ключі, що знаходяться у вашому гаманці</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою Myriad-адресою </translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Підтвердіть, що Ви є власником повідомлення підписавши його Вашою Argentum-адресою </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Myriad-адресою</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Argentum-адресою</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -387,20 +387,20 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Створити запит платежу (генерує QR-код та myriad: URI)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Створити запит платежу (генерує QR-код та argentum: URI)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>П&amp;ро Myriad Core</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>П&amp;ро Argentum Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Myriad Core</source>
-        <translation>Редагувати параметри Myriad Core</translation>
+        <source>Modify configuration options for Argentum Core</source>
+        <translation>Редагувати параметри Argentum Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Показати список адрес і міток, що були використані для отримання</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Відкрити myriad: URI чи запит платежу</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>Відкрити argentum: URI чи запит платежу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>П&amp;араметри командного рядка</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Показати довідку Myriad Core для отримання переліку можливих параметрів командного рядка.</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>Показати довідку Argentum Core для отримання переліку можливих параметрів командного рядка.</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriad network</source>
-        <translation><numerusform>%n активне з'єднання з мережею Myriad</numerusform><numerusform>%n активні з'єднання з мережею Myriad</numerusform><numerusform>%n активних з'єднань з мережею Myriad</numerusform></translation>
+        <source>%n active connection(s) to Argentum network</source>
+        <translation><numerusform>%n активне з'єднання з мережею Argentum</numerusform><numerusform>%n активні з'єднання з мережею Argentum</numerusform><numerusform>%n активних з'єднань з мережею Argentum</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -806,8 +806,8 @@
         <translation>Введена адреса «%1» вже присутня в адресній книзі.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Введена адреса «%1» не є коректною адресою в мережі Myriad.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>Введена адреса «%1» не є коректною адресою в мережі Argentum.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -844,8 +844,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -856,8 +856,8 @@
         <translation>(%1-бітний)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Про Myriad Core</translation>
+        <source>About Argentum Core</source>
+        <translation>Про Argentum Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -879,16 +879,16 @@
         <translation>Вітання</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Ласкаво просимо в Myriad Core.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>Ласкаво просимо в Argentum Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
-        <translation>Оскільки це перший запуск програми, ви можете обрати де Myriad Core буде зберігати дані.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <translation>Оскільки це перший запуск програми, ви можете обрати де Argentum Core буде зберігати дані.</translation>
     </message>
     <message>
-        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Myriad Core завантажить та збереже копію ланцюжка блоків Myriad. Щонайменше %1ГБ даних буде збережено в цьому каталозі. Гаманець теж буде збережено в цьому каталозі.</translation>
+        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum Core завантажить та збереже копію ланцюжка блоків Argentum. Щонайменше %1ГБ даних буде збережено в цьому каталозі. Гаманець теж буде збережено в цьому каталозі.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -899,8 +899,8 @@
         <translation>Використовувати свій каталог даних:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -981,8 +981,8 @@
         <translation>Згортати замість закриття. Якщо ця опція включена, програма закриється лише після вибору відповідного пункту в меню.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriad Core.</source>
-        <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску Myriad Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <translation>Встановлює мову інтерфейсу. Зміни набудуть чинності після перезапуску Argentum Core.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1009,12 +1009,12 @@
         <translation>&amp;Мережа</translation>
     </message>
     <message>
-        <source>Automatically start Myriad Core after logging in to the system.</source>
-        <translation>Автоматично запускати Myriad Core при вході до системи.</translation>
+        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <translation>Автоматично запускати Argentum Core при вході до системи.</translation>
     </message>
     <message>
-        <source>&amp;Start Myriad Core on system login</source>
-        <translation>&amp;Запускати Myriad Core при вході до системи</translation>
+        <source>&amp;Start Argentum Core on system login</source>
+        <translation>&amp;Запускати Argentum Core при вході до системи</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1041,7 +1041,7 @@
         <translation>&amp;Витрачати непідтверджену решту</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Автоматично відкривати порт для клієнту біткоін на роутері. Працює лише якщо ваш роутер підтримує UPnP і ця функція увімкнена.</translation>
     </message>
     <message>
@@ -1049,8 +1049,8 @@
         <translation>Відображення порту через &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
-        <translation>Підключення до мережі Myriad через SOCKS5 проксі.</translation>
+        <source>Connect to the Argentum network through a SOCKS5 proxy.</source>
+        <translation>Підключення до мережі Argentum через SOCKS5 проксі.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1148,8 +1148,8 @@
         <translation>Форма</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Myriad після встановлення підключення, але цей процес ще не завершено.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>Показана інформація вже може бути застарілою. Ваш гаманець буде автоматично синхронізовано з мережею Argentum після встановлення підключення, але цей процес ще не завершено.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1247,16 +1247,16 @@
         <translation>Помилка запиту платежу</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>Неможливо запустити myriad: обробник click-to-pay</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>Неможливо запустити argentum: обробник click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>URL запиту платежу є некоректним: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Myriad address or malformed URI parameters.</source>
-        <translation>Неможливо обробити URI! Причиною цього може бути некоректна Myriad-адреса або неправильні параметри URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Argentum address or malformed URI parameters.</source>
+        <translation>Неможливо обробити URI! Причиною цього може бути некоректна Argentum-адреса або неправильні параметри URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1333,8 +1333,8 @@
         <translation>Кількість</translation>
     </message>
     <message>
-        <source>Enter a Myriad address (e.g. %1)</source>
-        <translation>Введіть адресу Myriad (наприклад %1)</translation>
+        <source>Enter a Argentum address (e.g. %1)</source>
+        <translation>Введіть адресу Argentum (наприклад %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1443,8 +1443,8 @@
         <translation>Поточне число блоків</translation>
     </message>
     <message>
-        <source>Open the Myriad Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Відкрити файл журналу налагодження Myriad Core з поточного каталогу даних. Це може зайняти кілька секунд для великих файлів журналів.</translation>
+        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Відкрити файл журналу налагодження Argentum Core з поточного каталогу даних. Це може зайняти кілька секунд для великих файлів журналів.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1563,8 +1563,8 @@
         <translation>Очистити консоль</translation>
     </message>
     <message>
-        <source>Welcome to the Myriad Core RPC console.</source>
-        <translation>Вітаємо у RPC-консолі Myriad Core.</translation>
+        <source>Welcome to the Argentum Core RPC console.</source>
+        <translation>Вітаємо у RPC-консолі Argentum Core.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1638,8 +1638,8 @@
         <translation>По&amp;вторно використати адресу для отримання (не рекомендується)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriad network.</source>
-        <translation>Необов'язкове повідомлення на додаток до запиту платежу, котре буде показане під час відкриття запиту. Примітка: Це повідомлення не буде відправлено з платежем через мережу Myriad.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Argentum network.</source>
+        <translation>Необов'язкове повідомлення на додаток до запиту платежу, котре буде показане під час відкриття запиту. Примітка: Це повідомлення не буде відправлено з платежем через мережу Argentum.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1871,8 +1871,8 @@
         <translation>всього щонайменше</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for myriad transactions than the network can process.</source>
-        <translation>Оплата тільки мінімальної комісії є прийнятною, допоки обсяг транзакцій є меншим простору в блоках. Але майте на увазі, що це може анулювати транзакцію, якщо попит на Myriad транзакції стане більшим, ніж мережа зможе обробити.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for argentum transactions than the network can process.</source>
+        <translation>Оплата тільки мінімальної комісії є прийнятною, допоки обсяг транзакцій є меншим простору в блоках. Але майте на увазі, що це може анулювати транзакцію, якщо попит на Argentum транзакції стане більшим, ніж мережа зможе обробити.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2031,8 +2031,8 @@
         <translation>Знайдено адресу, що дублюється: кожна адреса має бути вказана не більше одного разу.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Увага: Неправильна Myriad-адреса</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>Увага: Неправильна Argentum-адреса</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2082,8 +2082,8 @@
         <translation>Це звичайний платіж.</translation>
     </message>
     <message>
-        <source>The Myriad address to send the payment to</source>
-        <translation>Адреса Myriad для відправлення платежу</translation>
+        <source>The Argentum address to send the payment to</source>
+        <translation>Адреса Argentum для відправлення платежу</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2102,7 +2102,7 @@
         <translation>Видалити цей запис</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less myriads than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less argentums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Комісію буде знято зі вказаної суми. До отримувача надійде менше біткоінів, ніж було вказано в полі кількості. Якщо ж отримувачів декілька - комісію буде розподілено між ними.</translation>
     </message>
     <message>
@@ -2126,8 +2126,8 @@
         <translation>Введіть мітку для цієї адреси для додавання її в список використаних адрес</translation>
     </message>
     <message>
-        <source>A message that was attached to the myriad: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriad network.</source>
-        <translation>Повідомлення, що було додане до myriad:URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу Myriad.</translation>
+        <source>A message that was attached to the argentum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Argentum network.</source>
+        <translation>Повідомлення, що було додане до argentum:URI та буде збережено разом з транзакцією для довідки. Примітка: Це повідомлення не буде відправлено в мережу Argentum.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2141,8 +2141,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>Myriad Core вимикається...</translation>
+        <source>Argentum Core is shutting down...</source>
+        <translation>Argentum Core вимикається...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2160,12 +2160,12 @@
         <translation>&amp;Підписати повідомлення</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive myriads sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive argentums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Ви можете підписувати повідомлення/угоди своїми адресами, щоб довести можливість отримання біткоінів, що будуть надіслані на них. Остерігайтеся підписувати будь-що нечітке чи неочікуване, так як за допомогою фішинг-атаки вас можуть спробувати ввести в оману для отримання вашого підпису під чужими словами. Підписуйте лише чіткі твердження, з якими ви повністю згодні.</translation>
     </message>
     <message>
-        <source>The Myriad address to sign the message with</source>
-        <translation>Адреса Myriad для підпису цього повідомлення</translation>
+        <source>The Argentum address to sign the message with</source>
+        <translation>Адреса Argentum для підпису цього повідомлення</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2196,7 +2196,7 @@
         <translation>Копіювати поточну сигнатуру до системного буферу обміну</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
+        <source>Sign the message to prove you own this Argentum address</source>
         <translation>Підпишіть повідомлення щоб довести, що ви є власником цієї адреси</translation>
     </message>
     <message>
@@ -2220,12 +2220,12 @@
         <translation>Введіть нижче адресу отримувача, повідомлення (впевніться, що ви точно скопіювали символи завершення рядка, табуляцію, пробіли тощо) та підпис для перевірки повідомлення. Впевніться, що в підпис не було додано зайвих символів: це допоможе уникнути атак типу «людина посередині». Зауважте, що це лише засвідчує можливість отримання транзакцій підписувачем, але не в стані підтвердити джерело жодної транзакції!</translation>
     </message>
     <message>
-        <source>The Myriad address the message was signed with</source>
-        <translation>Адреса Myriad, якою було підписано це повідомлення</translation>
+        <source>The Argentum address the message was signed with</source>
+        <translation>Адреса Argentum, якою було підписано це повідомлення</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Myriad-адресою</translation>
+        <source>Verify the message to ensure it was signed with the specified Argentum address</source>
+        <translation>Перевірте повідомлення для впевненості, що воно підписано вказаною Argentum-адресою</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2291,12 +2291,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Розробники Myriad Core</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Розробники Argentum Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2845,8 +2845,8 @@
         <translation>Це тестова збірка пре-релізної версії - використовуйте на свій страх і ризик - не застосовувати для добування монет або торгівлі</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Myriad Core is probably already running.</source>
-        <translation>Неможливо прив'язатися до %s на цьому комп'ютері. Можливо, Myriad Core вже запущено.</translation>
+        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <translation>Неможливо прив'язатися до %s на цьому комп'ютері. Можливо, Argentum Core вже запущено.</translation>
     </message>
     <message>
         <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
@@ -3037,8 +3037,8 @@
         <translation>Прив'язатися до даної адреси для прослуховування JSON-RPC підключень. Використовуйте запис виду [хост]:порт для IPv6. Цей параметр можна вказувати декілька разів (типово: прив'язуватися до всіх інтерфейсів)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
-        <translation>Не вдалося встановити блокування на каталог даних %s. Myriad Core, ймовірно, вже запущений.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <translation>Не вдалося встановити блокування на каталог даних %s. Argentum Core, ймовірно, вже запущений.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3105,27 +3105,27 @@
         <translation>Цей продукт включає в себе програмне забезпечення, розроблене в рамках проекту OpenSSL &lt;https://www.openssl.org/&gt;, криптографічне програмне забезпечення, написане Еріком Янгом, та функції для роботи з UPnP, написані Томасом Бернардом.</translation>
     </message>
     <message>
-        <source>To use myriadcoind, or the -server option to myriadcoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use argentumd, or the -server option to argentum-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
+rpcuser=argentumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
 </source>
-        <translation>Для використання myriadcoind, або myriadcoin-qt з параметром -server, ви повинні встановити rpcpassword в файлі конфігурації:
+        <translation>Для використання argentumd, або argentum-qt з параметром -server, ви повинні встановити rpcpassword в файлі конфігурації:
 %s
 Рекомендується використати такий випадковий пароль:
-rpcuser=myriadcoinrpc
+rpcuser=argentumrpc
 rpcpassword=%s
 (вам не треба запам'ятовувати цей пароль)
 Ім'я користувача та пароль ПОВИННІ бути різними.
 Якщо файлу не існує, створіть його, обмеживши доступ правом читання для власника.
 Також рекомендується використовувати alertnotify для того, щоб отримувати сповіщення про проблеми;
-наприклад: alertnotify=echo %%s | mail -s "Сповіщення Myriad" admin@foo.com
+наприклад: alertnotify=echo %%s | mail -s "Сповіщення Argentum" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3133,8 +3133,8 @@ rpcpassword=%s
         <translation>Увага: установлено дуже велике значення -maxtxfee! Такі великі комісії можуть бути сплачені в окремій транзакції.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myriad Core will not work properly.</source>
-        <translation>Увага: будь ласка, перевірте дату і час на своєму комп'ютері! Якщо ваш годинник йде неправильно, Myriad Core може працювати некоректно.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
+        <translation>Увага: будь ласка, перевірте дату і час на своєму комп'ютері! Якщо ваш годинник йде неправильно, Argentum Core може працювати некоректно.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3173,16 +3173,16 @@ rpcpassword=%s
         <translation>Підключитись через SOCKS5-проксі</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Myriad Core Developers</source>
-        <translation>(C) 2009-%i Розробники Myriad Core</translation>
+        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <translation>(C) 2009-%i Розробники Argentum Core</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Неможливо розпізнати мережеву адресу для параметру -rpcbind (%s)</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriad Core</source>
-        <translation>Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії Myriad Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <translation>Помилка при завантаженні wallet.dat: Гаманець потребує новішої версії Argentum Core</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3205,8 +3205,8 @@ rpcpassword=%s
         <translation>Інформація</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Myriad Core is shutting down.</source>
-        <translation>Не вдалося пройти базові перевірки під час ініціалізації. Myriad Core буде вимкнено.</translation>
+        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
+        <translation>Не вдалося пройти базові перевірки під час ініціалізації. Argentum Core буде вимкнено.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3245,8 +3245,8 @@ rpcpassword=%s
         <translation>Скорочення кількості блоків...</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Myriad Wiki for SSL setup instructions)</source>
-        <translation>Параметри RPC SSL: (див. Myriad Wiki для налаштування SSL)</translation>
+        <source>RPC SSL options: (see the Argentum Wiki for SSL setup instructions)</source>
+        <translation>Параметри RPC SSL: (див. Argentum Wiki для налаштування SSL)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3341,8 +3341,8 @@ rpcpassword=%s
         <translation>Ім'я користувача для JSON-RPC-з'єднань</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Myriad Core to complete</source>
-        <translation>Потрібно перезаписати гаманець: перезапустіть Myriad Core для завершення</translation>
+        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
+        <translation>Потрібно перезаписати гаманець: перезапустіть Argentum Core для завершення</translation>
     </message>
     <message>
         <source>Warning</source>

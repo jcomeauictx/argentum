@@ -173,7 +173,7 @@ BOOST_AUTO_TEST_CASE(key_test1)
     BOOST_CHECK(key1.Sign(hashMsg, detsig));
     BOOST_CHECK(key1C.Sign(hashMsg, detsigc));
     BOOST_CHECK(detsig == detsigc);
-    // Myriad - Some tests disabled due to being unable to produce the correct signed data.
+    // Argentum - Some tests disabled due to being unable to produce the correct signed data.
     //BOOST_CHECK(detsig == ParseHex("1c493ca871b19f5bb10f5bd41eac4519ea486e6878cb08d1623e727887c220aa504878e189fb9869aede19fce2fdc32f0395166e680f1589c27ac22e80d3ff0d82"));
     //BOOST_CHECK_EQUAL(detsig, ParseHex("1c493ca871b19f5bb10f5bd41eac4519ea486e6878cb08d1623e727887c220aa504878e189fb9869aede19fce2fdc32f0395166e680f1589c27ac22e80d3ff0d82"));
     BOOST_CHECK(key2.Sign(hashMsg, detsig));

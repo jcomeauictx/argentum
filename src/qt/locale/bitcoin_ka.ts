@@ -62,12 +62,12 @@
         <translation>მიღების მისამართი</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>ეს არის თქვენი Myriad-მისამართები გადახდების შესასრულებლად. მონეტების გაგზავნამდე ყოველთვის შეამოწმეთ თანხა და მიმღების მისამართი.</translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>ეს არის თქვენი Argentum-მისამართები გადახდების შესასრულებლად. მონეტების გაგზავნამდე ყოველთვის შეამოწმეთ თანხა და მიმღების მისამართი.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>ეს არის თქვენი Myriad-მისამართები გადახდების მისაღებად. რეკომენდებულია ყოველი ტრანსაქციისათვის ახალი მიღების მისამართის გამოყენება.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>ეს არის თქვენი Argentum-მისამართები გადახდების მისაღებად. რეკომენდებულია ყოველი ტრანსაქციისათვის ახალი მიღების მისამართის გამოყენება.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -152,7 +152,7 @@
         <translation>დაადასტურეთ საფულის დაშიფრვა</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>ყურადღება: საფულის დაშიფრვის შემდეგ თუ თქვენ დაკარგავთ ფრაზა-პაროლს,  &lt;b&gt;ყველა ბიტქოინი დაგეკარგებათ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -283,8 +283,8 @@
         <translation>დისკზე ბლოკების რეინდექსაცია...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>მონეტების გაგზავნა Myriad-მისამართზე</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>მონეტების გაგზავნა Argentum-მისამართზე</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -307,8 +307,8 @@
         <translation>&amp;ვერიფიკაცია</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -335,12 +335,12 @@
         <translation>თქვენი საფულის პირადი გასაღებების დაშიფრვა</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>მესიჯებზე ხელმოწერა თქვენი Myriad-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>მესიჯებზე ხელმოწერა თქვენი Argentum-მისამართებით იმის დასტურად, რომ ის თქვენია</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Myriad-მისამართით</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>შეამოწმეთ, რომ მესიჯები ხელმოწერილია მითითებული Argentum-მისამართით</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -359,16 +359,16 @@
         <translation>ბარათების პანელი</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და myriad: ბმულები)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და argentum: ბმულები)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>Myriad Core-ს შეს&amp;ახებ</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>Argentum Core-ს შეს&amp;ახებ</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -379,16 +379,16 @@
         <translation>გამოყენებული მიღების მისამართებისა და ნიშნულების სიის ჩვენება</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>myriad: URI-ის ან გადახდის მოთხოვნის გახსნა</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>argentum: URI-ის ან გადახდის მოთხოვნის გახსნა</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>საკომანდო სტრიქონის ოპ&amp;ციები</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Myriad Core-ს დახმარების ჩვენება Myriad-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>Argentum Core-ს დახმარების ჩვენება Argentum-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -684,8 +684,8 @@
         <translation>მისამართი "%1" უკვე არის მისამართების წიგნში.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>შეყვანილი მისამართი "%1" არ არის ვალიდური Myriad-მისამართი.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>შეყვანილი მისამართი "%1" არ არის ვალიდური Argentum-მისამართი.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -722,16 +722,16 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>version</source>
         <translation>ვერსია</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Myriad Core-ს შესახებ</translation>
+        <source>About Argentum Core</source>
+        <translation>Argentum Core-ს შესახებ</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -753,12 +753,12 @@
         <translation>მოგესალმებით</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>მოგესალმებათ Myriad Core.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>მოგესალმებათ Argentum Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
-        <translation>ეს პროგრამის პირველი გაშვებაა; შეგიძლიათ მიუთითოთ, სად შეინახოს მონაცემები Myriad Core-მ.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <translation>ეს პროგრამის პირველი გაშვებაა; შეგიძლიათ მიუთითოთ, სად შეინახოს მონაცემები Argentum Core-მ.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -769,8 +769,8 @@
         <translation>მითითებული კატალოგის გამოყენება:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -851,8 +851,8 @@
         <translation>დაუდასტურებელი ხურდის გამოყენების აკრძალვის შემდეგ მათი გამოყენება შეუძლებელი იქნება, სანამ ტრანსაქციას არ ექნება ერთი დასტური მაინც. ეს აისახება თქვენი ნაშთის დათვლაზეც.</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>როუტერში Myriad-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>როუტერში Argentum-კლიენტის პორტის ავტომატური გახსნა. მუშაობს, თუ თქვენს როუტერს ჩართული აქვს UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -946,8 +946,8 @@
         <translation>ფორმა</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Myriad-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>ნაჩვენები ინფორმაცია შეიძლება მოძველებული იყოს. თქვენი საფულე ავტომატურად სინქრონიზდება Argentum-ის ქსელთან კავშირის დამყარების შემდეგ, ეს პროცესი ჯერ არ არის დასრულებული.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1001,8 +1001,8 @@
         <translation>გადახდის მოთხოვნის შეცდომა</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>ვერ გაიშვა myriad: click-to-pay</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>ვერ გაიშვა argentum: click-to-pay</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1224,7 +1224,7 @@
         <translation>ად&amp;რე გამოყენებული მიღების მისამართის გამოყენება (არ არის რეკომენდებული)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriad network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Argentum network.</source>
         <translation>არააუცილებელი მესიჯი, რომელიც ერთვის გადახდის მოთხოვნას და ნაჩვენები იქნება მოთხოვნის გახსნისას. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>
@@ -1513,8 +1513,8 @@
         <translation>ტრანსაქცია უარყოფილია! შესაძლოა მონეტების ნაწილი თქვენი საფულიდან უკვე გამოყენებულია, რაც შეიძლება მოხდეს wallet.dat-ის ასლის გამოყენებისას, როცა მონეტები გაიგზავნა სხვა ასლიდან, აქ კი არ არის გაგზავნილად მონიშნული.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>ყურადღება: არასწორია Myriad-მისამართი</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>ყურადღება: არასწორია Argentum-მისამართი</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1584,7 +1584,7 @@
         <translation>შეიყვანეთ ამ მისამართის ნიშნული გამოყენებული მისამართების სიაში დასამატებლად</translation>
     </message>
     <message>
-        <source>A message that was attached to the myriad: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriad network.</source>
+        <source>A message that was attached to the argentum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Argentum network.</source>
         <translation>მესიჯი, რომელიც თან ერთვის მონეტებს:  URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>
@@ -1599,8 +1599,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>Myriad Core იხურება...</translation>
+        <source>Argentum Core is shutting down...</source>
+        <translation>Argentum Core იხურება...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1646,7 +1646,7 @@
         <translation>მიმდინარე ხელმოწერის კოპირება კლიპბორდში</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
+        <source>Sign the message to prove you own this Argentum address</source>
         <translation>მოაწერეთ ხელი იმის დასადასტურებლად, რომ ეს მისამართი თქვენია</translation>
     </message>
     <message>
@@ -1666,8 +1666,8 @@
         <translation>მესიჯის &amp;ვერიფიკაცია</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Myriad-მისამართით</translation>
+        <source>Verify the message to ensure it was signed with the specified Argentum address</source>
+        <translation>შეამოწმეთ, რომ მესიჯი ხელმოწერილია მითითებული Argentum-მისამართით</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1733,12 +1733,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Myriad Core-ს ავტორები</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Argentum Core-ს ავტორები</translation>
     </message>
     <message>
         <source>[testnet]</source>

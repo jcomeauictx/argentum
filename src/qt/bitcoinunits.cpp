@@ -58,11 +58,11 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MBTC: return QString("Mega-Myriad (1,000,000)");
-    case kBTC: return QString("Kilo-Myriad (1,000)");
-    case BTC: return QString("Myriad");
-    case mBTC: return QString("Milli-Myriad (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Myriad (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case MBTC: return QString("Mega-Argentum (1,000,000)");
+    case kBTC: return QString("Kilo-Argentum (1,000)");
+    case BTC: return QString("Argentum");
+    case mBTC: return QString("Milli-Argentum (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-Argentum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

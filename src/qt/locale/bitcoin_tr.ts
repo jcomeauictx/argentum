@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Myriad yollanacak adresi seç</translation>
+        <translation>Argentum yollanacak adresi seç</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Myriad alınacak adresi seç</translation>
+        <translation>Argentum alınacak adresi seç</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -66,12 +66,12 @@
         <translation>Alım adresleri</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için kullanacağınız Myriad adreslerinizdir. Myriad yollamadan önce miktarı ve alıcının alım adresini daima kontrol ediniz.</translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için kullanacağınız Argentum adreslerinizdir. Argentum yollamadan önce miktarı ve alıcının alım adresini daima kontrol ediniz.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için kullanacağınız Myriad adreslerinizdir. Her işlem için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için kullanacağınız Argentum adreslerinizdir. Her işlem için yeni bir alım adresi kullanmanız tavsiye edilir.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -160,7 +160,7 @@
         <translation>Cüzdanın şifrelemesini teyit eder</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>Uyarı: Eğer cüzdanınızı şifrelerseniz ve parolanızı kaybederseniz, &lt;b&gt;TÜM BİTCOİNLERİNİZİ KAYBEDERSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -168,8 +168,8 @@
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Myriad Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriads from being stolen by malware infecting your computer.</source>
-        <translation>Şifreleme işlemini tamamlamak için Myriad Çekirdeği şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Myriadlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
+        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Şifreleme işlemini tamamlamak için Argentum Çekirdeği şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Argentumlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,8 +295,8 @@
         <translation>&amp;URI aç...</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Myriad Çekirdeği istemcisi</translation>
+        <source>Argentum Core client</source>
+        <translation>Argentum Çekirdeği istemcisi</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,8 +307,8 @@
         <translation>Diskteki bloklar yeniden endeksleniyor...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Bir Myriad adresine Myriad yolla</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Bir Argentum adresine Argentum yolla</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -331,8 +331,8 @@
         <translation>Mesaj &amp;kontrol et...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Al</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Myriad Çekirdeği hakkında bilgi göster</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Argentum Çekirdeği hakkında bilgi göster</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -363,12 +363,12 @@
         <translation>Cüzdanınızın özel anahtarlarını şifrele</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Myriad adresleri ile imzala</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Mesajları adreslerin size ait olduğunu ispatlamak için Argentum adresleri ile imzala</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Belirtilen Myriad adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Belirtilen Argentum adresleri ile imzalandıklarından emin olmak için mesajları kontrol et</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -387,20 +387,20 @@
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Çekirdeği</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Ödeme talep et (QR kodu ve myriad URI'si oluşturur)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Ödeme talep et (QR kodu ve argentum URI'si oluşturur)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>Myriad Çekirdeği &amp;hakkında</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>Argentum Çekirdeği &amp;hakkında</translation>
     </message>
     <message>
-        <source>Modify configuration options for Myriad Core</source>
-        <translation>Myriad Çekirdeği yapılandırma seçeneklerini değiştir</translation>
+        <source>Modify configuration options for Argentum Core</source>
+        <translation>Argentum Çekirdeği yapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Kullanılmış alım adresleri ve etiketlerin listesini göster</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Bir myriad: bağlantısı ya da ödeme talebi aç</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>Bir argentum: bağlantısı ya da ödeme talebi aç</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Komut satırı seçenekleri</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Myriad komut satırı seçeneklerinin listesini elde etmek için Myriad Çekirdeği yardım mesajını göster</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>Argentum komut satırı seçeneklerinin listesini elde etmek için Argentum Çekirdeği yardım mesajını göster</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriad network</source>
-        <translation><numerusform>Myriad şebekesine %n faal bağlantı</numerusform><numerusform>Myriad şebekesine %n faal bağlantı</numerusform></translation>
+        <source>%n active connection(s) to Argentum network</source>
+        <translation><numerusform>Argentum şebekesine %n faal bağlantı</numerusform><numerusform>Argentum şebekesine %n faal bağlantı</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -544,7 +544,7 @@
     <name>CoinControlDialog</name>
     <message>
         <source>Coin Selection</source>
-        <translation>Myriad Seçimi</translation>
+        <translation>Argentum Seçimi</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -806,8 +806,8 @@
         <translation>Girilen "%1" adresi hâlihazırda adres defterinde mevcuttur.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Girilen "%1" adresi geçerli bir Myriad adresi değildir.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>Girilen "%1" adresi geçerli bir Argentum adresi değildir.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -844,8 +844,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Çekirdeği</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
         <source>version</source>
@@ -856,8 +856,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Myriad Çekirdeği hakkında</translation>
+        <source>About Argentum Core</source>
+        <translation>Argentum Çekirdeği hakkında</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -879,16 +879,16 @@
         <translation>Hoş geldiniz</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Myriad Çekirdeğine hoş geldiniz.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>Argentum Çekirdeğine hoş geldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
-        <translation>Bu programı ilk kez başlattığınızdan dolayı Myriad Çekirdeğinin verilerini nereye saklayacağını seçebilirsiniz.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <translation>Bu programı ilk kez başlattığınızdan dolayı Argentum Çekirdeğinin verilerini nereye saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Myriad çekirdeği Myriad blok zincirinin bir kopyasını indirip saklayacaktır. Asgari %1GB bouyutunda veri bu klasörde saklanacak ve zamanla bu boyut artacaktır. Cüzdan da bu klasörde saklanacaktır. </translation>
+        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum çekirdeği Argentum blok zincirinin bir kopyasını indirip saklayacaktır. Asgari %1GB bouyutunda veri bu klasörde saklanacak ve zamanla bu boyut artacaktır. Cüzdan da bu klasörde saklanacaktır. </translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -899,8 +899,8 @@
         <translation>Özel bir veri klasörü kullan:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Çekirdeği</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -981,8 +981,8 @@
         <translation>Pencere kapatıldığında uygulamadan çıkmak yerine uygulamayı küçültür. Bu seçenek etkinleştirildiğinde, uygulama sadece menüden çıkış seçildiğinde kapanacaktır.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriad Core.</source>
-        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Myriad Çekirdeği tekrar başlatıldığında etkinleşecektir.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Argentum Çekirdeği tekrar başlatıldığında etkinleşecektir.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1009,12 +1009,12 @@
         <translation>&amp;Şebeke</translation>
     </message>
     <message>
-        <source>Automatically start Myriad Core after logging in to the system.</source>
-        <translation>Sistemde oturum açıldığında Myriad Çekirdeğini otomatik olarak başlat.</translation>
+        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <translation>Sistemde oturum açıldığında Argentum Çekirdeğini otomatik olarak başlat.</translation>
     </message>
     <message>
-        <source>&amp;Start Myriad Core on system login</source>
-        <translation>Myriad Çekirdeğini sistem oturumuyla &amp;başlat</translation>
+        <source>&amp;Start Argentum Core on system login</source>
+        <translation>Argentum Çekirdeğini sistem oturumuyla &amp;başlat</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1041,16 +1041,16 @@
         <translation>Teyit edilmemiş para üstünü &amp;harca</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönlendiricide Myriad istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönlendiricide Argentum istemci portlarını otomatik olarak açar. Bu, sadece yönlendiricinizin UPnP desteği bulunuyorsa ve etkinse çalışabilir.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portları &amp;UPnP kullanarak haritala</translation>
     </message>
     <message>
-        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
-        <translation>Myriad şebekesine SOCKS5 vekil sunucusu vasıtasıyla bağlan.</translation>
+        <source>Connect to the Argentum network through a SOCKS5 proxy.</source>
+        <translation>Argentum şebekesine SOCKS5 vekil sunucusu vasıtasıyla bağlan.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1098,7 +1098,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Myriad gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
+        <translation>Argentum gönderildiğinde arayüzde gösterilecek varsayılan alt birimi seçiniz.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1148,7 +1148,7 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
         <translation>Görüntülenen veriler zaman aşımına uğramış olabilir. Bağlantı kurulduğunda cüzdanınız otomatik olarak şebeke ile eşleşir ancak bu işlem henüz tamamlanmamıştır.</translation>
     </message>
     <message>
@@ -1247,16 +1247,16 @@
         <translation>Ödeme talebi hatası</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>Myriad başlatılamadı: tıkla-ve-öde yöneticisi</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>Argentum başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>Ödeme talebini alma URL'i geçersiz: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Myriad address or malformed URI parameters.</source>
-        <translation>URI okunamadı! Sebebi geçersiz bir Myriad adresi veya hatalı URI parametreleri olabilir.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Argentum address or malformed URI parameters.</source>
+        <translation>URI okunamadı! Sebebi geçersiz bir Argentum adresi veya hatalı URI parametreleri olabilir.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1333,8 +1333,8 @@
         <translation>Meblağ</translation>
     </message>
     <message>
-        <source>Enter a Myriad address (e.g. %1)</source>
-        <translation>Bir Myriad adresi giriniz (mesela %1)</translation>
+        <source>Enter a Argentum address (e.g. %1)</source>
+        <translation>Bir Argentum adresi giriniz (mesela %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1443,8 +1443,8 @@
         <translation>Güncel blok sayısı</translation>
     </message>
     <message>
-        <source>Open the Myriad Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Güncel veri klasöründen Myriad Çekirdeği hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
+        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Güncel veri klasöründen Argentum Çekirdeği hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1563,8 +1563,8 @@
         <translation>Konsolu temizle</translation>
     </message>
     <message>
-        <source>Welcome to the Myriad Core RPC console.</source>
-        <translation>Myriad Çekirdeği RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the Argentum Core RPC console.</source>
+        <translation>Argentum Çekirdeği RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1638,8 +1638,8 @@
         <translation>&amp;Hâlihazırda bulunan bir alım adresini kullan (önerilmez)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriad network.</source>
-        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir mesaj. Not: Bu mesaj ödeme ile birlikte Myriad şebekesi üzerinden gönderilmeyecektir.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Argentum network.</source>
+        <translation>Talep açıldığında gösterilecek, isteğinize dayalı, ödeme talebi ile ilişkilendirilecek bir mesaj. Not: Bu mesaj ödeme ile birlikte Argentum şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1788,7 +1788,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Myriad yolla</translation>
+        <translation>Argentum yolla</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1871,8 +1871,8 @@
         <translation>toplam asgari</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for myriad transactions than the network can process.</source>
-        <translation>Asgari ücreti ödemek, bloklarda boşluktan daha az muamele hacmi olduğu sürece bir sorun çıkarmaz. Fakat şebekenin işleyecebileceğinden daha çok myriad muameleleri talebi olduğunda bunun asla teyit edilmeyen bir muamele olabileceğinin farkında olmalısınız.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for argentum transactions than the network can process.</source>
+        <translation>Asgari ücreti ödemek, bloklarda boşluktan daha az muamele hacmi olduğu sürece bir sorun çıkarmaz. Fakat şebekenin işleyecebileceğinden daha çok argentum muameleleri talebi olduğunda bunun asla teyit edilmeyen bir muamele olabileceğinin farkında olmalısınız.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2023,8 +2023,8 @@
         <translation>Çift adres bulundu: adresler herbiri için sadece bir kez kullanılmalıdır.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Uyarı: geçersiz Myriad adresi</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>Uyarı: geçersiz Argentum adresi</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2074,8 +2074,8 @@
         <translation>Bu, normal bir ödemedir.</translation>
     </message>
     <message>
-        <source>The Myriad address to send the payment to</source>
-        <translation>Ödemenin yollanacağı Myriad adresi</translation>
+        <source>The Argentum address to send the payment to</source>
+        <translation>Ödemenin yollanacağı Argentum adresi</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2094,8 +2094,8 @@
         <translation>Bu unsuru kaldır</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less myriads than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Ücret yollanan meblağdan alınacaktır. Alıcı meblağ alanında girdiğinizden daha az myriad alacaktır.  Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less argentums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Ücret yollanan meblağdan alınacaktır. Alıcı meblağ alanında girdiğinizden daha az argentum alacaktır.  Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2118,8 +2118,8 @@
         <translation>Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
-        <source>A message that was attached to the myriad: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriad network.</source>
-        <translation>Myriad: URI'siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj Myriad şebekesi üzerinden gönderilmeyecektir.</translation>
+        <source>A message that was attached to the argentum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Argentum network.</source>
+        <translation>Argentum: URI'siyle ilişkili ve bilginiz için muameleyle saklanacak bir mesaj. Not: Bu mesaj Argentum şebekesi üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2133,8 +2133,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>Myriad Çekirdeği kapanıyor...</translation>
+        <source>Argentum Core is shutting down...</source>
+        <translation>Argentum Çekirdeği kapanıyor...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2152,12 +2152,12 @@
         <translation>Mesaj &amp;imzala</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive myriads sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Adreslerinize yollanan myriadleri alabileceğiniz ispatlamak için adreslerinizle mesaj/anlaşma imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive argentums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Adreslerinize yollanan argentumleri alabileceğiniz ispatlamak için adreslerinizle mesaj/anlaşma imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
     </message>
     <message>
-        <source>The Myriad address to sign the message with</source>
-        <translation>Mesajın imzalanmasında kullanılacak Myriad adresi</translation>
+        <source>The Argentum address to sign the message with</source>
+        <translation>Mesajın imzalanmasında kullanılacak Argentum adresi</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2188,8 +2188,8 @@
         <translation>Güncel imzayı sistem panosuna kopyala</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
-        <translation>Bu Myriad adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
+        <source>Sign the message to prove you own this Argentum address</source>
+        <translation>Bu Argentum adresinin sizin olduğunu ispatlamak için mesajı imzalayın</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2212,12 +2212,12 @@
         <translation>Alıcının adresini, mesajı (satır sonları, boşluklar, sekmeler vs. karakterleri tam olarak kopyaladığınızdan emin olunuz) ve imzayı aşağıda giriniz. Bir ortadaki adam saldırısı tarafından kandırılmaya mâni olmak için imzadan, imzalı mesajın içeriğini aşan bir anlam çıkarmamaya dikkat ediniz. Bunun sadece imzalayan tarafın adres ile alım yapabildiğini ispatladığını ve herhangi bir muamelenin gönderi tarafını kanıtlayamayacağını unutmayınız!</translation>
     </message>
     <message>
-        <source>The Myriad address the message was signed with</source>
-        <translation>Mesajın imzalanmasında kullanılan Myriad adresi</translation>
+        <source>The Argentum address the message was signed with</source>
+        <translation>Mesajın imzalanmasında kullanılan Argentum adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>Belirtilen Myriad adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
+        <source>Verify the message to ensure it was signed with the specified Argentum address</source>
+        <translation>Belirtilen Argentum adresi ile imzalandığını doğrulamak için mesajı kontrol et</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2283,12 +2283,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Çekirdeği</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Myriad Çekirdeği geliştiricileri</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Argentum Çekirdeği geliştiricileri</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2414,7 +2414,7 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Oluşturulan myriad'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <translation>Oluşturulan argentum'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2732,7 +2732,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Myriad yolla</translation>
+        <translation>Argentum yolla</translation>
     </message>
 </context>
 <context>
@@ -2834,11 +2834,11 @@
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - myriad oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+        <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - argentum oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Myriad Core is probably already running.</source>
-        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Myriad Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
+        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Argentum Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
         <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
@@ -3029,8 +3029,8 @@
         <translation>Belirtilen adrese bağlan ve JSON RPC bağlantıları için dinlemeye geç. IPv6 için [makine]:port imlasını kullanınız. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arayüzlere bağlan)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
-        <translation>%s veri dizininde kilit elde edilemedi. Myriad Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <translation>%s veri dizininde kilit elde edilemedi. Argentum Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3086,7 +3086,7 @@
     </message>
     <message>
         <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Etkinse myriad oluşuturulmasına atanan iş parçacığı sayısını ayarla (-1 = tüm çekirdekler, varsayılan: %d)</translation>
+        <translation>Etkinse argentum oluşuturulmasına atanan iş parçacığı sayısını ayarla (-1 = tüm çekirdekler, varsayılan: %d)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
@@ -3097,27 +3097,27 @@
         <translation>Bu ürün OpenSSL projesi tarafından OpenSSL araç takımı (http://www.openssl.org/) için geliştirilen yazılımlar, Eric Young (eay@cryptsoft.com) tarafından hazırlanmış şifreleme yazılımları ve Thomas Bernard tarafından programlanmış UPnP yazılımı içerir.</translation>
     </message>
     <message>
-        <source>To use myriadcoind, or the -server option to myriadcoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use argentumd, or the -server option to argentum-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
+rpcuser=argentumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
 </source>
-        <translation>myriadcoind ya da myriadcoin-qt ile -server seçeneğini kullanmak için yapılandırma dosyasında bir rpc parolası belirtmeniz gerekir:
+        <translation>argentumd ya da argentum-qt ile -server seçeneğini kullanmak için yapılandırma dosyasında bir rpc parolası belirtmeniz gerekir:
 %s
 Aşağıdaki rastgele oluşturulan parolayı kullanmanız tavsiye edilir:
-rpcuser=myriadcoinrpc
+rpcuser=argentumrpc
 rpcpassword=%s
 (bu parolayı hatırlamanız gerekli değildir)
 Kullanıcı ismi ile parolanın FARKLI olmaları gerekir.
 Dosya mevcut değilse, sadece sahibi için okumayla sınırlı izin ile oluşturunuz.
 Sorunlar hakkında bildiri almak için alertnotify unsurunu ayarlamanız tavsiye edilir;
-mesela: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
+mesela: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3125,8 +3125,8 @@ mesela: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>İkaz: -maxtxfee çok yüksek bir değere ayarlanmış! Bu denli yüksek ücretler tek bir muamelede ödenebilir.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myriad Core will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın saat ve tarihinin doğru olduğunu kontol ediniz! Saatinizde gecikme varsa Myriad Çekirdeği doğru şekilde çalışamaz.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın saat ve tarihinin doğru olduğunu kontol ediniz! Saatinizde gecikme varsa Argentum Çekirdeği doğru şekilde çalışamaz.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3165,16 +3165,16 @@ mesela: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>SOCKS5 vekil sunucusu vasıtasıyla bağlan</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Myriad Core Developers</source>
-        <translation>Telif hakkı 2009-%i Myriad Çekirdeği Geliştiricileri</translation>
+        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <translation>Telif hakkı 2009-%i Argentum Çekirdeği Geliştiricileri</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>-rpcbind değeri %s şebeke adresi olarak ayrıştırılamadı</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriad Core</source>
-        <translation>wallet.dat dosyasının yüklenmesinde hata: Cüzdan Myriad Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <translation>wallet.dat dosyasının yüklenmesinde hata: Cüzdan Argentum Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3193,8 +3193,8 @@ mesela: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>Bilgi</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Myriad Core is shutting down.</source>
-        <translation>Başlatma sınaması başarısız oldu. Myriad Çekirdeği kapatılıyor.</translation>
+        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
+        <translation>Başlatma sınaması başarısız oldu. Argentum Çekirdeği kapatılıyor.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3229,8 +3229,8 @@ mesela: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>Düğüm röle seçenekleri:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Myriad Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL seçenekleri: (SSL kurulumu yönergeleri için Myriad vikisine bakınız)</translation>
+        <source>RPC SSL options: (see the Argentum Wiki for SSL setup instructions)</source>
+        <translation>RPC SSL seçenekleri: (SSL kurulumu yönergeleri için Argentum vikisine bakınız)</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3325,8 +3325,8 @@ mesela: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>JSON-RPC bağlantıları için kullanıcı ismi</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Myriad Core to complete</source>
-        <translation>Cüzdanın tekrar yazılması gerekmektedir: tamamlamak için Myriad Çekirdeğini yeniden başlatın</translation>
+        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
+        <translation>Cüzdanın tekrar yazılması gerekmektedir: tamamlamak için Argentum Çekirdeğini yeniden başlatın</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3430,7 +3430,7 @@ mesela: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
-        <translation>Myriad oluştur (varsayılan: %u)</translation>
+        <translation>Argentum oluştur (varsayılan: %u)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>

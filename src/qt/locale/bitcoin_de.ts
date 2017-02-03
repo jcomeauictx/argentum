@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie Myriads überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie Argentums überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie Myriads empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie Argentums empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -66,12 +66,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind Ihre Myriad-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Myriads überweisen.</translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind Ihre Argentum-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Argentums überweisen.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind Ihre Myriad-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind Ihre Argentum-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -160,16 +160,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;alle Ihre Myriads verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;alle Ihre Argentums verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie Ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Myriad Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriads from being stolen by malware infecting your computer.</source>
-        <translation>Myriad Core wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Vergessen Sie nicht, dass eine Wallet-Verschlüsselung nicht vollständig vor Diebstahl Ihrer Myriads durch Schadsoftware schützen kann, die Ihren Computer infiziert.</translation>
+        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Argentum Core wird jetzt beendet, um den Verschlüsselungsprozess abzuschließen. Vergessen Sie nicht, dass eine Wallet-Verschlüsselung nicht vollständig vor Diebstahl Ihrer Argentums durch Schadsoftware schützen kann, die Ihren Computer infiziert.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,8 +295,8 @@
         <translation>&amp;URI öffnen...</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>"Myriad Core"-Client</translation>
+        <source>Argentum Core client</source>
+        <translation>"Argentum Core"-Client</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,8 +307,8 @@
         <translation>Reindiziere Blöcke auf Datenträger...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Myriads an eine Myriad-Adresse überweisen</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Argentums an eine Argentum-Adresse überweisen</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -331,8 +331,8 @@
         <translation>Nachricht &amp;verifizieren...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Empfangen</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Informationen über Myriad Core anzeigen</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Informationen über Argentum Core anzeigen</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -363,12 +363,12 @@
         <translation>Verschlüsselt die zu Ihrer Wallet gehörenden privaten Schlüssel</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Nachrichten signieren, um den Besitz Ihrer Myriad-Adressen zu beweisen</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Nachrichten signieren, um den Besitz Ihrer Argentum-Adressen zu beweisen</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen Myriad-Adressen signiert wurden</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Nachrichten verifizieren, um sicherzustellen, dass diese mit den angegebenen Argentum-Adressen signiert wurden</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -387,20 +387,20 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Zahlungen anfordern (erzeugt QR-Codes und "myriad:"-URIs)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Zahlungen anfordern (erzeugt QR-Codes und "argentum:"-URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>&amp;Über Myriad Core</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>&amp;Über Argentum Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Myriad Core</source>
-        <translation>Konfiguration von Myriad Core bearbeiten</translation>
+        <source>Modify configuration options for Argentum Core</source>
+        <translation>Konfiguration von Argentum Core bearbeiten</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Liste verwendeter Empfangsadressen und Bezeichnungen anzeigen</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Eine "myriad:"-URI oder Zahlungsanforderung öffnen</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>Eine "argentum:"-URI oder Zahlungsanforderung öffnen</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandozeilenoptionen</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Zeige den "Myriad Core"-Hilfetext, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>Zeige den "Argentum Core"-Hilfetext, um eine Liste mit möglichen Kommandozeilenoptionen zu erhalten</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriad network</source>
-        <translation><numerusform>%n aktive Verbindung zum Myriad-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Myriad-Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to Argentum network</source>
+        <translation><numerusform>%n aktive Verbindung zum Argentum-Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Argentum-Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -806,8 +806,8 @@
         <translation>Die eingegebene Adresse "%1" befindet sich bereits im Adressbuch.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Myriad-Adresse.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige Argentum-Adresse.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -844,8 +844,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -856,8 +856,8 @@
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Über Myriad Core</translation>
+        <source>About Argentum Core</source>
+        <translation>Über Argentum Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -879,16 +879,16 @@
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Willkommen zu Myriad Core.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>Willkommen zu Argentum Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
-        <translation>Da Sie das Programm gerade zum ersten Mal starten, können Sie nun auswählen wo Myriad Core seine Daten ablegen soll.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <translation>Da Sie das Programm gerade zum ersten Mal starten, können Sie nun auswählen wo Argentum Core seine Daten ablegen soll.</translation>
     </message>
     <message>
-        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Myriad Core wird eine Kopie der Blockkette herunterladen und speichern. Mindestens %1GB Daten werden in diesem Verzeichnis abgelegt und die Datenmenge wächst über die Zeit an. Auch die Wallet wird in diesem Verzeichnis abgelegt.</translation>
+        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum Core wird eine Kopie der Blockkette herunterladen und speichern. Mindestens %1GB Daten werden in diesem Verzeichnis abgelegt und die Datenmenge wächst über die Zeit an. Auch die Wallet wird in diesem Verzeichnis abgelegt.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -899,8 +899,8 @@
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -981,8 +981,8 @@
         <translation>Minimiert die Anwendung anstatt sie zu beenden wenn das Fenster geschlossen wird. Wenn dies aktiviert ist, müssen Sie die Anwendung über "Beenden" im Menü schließen.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriad Core.</source>
-        <translation>Legt die Sprache der Benutzeroberfläche fest. Diese Einstellung wird erst nach einem Neustart von Myriad Core aktiv.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <translation>Legt die Sprache der Benutzeroberfläche fest. Diese Einstellung wird erst nach einem Neustart von Argentum Core aktiv.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1009,12 +1009,12 @@
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>Automatically start Myriad Core after logging in to the system.</source>
-        <translation>Myriad Core nach der Anmeldung am System automatisch starten.</translation>
+        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <translation>Argentum Core nach der Anmeldung am System automatisch starten.</translation>
     </message>
     <message>
-        <source>&amp;Start Myriad Core on system login</source>
-        <translation>&amp;Myriad Core nach Systemanmeldung starten</translation>
+        <source>&amp;Start Argentum Core on system login</source>
+        <translation>&amp;Argentum Core nach Systemanmeldung starten</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1041,16 +1041,16 @@
         <translation>&amp;Unbestätigtes Wechselgeld darf ausgegeben werden</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisch den Myriad-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisch den Argentum-Clientport auf dem Router öffnen. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und dies aktiviert ist.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portweiterleitung via &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
-        <translation>Über einen SOCKS5-Proxy mit dem Myriad-Netzwerk verbinden.</translation>
+        <source>Connect to the Argentum network through a SOCKS5 proxy.</source>
+        <translation>Über einen SOCKS5-Proxy mit dem Argentum-Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1098,7 +1098,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Wählen Sie die standardmäßige Untereinheit, die in der Benutzeroberfläche und beim Überweisen von Myriads angezeigt werden soll.</translation>
+        <translation>Wählen Sie die standardmäßige Untereinheit, die in der Benutzeroberfläche und beim Überweisen von Argentums angezeigt werden soll.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1148,8 +1148,8 @@
         <translation>Formular</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Wallet wird automatisch synchronisiert, nachdem eine Verbindung zum Myriad-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigten Informationen sind möglicherweise nicht mehr aktuell. Ihre Wallet wird automatisch synchronisiert, nachdem eine Verbindung zum Argentum-Netzwerk hergestellt wurde. Dieser Prozess ist jedoch derzeit noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1247,16 +1247,16 @@
         <translation>fehlerhafte Zahlungsanforderung</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>"myriad: Klicken-zum-Bezahlen"-Handler konnte nicht gestartet werden</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>"argentum: Klicken-zum-Bezahlen"-Handler konnte nicht gestartet werden</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>Abruf-URL der Zahlungsanforderung ist ungültig: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Myriad address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Myriad-Adresse oder fehlerhafte URI-Parameter verursacht werden.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Argentum address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Argentum-Adresse oder fehlerhafte URI-Parameter verursacht werden.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1333,8 +1333,8 @@
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Myriad address (e.g. %1)</source>
-        <translation>Myriad-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a Argentum address (e.g. %1)</source>
+        <translation>Argentum-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1443,8 +1443,8 @@
         <translation>Aktuelle Anzahl Blöcke</translation>
     </message>
     <message>
-        <source>Open the Myriad Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffnet die "Myriad Core"-Debugprotokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffnet die "Argentum Core"-Debugprotokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1563,8 +1563,8 @@
         <translation>Konsole zurücksetzen</translation>
     </message>
     <message>
-        <source>Welcome to the Myriad Core RPC console.</source>
-        <translation>Willkommen in der "Myriad Core"-RPC-Konsole.</translation>
+        <source>Welcome to the Argentum Core RPC console.</source>
+        <translation>Willkommen in der "Argentum Core"-RPC-Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1638,8 +1638,8 @@
         <translation>Vorhandene Empfangsadresse &amp;wiederverwenden (nicht empfohlen)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriad network.</source>
-        <translation>Eine optionale Nachricht, die an die Zahlungsanforderung angehängt wird. Sie wird angezeigt, wenn die Anforderung geöffnet wird. Hinweis: Diese Nachricht wird nicht mit der Zahlung über das Myriad-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Argentum network.</source>
+        <translation>Eine optionale Nachricht, die an die Zahlungsanforderung angehängt wird. Sie wird angezeigt, wenn die Anforderung geöffnet wird. Hinweis: Diese Nachricht wird nicht mit der Zahlung über das Argentum-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1788,7 +1788,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Myriads überweisen</translation>
+        <translation>Argentums überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1871,8 +1871,8 @@
         <translation>Mindestbetrag</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for myriad transactions than the network can process.</source>
-        <translation>Nur die minimale Gebühr zu bezahlen ist so lange in Ordnung, wie weniger Transaktionsvolumen als Platz in den Blöcken vorhanden ist. Aber Vorsicht, diese Option kann dazu führen, dass Transaktionen nicht bestätigt werden, wenn mehr Bedarf an Myriad-Transaktionen besteht als das Netzwerk verarbeiten kann.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for argentum transactions than the network can process.</source>
+        <translation>Nur die minimale Gebühr zu bezahlen ist so lange in Ordnung, wie weniger Transaktionsvolumen als Platz in den Blöcken vorhanden ist. Aber Vorsicht, diese Option kann dazu führen, dass Transaktionen nicht bestätigt werden, wenn mehr Bedarf an Argentum-Transaktionen besteht als das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2000,7 +2000,7 @@
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Die Transaktion wurde abgelehnt! Dies kann passieren, wenn einige Myriads aus Ihrer Wallet bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Myriads dort ausgegeben haben und dies daher in der derzeit aktiven Wallet nicht vermerkt ist.</translation>
+        <translation>Die Transaktion wurde abgelehnt! Dies kann passieren, wenn einige Argentums aus Ihrer Wallet bereits ausgegeben wurden. Beispielsweise weil Sie eine Kopie Ihrer wallet.dat genutzt, die Argentums dort ausgegeben haben und dies daher in der derzeit aktiven Wallet nicht vermerkt ist.</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2031,8 +2031,8 @@
         <translation>Doppelte Adresse entdeckt: Adressen dürfen jeweils nur einmal vorkommen.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Warnung: Ungültige Myriad-Adresse</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>Warnung: Ungültige Argentum-Adresse</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2082,7 +2082,7 @@
         <translation>Dies ist eine normale Überweisung.</translation>
     </message>
     <message>
-        <source>The Myriad address to send the payment to</source>
+        <source>The Argentum address to send the payment to</source>
         <translation>Die Zahlungsadresse der Überweisung</translation>
     </message>
     <message>
@@ -2102,8 +2102,8 @@
         <translation>Diesen Eintrag entfernen</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less myriads than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Die Gebühr wird vom zu überweisenden Betrag abgezogen. Der Empfänger wird also weniger Myriads erhalten, als Sie im Betrags-Feld eingegeben haben. Falls mehrere Empfänger ausgewählt wurden, wird die Gebühr gleichmäßig verteilt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less argentums than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Die Gebühr wird vom zu überweisenden Betrag abgezogen. Der Empfänger wird also weniger Argentums erhalten, als Sie im Betrags-Feld eingegeben haben. Falls mehrere Empfänger ausgewählt wurden, wird die Gebühr gleichmäßig verteilt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2126,8 +2126,8 @@
         <translation>Adressbezeichnung eingeben, die dann zusammen mit der Adresse der Liste bereits verwendeter Adressen hinzugefügt wird.</translation>
     </message>
     <message>
-        <source>A message that was attached to the myriad: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriad network.</source>
-        <translation>Eine an die "myriad:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Myriad-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the argentum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Argentum network.</source>
+        <translation>Eine an die "argentum:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Argentum-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2141,8 +2141,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>Myriad Core wird beendet...</translation>
+        <source>Argentum Core is shutting down...</source>
+        <translation>Argentum Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2160,12 +2160,12 @@
         <translation>Nachricht &amp;signieren</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive myriads sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Sie können Nachrichten/Vereinbarungen mit Hilfe Ihrer Adressen signieren, um zu beweisen, dass Sie Myriads empfangen können, die an diese Adressen überwiesen werden. Seien Sie vorsichtig und signieren Sie nichts Vages oder Willkürliches, um Ihre Indentität vor Phishingangriffen zu schützen. Signieren Sie nur vollständig-detaillierte Aussagen, mit denen Sie auch einverstanden sind.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive argentums sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Sie können Nachrichten/Vereinbarungen mit Hilfe Ihrer Adressen signieren, um zu beweisen, dass Sie Argentums empfangen können, die an diese Adressen überwiesen werden. Seien Sie vorsichtig und signieren Sie nichts Vages oder Willkürliches, um Ihre Indentität vor Phishingangriffen zu schützen. Signieren Sie nur vollständig-detaillierte Aussagen, mit denen Sie auch einverstanden sind.</translation>
     </message>
     <message>
-        <source>The Myriad address to sign the message with</source>
-        <translation>Die Myriad-Adresse mit der die Nachricht signiert wird</translation>
+        <source>The Argentum address to sign the message with</source>
+        <translation>Die Argentum-Adresse mit der die Nachricht signiert wird</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2196,8 +2196,8 @@
         <translation>Aktuelle Signatur in die Zwischenablage kopieren</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
-        <translation>Die Nachricht signieren, um den Besitz dieser Myriad-Adresse zu beweisen</translation>
+        <source>Sign the message to prove you own this Argentum address</source>
+        <translation>Die Nachricht signieren, um den Besitz dieser Argentum-Adresse zu beweisen</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2220,12 +2220,12 @@
         <translation>Geben Sie die Zahlungsadresse des Empfängers, Nachricht (achten Sie darauf Zeilenumbrüche, Leerzeichen, Tabulatoren usw. exakt zu kopieren) und Signatur unten ein, um die Nachricht zu verifizieren. Vorsicht, interpretieren Sie nicht mehr in die Signatur hinein, als in der signierten Nachricht selber enthalten ist, um nicht von einem Man-in-the-middle-Angriff hinters Licht geführt zu werden. Beachten Sie dass dies nur beweißt, dass die signierende Partei über diese Adresse Überweisungen empfangen kann.</translation>
     </message>
     <message>
-        <source>The Myriad address the message was signed with</source>
-        <translation>Die Myriad-Adresse mit der die Nachricht signiert wurde</translation>
+        <source>The Argentum address the message was signed with</source>
+        <translation>Die Argentum-Adresse mit der die Nachricht signiert wurde</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen Myriad-Adresse signiert wurde</translation>
+        <source>Verify the message to ensure it was signed with the specified Argentum address</source>
+        <translation>Die Nachricht verifizieren, um sicherzustellen, dass diese mit der angegebenen Argentum-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2291,12 +2291,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Die "Myriad Core"-Entwickler</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Die "Argentum Core"-Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2422,7 +2422,7 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte Myriads müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine Myriads gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte Argentums müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine Argentums gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2740,7 +2740,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Myriads überweisen</translation>
+        <translation>Argentums überweisen</translation>
     </message>
 </context>
 <context>
@@ -2845,8 +2845,8 @@
         <translation>Dies ist eine Vorab-Testversion - Verwendung auf eigene Gefahr - nicht für Mining- oder Handelsanwendungen nutzen!</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Myriad Core is probably already running.</source>
-        <translation>Kann auf diesem Computer nicht an %s binden, da Myriad Core wahrscheinlich bereits gestartet wurde.</translation>
+        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <translation>Kann auf diesem Computer nicht an %s binden, da Argentum Core wahrscheinlich bereits gestartet wurde.</translation>
     </message>
     <message>
         <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
@@ -3037,8 +3037,8 @@
         <translation>An die angegebene Adresse binden und nach eingehenden JSON-RPC-Verbindungen abhören. Für IPv6 "[Host]:Port"-Notation verwenden. Kann mehrmals angegeben werden. (Standard: an alle Schnittstellen binden)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
-        <translation>Datenverzeichnis %s kann nicht gesperrt werden, da Myriad Core wahrscheinlich bereits gestartet wurde.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <translation>Datenverzeichnis %s kann nicht gesperrt werden, da Argentum Core wahrscheinlich bereits gestartet wurde.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3094,7 +3094,7 @@
     </message>
     <message>
         <source>Set the number of threads for coin generation if enabled (-1 = all cores, default: %d)</source>
-        <translation>Maximale Anzahl an Threads zur Myriaderzeugung, wenn aktiviert, festlegen (-1 = alle Kerne, Standard: %d)</translation>
+        <translation>Maximale Anzahl an Threads zur Argentumerzeugung, wenn aktiviert, festlegen (-1 = alle Kerne, Standard: %d)</translation>
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
@@ -3105,27 +3105,27 @@
         <translation>Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im OpenSSL-Toolkit &lt;https://www.openssl.org/&gt; entwickelt wird, sowie von Eric Young geschriebene kryptographische Software und von Thomas Bernard geschriebene UPnP-Software.</translation>
     </message>
     <message>
-        <source>To use myriadcoind, or the -server option to myriadcoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use argentumd, or the -server option to argentum-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=myriadcoinrpc
+rpcuser=argentumrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
 </source>
-        <translation>Um myriadcoind oder die Option -server mit myriadcoin-qt verwenden zu können, müssen Sie rpcpassword in der Konfigurationsdatei angeben:
+        <translation>Um argentumd oder die Option -server mit argentum-qt verwenden zu können, müssen Sie rpcpassword in der Konfigurationsdatei angeben:
 %s
 Es wird empfohlen das folgende Zufallspasswort zu verwenden.
-rpcuser=myriadcoinrpc
+rpcuser=argentumrpc
 rpcpassword=%s
 (Sie müssen sich dieses Passwort nicht merken!)
 Der Benutzername und das Passwort dürfen NICHT identisch sein.
 Falls die Konfigurationsdatei nicht existiert, erzeugen Sie diese bitte mit Leserechten nur für den Dateibesitzer.
 Es wird ebenfalls empfohlen alertnotify anzugeben, um im Problemfall benachrichtigt zu werden.
-Beispiel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
+Beispiel: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -3133,8 +3133,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>Warnung: -maxtxfee ist auf einen sehr hohen Wert festgelegt! Gebühren dieser Höhe könnten für eine einzelne Transaktion bezahlt werden.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Myriad Core will not work properly.</source>
-        <translation>Warnung: Bitte korrigieren Sie die Datums- und Uhrzeiteinstellungen Ihres Computers, da Myriad Core ansonsten nicht ordnungsgemäß funktionieren wird.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
+        <translation>Warnung: Bitte korrigieren Sie die Datums- und Uhrzeiteinstellungen Ihres Computers, da Argentum Core ansonsten nicht ordnungsgemäß funktionieren wird.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3173,16 +3173,16 @@ Beispiel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>Über einen SOCKS5-Proxy &amp;verbinden</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Myriad Core Developers</source>
-        <translation>Urheberrecht (C) 2009-%i Die "Myriad Core"-Entwickler</translation>
+        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <translation>Urheberrecht (C) 2009-%i Die "Argentum Core"-Entwickler</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Der Wert %s von -rpcbind wurde nicht als Netzwerkadresse erkannt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriad Core</source>
-        <translation>Fehler beim Laden von wallet.dat: Wallet benötigt neuere Version von Myriad Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <translation>Fehler beim Laden von wallet.dat: Wallet benötigt neuere Version von Argentum Core</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3205,8 +3205,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Myriad Core is shutting down.</source>
-        <translation>Initialisierungsplausibilitätsprüfung fehlgeschlagen. Myriad Core wird beendet.</translation>
+        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
+        <translation>Initialisierungsplausibilitätsprüfung fehlgeschlagen. Argentum Core wird beendet.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3241,8 +3241,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>Knoten-Weiterleitungsoptionen:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Myriad Wiki for SSL setup instructions)</source>
-        <translation>RPC-SSL-Optionen (siehe Myriad-Wiki für SSL-Einrichtung):</translation>
+        <source>RPC SSL options: (see the Argentum Wiki for SSL setup instructions)</source>
+        <translation>RPC-SSL-Optionen (siehe Argentum-Wiki für SSL-Einrichtung):</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -3337,8 +3337,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Myriad Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: starten Sie Myriad Core zur Fertigstellung neu</translation>
+        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: starten Sie Argentum Core zur Fertigstellung neu</translation>
     </message>
     <message>
         <source>Warning</source>
@@ -3442,7 +3442,7 @@ Beispiel: alertnotify=echo %%s | mail -s "Myriad Alert" admin@foo.com
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
-        <translation>Myriads erzeugen (Standard: %u)</translation>
+        <translation>Argentums erzeugen (Standard: %u)</translation>
     </message>
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>

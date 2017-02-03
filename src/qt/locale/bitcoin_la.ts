@@ -30,7 +30,7 @@
         <translation>&amp;Dele</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hae sunt inscriptiones mittendi pensitationes.  Semper inspice quantitatem et inscriptionem accipiendi antequam nummos mittis.</translation>
     </message>
     <message>
@@ -108,7 +108,7 @@
         <translation>Confirma cifrationem cassidilis</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>Monitio: Si cassidile tuum cifras et tesseram amittis, tu &lt;b&gt;AMITTES OMNES TUOS NUMMOS BITOS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -223,8 +223,8 @@
         <translation>Recreans indicem frustorum in disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Mitte nummos ad inscriptionem Myriad</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Mitte nummos ad inscriptionem Argentum</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -247,8 +247,8 @@
         <translation>&amp;Verifica nuntium...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -275,12 +275,12 @@
         <translation>Cifra claves privatas quae cassidili tui sunt</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Myriad ut demonstres te eas possidere</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus Argentum ut demonstres te eas possidere</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Myriad</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Argentum</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -299,8 +299,8 @@
         <translation>Tabella instrumentorum "Tabs"</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Nucleus</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Nucleus</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -436,8 +436,8 @@
         <translation>Inserta inscriptio "%1" iam in libro inscriptionum est.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Inscriptio inserta "%1" non valida inscriptio Myriad est.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>Inscriptio inserta "%1" non valida inscriptio Argentum est.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -454,8 +454,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Nucleus</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Nucleus</translation>
     </message>
     <message>
         <source>version</source>
@@ -477,8 +477,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Nucleus</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Nucleus</translation>
     </message>
     <message>
         <source>Error</source>
@@ -511,8 +511,8 @@
         <translation>&amp;Rete</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis Myriad in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis Argentum in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -590,8 +590,8 @@
         <translation>Schema</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Myriad postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Argentum postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <source>Immature:</source>
@@ -609,8 +609,8 @@
         <translation>Tractatio URI</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>Myriad incipere non potest: cliccare-ad-pensandum handler</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>Argentum incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
     </context>
 <context>
@@ -906,8 +906,8 @@
         <translation>Copia signationem in latibulum systematis</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Myriad a te possessa esse</translation>
+        <source>Sign the message to prove you own this Argentum address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem Argentum a te possessa esse</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -926,8 +926,8 @@
         <translation>&amp;Verifica Nuntium</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Myriad</translation>
+        <source>Verify the message to ensure it was signed with the specified Argentum address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Argentum</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -993,8 +993,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Nucleus</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Nucleus</translation>
     </message>
     <message>
         <source>[testnet]</source>

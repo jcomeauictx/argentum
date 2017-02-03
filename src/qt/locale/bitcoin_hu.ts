@@ -66,12 +66,12 @@
         <translation>Fogadó címek</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ezekről a címekről küldhetsz myriadt. Mindig ellenőrizd a fogadó címet és a fizetendő összeget, mielőtt elküldöd.</translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ezekről a címekről küldhetsz argentumt. Mindig ellenőrizd a fogadó címet és a fizetendő összeget, mielőtt elküldöd.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ezekkel a címekkel fogadhatsz myriadt. Ajánlott minden tranzakcióhoz egy új fogadó címet használni.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ezekkel a címekkel fogadhatsz argentumt. Ajánlott minden tranzakcióhoz egy új fogadó címet használni.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -160,7 +160,7 @@
         <translation>Biztosan titkosítani akarod a tárcát?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>Figyelem: ha titkosítod a tárcát és elveszted a jelszavad, akkor &lt;b&gt;AZ ÖSSZES BITCOINOD ELVESZIK!&lt;/b&gt;</translation>
     </message>
     <message>
@@ -287,8 +287,8 @@
         <translation>&amp;URI azonosító megnyitása...</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Myriad Core kliens</translation>
+        <source>Argentum Core client</source>
+        <translation>Argentum Core kliens</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -299,8 +299,8 @@
         <translation>Lemezen lévő blokkok újraindexelése...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Myriad küldése megadott címre</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Argentum küldése megadott címre</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -323,8 +323,8 @@
         <translation>Üzenet &amp;valódiságának ellenőrzése</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -339,8 +339,8 @@
         <translation>&amp;Fogadás</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Myriad Core információ megjelenítése</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Argentum Core információ megjelenítése</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,12 +355,12 @@
         <translation>A tárcádhoz tartozó privát kulcsok titkosítása</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Üzenetek aláírása a Myriad-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Üzenetek aláírása a Argentum-címmeiddel, amivel bizonyítod, hogy a cím a sajátod</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Myriad-címekkel vannak-e aláírva</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Üzenetek ellenőrzése, hogy valóban a megjelölt Argentum-címekkel vannak-e aláírva</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -379,16 +379,16 @@
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Fizetési kérelem (QR-kódot és "myriad:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Fizetési kérelem (QR-kódot és "argentum:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>&amp;A Myriad Core-ról</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>&amp;A Argentum Core-ról</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -399,16 +399,16 @@
         <translation>A használt fogadó címek és címkék megtekintése</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>"myriad:" URI azonosító vagy fizetési kérelem megnyitása</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>"argentum:" URI azonosító vagy fizetési kérelem megnyitása</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>A Myriad Core súgóüzenet megjelenítése a Myriad lehetséges parancssori kapcsolóival.</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>A Argentum Core súgóüzenet megjelenítése a Argentum lehetséges parancssori kapcsolóival.</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -732,8 +732,8 @@
         <translation>A megadott "%1" cím már szerepel a címjegyzékben.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>A megadott "%1" cím nem egy érvényes Myriad-cím.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>A megadott "%1" cím nem egy érvényes Argentum-cím.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -766,8 +766,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -778,8 +778,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>A Myriad Core-ról</translation>
+        <source>About Argentum Core</source>
+        <translation>A Argentum Core-ról</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -801,12 +801,12 @@
         <translation>Üdvözlünk</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Üdvözlünk a Myriad Core-ban.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>Üdvözlünk a Argentum Core-ban.</translation>
     </message>
     <message>
-        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>A Myriad Core le fogja tölteni és tárolni fogja a Myriad blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
+        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>A Argentum Core le fogja tölteni és tárolni fogja a Argentum blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -817,8 +817,8 @@
         <translation>Saját adatkönyvtár használata:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -891,24 +891,24 @@
         <translation>&amp;Hálózat</translation>
     </message>
     <message>
-        <source>&amp;Start Myriad Core on system login</source>
-        <translation>A Myriad elindítása bejelentkezéskor</translation>
+        <source>&amp;Start Argentum Core on system login</source>
+        <translation>A Argentum elindítása bejelentkezéskor</translation>
     </message>
     <message>
         <source>Expert</source>
         <translation>szakértő</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>A Myriad-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>A Argentum-kliens portjának automatikus megnyitása a routeren. Ez csak akkor működik, ha a routered támogatja az UPnP-t és az engedélyezve is van rajta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>&amp;UPnP port-feltérképezés</translation>
     </message>
     <message>
-        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
-        <translation>Csatlakozás a Myriad hálózatához SOCKS5 proxyn keresztül</translation>
+        <source>Connect to the Argentum network through a SOCKS5 proxy.</source>
+        <translation>Csatlakozás a Argentum hálózatához SOCKS5 proxyn keresztül</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -990,8 +990,8 @@
         <translation>Űrlap</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Myriad hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>A kijelzett információ lehet, hogy elavult. A pénztárcája automatikusan szinkronizálja magát a Argentum hálózattal miután a kapcsolat létrejön, de ez e folyamat még nem fejeződött be.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1041,8 +1041,8 @@
         <translation>URI kezelés</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>A myriadt nem lehet elindítani: click-to-pay handler</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>A argentumt nem lehet elindítani: click-to-pay handler</translation>
     </message>
     </context>
 <context>
@@ -1494,7 +1494,7 @@
     </message>
     <message>
         <source>The amount exceeds your balance.</source>
-        <translation>Nincs ennyi myriad az egyenlegeden.</translation>
+        <translation>Nincs ennyi argentum az egyenlegeden.</translation>
     </message>
     <message>
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
@@ -1552,8 +1552,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>A Myriad Core leáll...</translation>
+        <source>Argentum Core is shutting down...</source>
+        <translation>A Argentum Core leáll...</translation>
     </message>
     </context>
 <context>
@@ -1591,7 +1591,7 @@
         <translation>A jelenleg kiválasztott aláírás másolása a rendszer-vágólapra</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
+        <source>Sign the message to prove you own this Argentum address</source>
         <translation>Üzenet </translation>
     </message>
     <message>
@@ -1646,12 +1646,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>A Myriad Core fejlesztői</translation>
+        <source>The Argentum Core developers</source>
+        <translation>A Argentum Core fejlesztői</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2149,8 +2149,8 @@
         <translation>Adatkönyvtár kiválasztása induláskor (alapbeállítás: 0)</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Myriad Core Developers</source>
-        <translation>Copyright (C) 2009-%i A Myriad Core Fejlesztői</translation>
+        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <translation>Copyright (C) 2009-%i A Argentum Core Fejlesztői</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -2288,7 +2288,7 @@
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég myriadod.</translation>
+        <translation>Nincs elég argentumod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

@@ -11,12 +11,12 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Jezrga</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Jezrga</translation>
     </message>
     </context>
 <context>
@@ -34,15 +34,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Jezrga</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Jezrga</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Jezrga</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Jezrga</translation>
     </message>
     </context>
 <context>
@@ -109,8 +109,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Jezrga</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Jezrga</translation>
     </message>
     </context>
 <context>

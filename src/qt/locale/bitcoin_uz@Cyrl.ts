@@ -66,12 +66,12 @@
         <translation>Қабул қилинадиган манзиллар</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Улар тўловларни жўнатиш учун сизнинг Myriad манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Улар тўловларни жўнатиш учун сизнинг Argentum манзилларингиз. Доимо тангаларни жўнатишдан олдин сумма ва қабул қилувчи манзилни текшириб кўринг. </translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Улар тўловларни қабул қилиш учун сизнинг Myriad манзилларингиз. Ҳар бир ўтказма учун янги қабул қилувчи манзилдан фойдаланиш тавсия қилинади.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Улар тўловларни қабул қилиш учун сизнинг Argentum манзилларингиз. Ҳар бир ўтказма учун янги қабул қилувчи манзилдан фойдаланиш тавсия қилинади.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -160,7 +160,7 @@
         <translation>Ҳамённи кодлашни тасдиқлаш</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА BITCOIN ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -287,8 +287,8 @@
         <translation>Интернет манзилни очиш</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Myriad асос мижози</translation>
+        <source>Argentum Core client</source>
+        <translation>Argentum асос мижози</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -299,8 +299,8 @@
         <translation>Дискдаги блоклар қайта индексланмоқда...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Тангаларни Myriad манзилига жўнатиш</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Тангаларни Argentum манзилига жўнатиш</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -323,8 +323,8 @@
         <translation>Хабарни &amp;тасдиқлаш...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -339,8 +339,8 @@
         <translation>&amp;Қабул қилиш</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Myriad Core ҳақидаги маълумотларни кўрсатиш</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Argentum Core ҳақидаги маълумотларни кўрсатиш</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,12 +355,12 @@
         <translation>Ҳамёнингизга тегишли махфий калитларни кодлаш</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Myriad манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Argentum манзилидан унинг эгаси эканлигингизни исботлаш учун хабарлар ёзинг</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Хабарларни махсус Myriad манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Хабарларни махсус Argentum манзилларингиз билан ёзилганлигига ишонч ҳосил қилиш учун уларни тасдиқланг</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -379,16 +379,16 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва myriad ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Тўловлар (QR кодлари ва argentum ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>Myriad Core &amp;ҳақида</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>Argentum Core &amp;ҳақида</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -399,20 +399,20 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Myriad’ни очиш: URI ёки тўлов сўрови</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>Argentum’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Мавжуд Myriad буйруқлар матни мосламалари билан  Myriad Core ёрдам хабарларини олиш рўйхатини кўрсатиш</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>Мавжуд Argentum буйруқлар матни мосламалари билан  Argentum Core ёрдам хабарларини олиш рўйхатини кўрсатиш</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriad network</source>
-        <translation><numerusform>%n та Myriad тармоғига фаол уланиш мавжуд</numerusform></translation>
+        <source>%n active connection(s) to Argentum network</source>
+        <translation><numerusform>%n та Argentum тармоғига фаол уланиш мавжуд</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -736,8 +736,8 @@
         <translation>Киритилган "%1" манзили аллақачон манзил китобида.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Киритилган "%1" манзили тўғри Myriad манзили эмас.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>Киритилган "%1" манзили тўғри Argentum манзили эмас.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -774,8 +774,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>version</source>
@@ -786,8 +786,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Myriad Core ҳақида</translation>
+        <source>About Argentum Core</source>
+        <translation>Argentum Core ҳақида</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -805,16 +805,16 @@
         <translation>Хуш келибсиз</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>"Myriad Core"га хуш келибсиз.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>"Argentum Core"га хуш келибсиз.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
-        <translation>Биринчи марта дастур ишга тушгани каби сиз Myriad Core маълумотларини жойлаштирадиган жойни танлашингиз мумкин.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <translation>Биринчи марта дастур ишга тушгани каби сиз Argentum Core маълумотларини жойлаштирадиган жойни танлашингиз мумкин.</translation>
     </message>
     <message>
-        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Myriad Core юклаб олинади ва Myriad блок занжири нусхаси жойлаштирилади. Камида %1GB  маълумот ушбу директорияга жойлаштирилади ва вақт давомида ўсиб боради. Ҳамён ҳам ушбу директорияда жойлашади.</translation>
+        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum Core юклаб олинади ва Argentum блок занжири нусхаси жойлаштирилади. Камида %1GB  маълумот ушбу директорияга жойлаштирилади ва вақт давомида ўсиб боради. Ҳамён ҳам ушбу директорияда жойлашади.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -825,8 +825,8 @@
         <translation>Бошқа маълумотлар директориясида фойдаланинг:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -978,8 +978,8 @@
         <translation>Шакл</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Myriad тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>Кўрсатилган маълумот эскирган бўлиши мумкин. Ҳамёнингиз алоқа ўрнатилгандан сўнг Argentum тармоқ билан автоматик тарзда синхронланади, аммо жараён ҳалигача тугалланмади.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1477,8 +1477,8 @@
         <translation>Тўлов миқдори 0. дан катта бўлиши керак. </translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Диққат: Нотўғр Myriad манзили</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>Диққат: Нотўғр Argentum манзили</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1557,12 +1557,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Myriad Core дастурчилари</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Argentum Core дастурчилари</translation>
     </message>
     <message>
         <source>[testnet]</source>

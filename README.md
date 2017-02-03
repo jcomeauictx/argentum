@@ -1,29 +1,29 @@
-Myriad Core integration/staging tree
+Argentum Core integration/staging tree
 ========================================
 
-http://www.myriadcoin.org
+http://www.argentum.io
 
 Copyright (c) 2009-2015 Bitcoin Core Developers
 
-Copyright (c) 2014-2016 Myriad Core Developers
+Copyright (c) 2014-2016 Argentum Core Developers
 
 
-What is Myriad?
+What is Argentum?
 -------------------
 
-Myriad is an experimental new digital currency that enables instant payments to
-anyone, anywhere in the world. Myriad uses peer-to-peer technology to operate
+Argentum is an experimental new digital currency that enables instant payments to
+anyone, anywhere in the world. Argentum uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Myriad Core is the name of open source
+out collectively by the network. Argentum Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately usable, binary version of
-the Myriadcoin Core software, see http://www.myriadcoin.org/
+the Argentum-Core Core software, see http://www.argentum.io/
 
 License
 -------
 
-Myriad Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Argentum Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
 Building
@@ -58,8 +58,8 @@ A common question is how to build from Ubuntu, instructions follow:
 9. sudo apt-get install libqt4-dev -y
 10. sudo apt-get install libboost-all-dev -y
 11. sudo apt-get install libcurl4-openssl-dev -y
-12. git clone git://github.com/myriadteam/myriadcoin.git
-13. cd myriadcoin
+12. git clone git://github.com/argentumproject/argentum.git
+13. cd argentum
 14. ./autogen.sh
 15. ./configure
 16. make
@@ -98,7 +98,7 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the -testnet option to run with "play myriad" on the test network, if you
+Run with the -testnet option to run with "play argentum" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
@@ -107,7 +107,7 @@ that run in -regest mode.
 
 **DEBUG_LOCKORDER**
 
-Myriad Core is a multithreaded application, and deadlocks or other multithreading bugs
+Argentum Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks
 are held, and adds warning to the debug.log file if inconsistencies are detected.

@@ -107,7 +107,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Myriad</source>
+        <source>Argentum</source>
         <translation>Биткоин</translation>
     </message>
     <message>

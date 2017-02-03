@@ -60,11 +60,11 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += myriadcoind
+  bin_PROGRAMS += argentumd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += myriadcoin-cli myriadcoin-tx
+  bin_PROGRAMS += argentum-cli argentum-tx
 endif
 
 .PHONY: FORCE
@@ -109,7 +109,7 @@ BITCOIN_CORE_H = \
   merkleblock.h \
   miner.h \
   mruset.h \
-  myriad_params.h \
+  argentum_params.h \
   net.h \
   netbase.h \
   noui.h \
@@ -320,16 +320,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# myriadcoind binary #
-myriadcoind_SOURCES = bitcoind.cpp
-myriadcoind_CPPFLAGS = $(BITCOIN_INCLUDES)
-myriadcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# argentumd binary #
+argentumd_SOURCES = bitcoind.cpp
+argentumd_CPPFLAGS = $(BITCOIN_INCLUDES)
+argentumd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-myriadcoind_SOURCES += bitcoind-res.rc
+argentumd_SOURCES += bitcoind-res.rc
 endif
 
-myriadcoind_LDADD = \
+argentumd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -340,46 +340,46 @@ myriadcoind_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_WALLET
-myriadcoind_LDADD += libbitcoin_wallet.a
+argentumd_LDADD += libbitcoin_wallet.a
 endif
 
-myriadcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+argentumd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
 #
 
-# myriadcoin-cli binary #
-myriadcoin_cli_SOURCES = bitcoin-cli.cpp
-myriadcoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
-myriadcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# argentum-cli binary #
+argentum_cli_SOURCES = bitcoin-cli.cpp
+argentum_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+argentum_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-myriadcoin_cli_SOURCES += bitcoin-cli-res.rc
+argentum_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-myriadcoin_cli_LDADD = \
+argentum_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL)
 
 
-myriadcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS)
+argentum_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS)
 #
 
-# myriadcoin-tx binary #
-myriadcoin_tx_SOURCES = bitcoin-tx.cpp
-myriadcoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
-myriadcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# argentum-tx binary #
+argentum_tx_SOURCES = bitcoin-tx.cpp
+argentum_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+argentum_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-myriadcoin_tx_SOURCES += bitcoin-tx-res.rc
+argentum_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-myriadcoin_tx_LDADD = \
+argentum_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-myriadcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+argentum_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

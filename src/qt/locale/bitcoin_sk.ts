@@ -66,12 +66,12 @@
         <translation>Adresa prijatia</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú Vaše Myriad adresy pre posielanie platieb. Vždy skontrolujte množstvo a prijímaciu adresu pred poslaním coins.</translation>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú Vaše Argentum adresy pre posielanie platieb. Vždy skontrolujte množstvo a prijímaciu adresu pred poslaním coins.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Myriad adresy pre prijímanie platieb. Odporúča sa použiť novú prijímaciu adresu pre každú transakciu.</translation>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Argentum adresy pre prijímanie platieb. Odporúča sa použiť novú prijímaciu adresu pre každú transakciu.</translation>
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -160,7 +160,7 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE BITCOINY&lt;/b&gt;!⏎</translation>
     </message>
     <message>
@@ -168,8 +168,8 @@
         <translation>Ste si istí, že si želáte zašifrovať peňaženku?</translation>
     </message>
     <message>
-        <source>Myriad Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriads from being stolen by malware infecting your computer.</source>
-        <translation>Jadro Myriad sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj, že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred krádežou myriadov pomocou škodlivého software.</translation>
+        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Jadro Argentum sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj, že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred krádežou argentumov pomocou škodlivého software.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,8 +295,8 @@
         <translation>Otvoriť &amp;URI...</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Myriad Core klient</translation>
+        <source>Argentum Core client</source>
+        <translation>Argentum Core klient</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,8 +307,8 @@
         <translation>Preindexúvam bloky na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
-        <translation>Poslať myriads na adresu</translation>
+        <source>Send coins to a Argentum address</source>
+        <translation>Poslať argentums na adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -331,8 +331,8 @@
         <translation>O&amp;veriť správu...</translation>
     </message>
     <message>
-        <source>Myriad</source>
-        <translation>Myriad</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Prijať</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Zobraziť informácie o Myriad Core</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Zobraziť informácie o Argentum Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -363,12 +363,12 @@
         <translation>Zašifruj súkromné kľúče ktoré patria do vašej peňaženky</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
-        <translation>Podpísať správu s vašou adresou Myriad aby ste preukázali že ju vlastníte</translation>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
+        <translation>Podpísať správu s vašou adresou Argentum aby ste preukázali že ju vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
-        <translation>Overiť či správa bola podpísaná uvedenou Myriad adresou</translation>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
+        <translation>Overiť či správa bola podpísaná uvedenou Argentum adresou</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -387,20 +387,20 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Jadro Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Jadro Argentum</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
-        <translation>Vyžiadať platby (vygeneruje QR kódy a myriad: URI)</translation>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
+        <translation>Vyžiadať platby (vygeneruje QR kódy a argentum: URI)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>O jadre Myriad</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>O jadre Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Myriad Core</source>
-        <translation>Upraviť možnosti nastavenia pre Jadro Myriad</translation>
+        <source>Modify configuration options for Argentum Core</source>
+        <translation>Upraviť možnosti nastavenia pre Jadro Argentum</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -411,20 +411,20 @@
         <translation>Zobraziť zoznam použitých prijímacích adries a ich popisov</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
-        <translation>Otvoriť myriad URI alebo výzvu k platbe</translation>
+        <source>Open a argentum: URI or payment request</source>
+        <translation>Otvoriť argentum URI alebo výzvu k platbe</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Zobraziť pomocnú správu od Myriad Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>Zobraziť pomocnú správu od Argentum Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriad network</source>
-        <translation><numerusform>%n aktívne pripojenie do siete Myriad</numerusform><numerusform>%n aktívne pripojenia do siete Myriad</numerusform><numerusform>%n aktívnych pripojení do siete Myriad</numerusform></translation>
+        <source>%n active connection(s) to Argentum network</source>
+        <translation><numerusform>%n aktívne pripojenie do siete Argentum</numerusform><numerusform>%n aktívne pripojenia do siete Argentum</numerusform><numerusform>%n aktívnych pripojení do siete Argentum</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -806,8 +806,8 @@
         <translation>Vložená adresa "%1" sa už nachádza v adresári.</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Myriad address.</source>
-        <translation>Vložená adresa "%1" nieje platnou adresou myriad.</translation>
+        <source>The entered address "%1" is not a valid Argentum address.</source>
+        <translation>Vložená adresa "%1" nieje platnou adresou argentum.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -844,8 +844,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Jadro Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Jadro Argentum</translation>
     </message>
     <message>
         <source>version</source>
@@ -856,8 +856,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>O jadre Myriad</translation>
+        <source>About Argentum Core</source>
+        <translation>O jadre Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -879,16 +879,16 @@
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Vitajte v jadre Myriad.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>Vitajte v jadre Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Myriad Core will store its data.</source>
-        <translation>Keďže spúštate program prvý krát, môžte si vybrať kde bude Myriad Jadro ukladať svoje dáta.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <translation>Keďže spúštate program prvý krát, môžte si vybrať kde bude Argentum Jadro ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>Myriad Core will download and store a copy of the Myriad block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Jadro Myriad stiahne zo siete a uloží kópiu Myriad blockchain. Aspoň %1GB dát bude uložených v tomto priečinku a časom porastie. Peňaženka bude tiež uložená v tomto priečinku.</translation>
+        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Jadro Argentum stiahne zo siete a uloží kópiu Argentum blockchain. Aspoň %1GB dát bude uložených v tomto priečinku a časom porastie. Peňaženka bude tiež uložená v tomto priečinku.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -899,8 +899,8 @@
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Jadro Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Jadro Argentum</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -981,8 +981,8 @@
         <translation>Minimalizovať namiesto ukončenia aplikácie keď sa okno zavrie. Keď je zvolená táto možnosť, aplikácia sa zavrie len po zvolení Ukončiť v menu.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Myriad Core.</source>
-        <translation>Tu sa dá nastaviť jazyk užívateľského rozhrania. Toto nastavenie bude účinné po reštartovaní Jadra Myriad.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <translation>Tu sa dá nastaviť jazyk užívateľského rozhrania. Toto nastavenie bude účinné po reštartovaní Jadra Argentum.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1009,12 +1009,12 @@
         <translation>Sieť</translation>
     </message>
     <message>
-        <source>Automatically start Myriad Core after logging in to the system.</source>
-        <translation>Automaticky spustiť Jadro Myriad po prihlásení do systému</translation>
+        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <translation>Automaticky spustiť Jadro Argentum po prihlásení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Myriad Core on system login</source>
-        <translation>&amp;Spustiť Myriad pri spustení systému správy okien</translation>
+        <source>&amp;Start Argentum Core on system login</source>
+        <translation>&amp;Spustiť Argentum pri spustení systému správy okien</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1041,16 +1041,16 @@
         <translation>Minúť nepotvrdený výdavok</translation>
     </message>
     <message>
-        <source>Automatically open the Myriad client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvorit port pre Myriad na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
+        <source>Automatically open the Argentum client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvorit port pre Argentum na routeri. Toto funguje len ak router podporuje UPnP a je táto podpora aktivovaná.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapovať port pomocou &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Myriad network through a SOCKS5 proxy.</source>
-        <translation>Pripojiť do siete Myriad cez proxy server SOCKS5.</translation>
+        <source>Connect to the Argentum network through a SOCKS5 proxy.</source>
+        <translation>Pripojiť do siete Argentum cez proxy server SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1098,7 +1098,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Zvoľte ako deliť myriad pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
+        <translation>Zvoľte ako deliť argentum pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1148,8 +1148,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Myriad network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou Myriad po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Argentum network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť neaktuálne. Vaša peňaženka sa automaticky synchronizuje so sieťou Argentum po nadviazaní spojenia, ale tento proces ešte nie je ukončený.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1247,16 +1247,16 @@
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start myriad: click-to-pay handler</source>
-        <translation>Nedá sa spustiť obslužný program myriad: click-to-pay zaplatiť kliknutím</translation>
+        <source>Cannot start argentum: click-to-pay handler</source>
+        <translation>Nedá sa spustiť obslužný program argentum: click-to-pay zaplatiť kliknutím</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>URL pre stiahnutie výzvy na zaplatenie je neplatné: %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Myriad address or malformed URI parameters.</source>
-        <translation>URI sa nedá analyzovať! To môže byť spôsobené neplatnou Myriad adresou alebo zle upravenými vlastnosťami URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Argentum address or malformed URI parameters.</source>
+        <translation>URI sa nedá analyzovať! To môže byť spôsobené neplatnou Argentum adresou alebo zle upravenými vlastnosťami URI.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1333,8 +1333,8 @@
         <translation>Suma</translation>
     </message>
     <message>
-        <source>Enter a Myriad address (e.g. %1)</source>
-        <translation>Zadajte myriad adresu (napr. %1)</translation>
+        <source>Enter a Argentum address (e.g. %1)</source>
+        <translation>Zadajte argentum adresu (napr. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1443,8 +1443,8 @@
         <translation>Aktuálny počet blokov</translation>
     </message>
     <message>
-        <source>Open the Myriad Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvoriť Myriad log súbor pre ladenie z aktuálneho dátového adresára. Toto môže trvať niekoľko sekúnd pre veľké súbory.</translation>
+        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvoriť Argentum log súbor pre ladenie z aktuálneho dátového adresára. Toto môže trvať niekoľko sekúnd pre veľké súbory.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1563,8 +1563,8 @@
         <translation>Vymazať konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the Myriad Core RPC console.</source>
-        <translation>Vitajte v RPC konzole pre Jadro Myriad.</translation>
+        <source>Welcome to the Argentum Core RPC console.</source>
+        <translation>Vitajte v RPC konzole pre Jadro Argentum.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -1638,8 +1638,8 @@
         <translation>Znovu použiť jestvujúcu prijímaciu adresu (neodporúča sa)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Myriad network.</source>
-        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Myriad.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Argentum network.</source>
+        <translation>Pridať voliteľnú správu k výzve na zaplatenie, ktorá sa zobrazí keď bude výzva otvorená. Poznámka: Správa nebude poslaná s platbou cez sieť Argentum.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1788,7 +1788,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Myriads</translation>
+        <translation>Poslať Argentums</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1871,7 +1871,7 @@
         <translation>spolu aspoň</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for myriad transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for argentum transactions than the network can process.</source>
         <translation>Zaplatenie len minimálneho poplatku je v poriadku, pokiaľ existuje menej transakcií ako miesta v blokoch. Uvedomte si však, že ak bude vyšší dopyt po transakciách ako dokáže sieť spracovať, môže byť vaša transakcia odsúvaná a nepotvrdená donekonečna.</translation>
     </message>
     <message>
@@ -1944,7 +1944,7 @@
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie myriads</translation>
+        <translation>Potvrdiť odoslanie argentums</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2023,8 +2023,8 @@
         <translation>Našla sa duplicitná adresa: každú adresu je možné použiť len raz.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Myriad address</source>
-        <translation>Varovanie: Nesprávna Myriad adresa</translation>
+        <source>Warning: Invalid Argentum address</source>
+        <translation>Varovanie: Nesprávna Argentum adresa</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2074,7 +2074,7 @@
         <translation>Toto je normálna platba.</translation>
     </message>
     <message>
-        <source>The Myriad address to send the payment to</source>
+        <source>The Argentum address to send the payment to</source>
         <translation>Zvoľte adresu kam poslať platbu</translation>
     </message>
     <message>
@@ -2114,8 +2114,8 @@
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the myriad: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Myriad network.</source>
-        <translation>Správa ktorá bola pripojená k myriad: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Myriad.</translation>
+        <source>A message that was attached to the argentum: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Argentum network.</source>
+        <translation>Správa ktorá bola pripojená k argentum: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Argentum.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2129,8 +2129,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Myriad Core is shutting down...</source>
-        <translation>Jadro Myriad sa ukončuje...</translation>
+        <source>Argentum Core is shutting down...</source>
+        <translation>Jadro Argentum sa ukončuje...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2176,7 +2176,7 @@
         <translation>Kopírovať práve zvolenú adresu do systémového klipbordu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Myriad address</source>
+        <source>Sign the message to prove you own this Argentum address</source>
         <translation>Podpíšte správu aby ste dokázali že vlastníte túto adresu</translation>
     </message>
     <message>
@@ -2196,12 +2196,12 @@
         <translation>O&amp;veriť správu...</translation>
     </message>
     <message>
-        <source>The Myriad address the message was signed with</source>
-        <translation>Adresa Myriad, ktorou bola podpísaná správa</translation>
+        <source>The Argentum address the message was signed with</source>
+        <translation>Adresa Argentum, ktorou bola podpísaná správa</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Myriad address</source>
-        <translation>Overím správy sa uistiť že bola podpísaná označenou Myriad adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Argentum address</source>
+        <translation>Overím správy sa uistiť že bola podpísaná označenou Argentum adresou</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2267,12 +2267,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Jadro Myriad</translation>
+        <source>Argentum Core</source>
+        <translation>Jadro Argentum</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Vývojári jadra Myriad</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Vývojári jadra Argentum</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2708,7 +2708,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Poslať Myriads</translation>
+        <translation>Poslať Argentums</translation>
     </message>
 </context>
 <context>
@@ -2802,11 +2802,11 @@
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu myriad ani obchodovanie.</translation>
+        <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu argentum ani obchodovanie.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Myriad Core is probably already running.</source>
-        <translation>Nepodarilo sa pripojiť na %s na tomto počítači. Myriad Jadro je už pravdepodobne spustené.</translation>
+        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <translation>Nepodarilo sa pripojiť na %s na tomto počítači. Argentum Jadro je už pravdepodobne spustené.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -2979,8 +2979,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Spojiť s danou adresou pre počúvanie JSON-RPC spojení. Použite zápis [host]:port pre IPv6. Táto možnosť môže byt zadaná niekoľko krát (predvolené: spojiť so všetkými rozhraniami)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Myriad Core is probably already running.</source>
-        <translation>Neviem uzamknúť data adresár %s. Jadro Myriad je pravdepodobne už spustené.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <translation>Neviem uzamknúť data adresár %s. Jadro Argentum je pravdepodobne už spustené.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3059,16 +3059,16 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Pripojiť cez proxy server SOCKS5</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Myriad Core Developers</source>
-        <translation>Autorské práva (C) 2009-%i Vývojári jadra Myriad</translation>
+        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <translation>Autorské práva (C) 2009-%i Vývojári jadra Argentum</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Nedá sa analyzovať -rpcbind hodnota %s ako sieťová adresa</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Myriad Core</source>
-        <translation>Chyba pri čítaní wallet.dat: Peňaženka vyžaduje vyššiu verziu Jadra Myriad</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <translation>Chyba pri čítaní wallet.dat: Peňaženka vyžaduje vyššiu verziu Jadra Argentum</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3119,8 +3119,8 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Prenosové možnosti uzla:</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Myriad Wiki for SSL setup instructions)</source>
-        <translation>Možnosti RPC SSL: (Pozri v Myriad Wiki pokyny pre SSL nastavenie)</translation>
+        <source>RPC SSL options: (see the Argentum Wiki for SSL setup instructions)</source>
+        <translation>Možnosti RPC SSL: (Pozri v Argentum Wiki pokyny pre SSL nastavenie)</translation>
     </message>
     <message>
         <source>RPC server options:</source>

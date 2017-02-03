@@ -66,11 +66,11 @@
         <translation>адрасы Прымання</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Argentum addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Тут знаходзяцца Біткойн-адрасы для высылання плацяжоў. Заўсёды спраўджвайце колькасць і адрас прызначэння перад здзяйсненнем транзакцыі.</translation>
     </message>
     <message>
-        <source>These are your Myriad addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Argentum addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Тут знаходзяцца Біткойн-адрасы для прымання плацяжоў. Пажадана выкарыстоўваць новы адрас для кожнай транзакцыі.</translation>
     </message>
     <message>
@@ -160,7 +160,7 @@
         <translation>Пацвердзіце шыфраванне гаманца</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MYRIADS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ARGENTUMS&lt;/b&gt;!</source>
         <translation>Увага: калі вы зашыфруеце свой гаманец і страціце парольную фразу, то &lt;b&gt;СТРАЦІЦЕ ЎСЕ СВАЕ БІТКОЙНЫ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -168,8 +168,8 @@
         <translation>Ці ўпэўненыя вы, што жадаеце зашыфраваць свой гаманец?</translation>
     </message>
     <message>
-        <source>Myriad Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your myriads from being stolen by malware infecting your computer.</source>
-        <translation>Myriad Core зараз будзе зачынены, каб фіналізаваць працэс шыфравання. Памятайце, што шыфраванне вашага гаманца не гарантуе абсалютную абарону ад магчымасці крадзяжу біткойнаў шкоднымі праграмамі, якія могуць інфікаваць ваш камп'ютар.</translation>
+        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Argentum Core зараз будзе зачынены, каб фіналізаваць працэс шыфравання. Памятайце, што шыфраванне вашага гаманца не гарантуе абсалютную абарону ад магчымасці крадзяжу біткойнаў шкоднымі праграмамі, якія могуць інфікаваць ваш камп'ютар.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,8 +295,8 @@
         <translation>Адчыниць &amp;URI...</translation>
     </message>
     <message>
-        <source>Myriad Core client</source>
-        <translation>Myriad Core кліент</translation>
+        <source>Argentum Core client</source>
+        <translation>Argentum Core кліент</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -307,7 +307,7 @@
         <translation>Пераіндэксацыя блокаў на дыску...</translation>
     </message>
     <message>
-        <source>Send coins to a Myriad address</source>
+        <source>Send coins to a Argentum address</source>
         <translation>Даслаць манеты на Біткойн-адрас</translation>
     </message>
     <message>
@@ -331,7 +331,7 @@
         <translation>Праверыць паведамленне...</translation>
     </message>
     <message>
-        <source>Myriad</source>
+        <source>Argentum</source>
         <translation>Біткойн</translation>
     </message>
     <message>
@@ -347,8 +347,8 @@
         <translation>Атрымаць</translation>
     </message>
     <message>
-        <source>Show information about Myriad Core</source>
-        <translation>Паказаць інфармацыю аб Myriad Core</translation>
+        <source>Show information about Argentum Core</source>
+        <translation>Паказаць інфармацыю аб Argentum Core</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -363,11 +363,11 @@
         <translation>Зашыфраваць прыватныя ключы, якия належаць вашаму гаманцу</translation>
     </message>
     <message>
-        <source>Sign messages with your Myriad addresses to prove you own them</source>
+        <source>Sign messages with your Argentum addresses to prove you own them</source>
         <translation>Падпісаць паведамленне з дапамогай Біткойн-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Myriad addresses</source>
+        <source>Verify messages to ensure they were signed with specified Argentum addresses</source>
         <translation>Спраўдзіць паведамленне з дапамогай Біткойн-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
@@ -383,20 +383,20 @@
         <translation>Дапамога</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and myriad: URIs)</source>
+        <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Запатрабаваць плацёж (генеруецца QR-код для біткойн URI)</translation>
     </message>
     <message>
-        <source>&amp;About Myriad Core</source>
-        <translation>Аб Myriad Core</translation>
+        <source>&amp;About Argentum Core</source>
+        <translation>Аб Argentum Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Myriad Core</source>
-        <translation>Мадыфікаваць опцыі канфігурацыі Myriad Core</translation>
+        <source>Modify configuration options for Argentum Core</source>
+        <translation>Мадыфікаваць опцыі канфігурацыі Argentum Core</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -407,7 +407,7 @@
         <translation>Паказаць спіс адрасоў і метак для прымання</translation>
     </message>
     <message>
-        <source>Open a myriad: URI or payment request</source>
+        <source>Open a argentum: URI or payment request</source>
         <translation>Адкрыць біткойн: URI ці запыт плацяжу</translation>
     </message>
     <message>
@@ -415,12 +415,12 @@
         <translation>Опцыі каманднага радка</translation>
     </message>
     <message>
-        <source>Show the Myriad Core help message to get a list with possible Myriad command-line options</source>
-        <translation>Паказваць даведку Myriad Core каб атрымаць спіс магчымых опцый каманднага радка</translation>
+        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <translation>Паказваць даведку Argentum Core каб атрымаць спіс магчымых опцый каманднага радка</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Myriad network</source>
-        <translation><numerusform>%n актыўнае злучэнне з сецівам Myriad</numerusform><numerusform>%n актыўных злучэнняў з сецівам Myriad</numerusform><numerusform>%n актыўных злучэнняў з сецівам Myriad</numerusform><numerusform>%n актыўных злучэнняў з сецівам Myriad</numerusform></translation>
+        <source>%n active connection(s) to Argentum network</source>
+        <translation><numerusform>%n актыўнае злучэнне з сецівам Argentum</numerusform><numerusform>%n актыўных злучэнняў з сецівам Argentum</numerusform><numerusform>%n актыўных злучэнняў з сецівам Argentum</numerusform><numerusform>%n актыўных злучэнняў з сецівам Argentum</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -772,16 +772,16 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-біт)</translation>
     </message>
     <message>
-        <source>About Myriad Core</source>
-        <translation>Аб Myriad Core</translation>
+        <source>About Argentum Core</source>
+        <translation>Аб Argentum Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -803,12 +803,12 @@
         <translation>Вітаем</translation>
     </message>
     <message>
-        <source>Welcome to Myriad Core.</source>
-        <translation>Вітаем у Myriad Core.</translation>
+        <source>Welcome to Argentum Core.</source>
+        <translation>Вітаем у Argentum Core.</translation>
     </message>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1067,12 +1067,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Myriad Core</source>
-        <translation>Myriad Core</translation>
+        <source>Argentum Core</source>
+        <translation>Argentum Core</translation>
     </message>
     <message>
-        <source>The Myriad Core developers</source>
-        <translation>Распрацоўнікі Myriad Core</translation>
+        <source>The Argentum Core developers</source>
+        <translation>Распрацоўнікі Argentum Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
