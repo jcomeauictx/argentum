@@ -10,9 +10,9 @@
 #include <boost/signals2/signal.hpp>
 #include <boost/test/unit_test.hpp>
 
-BOOST_FIXTURE_TEST_SUITE(main_tests, TestingSetup)
+/*BOOST_FIXTURE_TEST_SUITE(main_tests, TestingSetup)
 
-/*static void TestBlockSubsidyHalvings(const Consensus::Params& consensusParams)
+static void TestBlockSubsidyHalvings(const Consensus::Params& consensusParams)
 {
     int maxHalvings = 64;
     CAmount nInitialSubsidy = 1000 * COIN;
