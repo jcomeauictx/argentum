@@ -26,7 +26,7 @@ struct Params {
     int64_t nPowTargetTimespan;
     int64_t nAveragingInterval;
     int64_t nLocalDifficultyAdjustment;
-    int64_t Phase2Timespan_Start;
+    //int64_t Phase2Timespan_Start;
     int64_t nMaxAdjustDown;
     int64_t nMaxAdjustUp;
     //int64_t nMaxAdjustUpV2;

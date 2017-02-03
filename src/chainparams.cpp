@@ -46,7 +46,7 @@ public:
         consensus.nStartAuxPow = 1825000; // 
         consensus.nAuxpowChainId = 0x004A3; 
         consensus.fStrictChainId = true;
-        consensus.nLocalDifficultyAdjustment = 12 // 12%
+        consensus.nLocalDifficultyAdjustment = 12; // 12%
         consensus.nMaxAdjustDown = 22; //22% adjustment down
         consensus.nMaxAdjustUp = 14; // 14% adjustment up
         //consensus.nMaxAdjustUpV2 = 4; // 4% adjustment up     
@@ -171,32 +171,33 @@ public:
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 16);
         
-        consensus.nStartAuxPow = 1825000;
-        consensus.nAuxpowChainId = 0x005A; 
+        consensus.nStartAuxPow = 100;
+        consensus.nAuxpowChainId = 0x004A3; 
         consensus.fStrictChainId = false;
         
-        consensus.nBlockTimeWarpPreventStart1 = 740500; // block where time warp 1 prevention starts
-        consensus.nBlockTimeWarpPreventStart2 = 766000; // block where time warp 2 prevention starts
-        consensus.nBlockTimeWarpPreventStart3 = 1048320; // block where time warp 3 prevention starts
-        consensus.Phase2Timespan_Start = 150; // block where 60 second target time kicks in
-        consensus.nBlockDiffAdjustV2 = 150; // block where difficulty adjust V2 starts
+        //consensus.nBlockTimeWarpPreventStart1 = 740500; // block where time warp 1 prevention starts
+        //consensus.nBlockTimeWarpPreventStart2 = 766000; // block where time warp 2 prevention starts
+        //consensus.nBlockTimeWarpPreventStart3 = 1048320; // block where time warp 3 prevention starts
+        //consensus.Phase2Timespan_Start = 150; // block where 45 second target time kicks in
+        //consensus.nBlockDiffAdjustV2 = 150; // block where difficulty adjust V2 starts
         
         consensus.nMaxAdjustDown = 22; // 22% adjustment down
         consensus.nMaxAdjustUp = 14; // 14% adjustment up
         //consensus.nMaxAdjustUpV2 = 4; // 4% adjustment up     
         
-        consensus.nBlockSequentialAlgoRuleStart1 = 1930000; // block where sequential algo rule starts
-        consensus.nBlockSequentialAlgoRuleStart2 = 2032000; // block where sequential algo rule starts
+        consensus.nBlockSequentialAlgoRuleStart1 = 100; // block where sequential algo rule starts
+        consensus.nBlockSequentialAlgoRuleStart2 = 150; // block where sequential algo rule starts
         consensus.nBlockSequentialAlgoMaxCount1 = 3; // maximum sequential blocks of same algo
-        consensus.nBlockSequentialAlgoMaxCount2 = 6; // maximum sequential blocks of same algo
+        consensus.nBlockSequentialAlgoMaxCount2 = 6; // maximums equential blocks of same algo
         //consensus.nBlockSequentialAlgoMaxCount3 = 6; // maximum sequential blocks of same algo
         
-        consensus.nBlockAlgoWorkWeightStart = 0; // block where algo work weighting starts
-        consensus.nBlockAlgoNormalisedWorkStart = 0; // block where algo combined weight starts
-        consensus.nBlockAlgoNormalisedWorkDecayStart1 = 0; // block where weight decay starts
-        consensus.nBlockAlgoNormalisedWorkDecayStart2 = 0; // block where weight decay starts
-        consensus.nGeoAvgWork_Start = 150;
-        consensus.nMultiAlgoFork = 1930000;
+        //consensus.nBlockAlgoWorkWeightStart = 0; // block where algo work weighting starts
+        //consensus.nBlockAlgoNormalisedWorkStart = 0; // block where algo combined weight starts
+        //consensus.nBlockAlgoNormalisedWorkDecayStart1 = 0; // block where weight decay starts
+        //consensus.nBlockAlgoNormalisedWorkDecayStart2 = 0; // block where weight decay starts
+        //consensus.nGeoAvgWork_Start = 150;
+        consensus.DGW3_Start_Block = 50; 
+        consensus.nMultiAlgoFork = 150; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
 
         pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;
@@ -219,9 +220,9 @@ public:
         vSeeds.clear();
         //vSeeds.push_back(CDNSSeedData("x.com", "x.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,86);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,186);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,237);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111); // 0x6F
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196); // 0xC4
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239); // 0xEF
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
 
