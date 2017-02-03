@@ -128,6 +128,7 @@ boost::filesystem::path GetSpecialFolderPath(int nFolder, bool fCreate = true);
 boost::filesystem::path GetTempPath();
 void ShrinkDebugFile();
 void runCommand(std::string strCommand);
+long hex2long(const char* hexString);
 
 inline bool IsSwitchChar(char c)
 {

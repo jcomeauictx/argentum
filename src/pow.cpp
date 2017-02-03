@@ -17,18 +17,18 @@ static const int64_t nTargetTimespan = 32 * 250; // Argentum: every 250 blocks
 static const int64_t nTargetSpacing = 32; // Argentum: 32 sec
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
-unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo, int nHeight)
+unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
 {
-        if (nHeight >= params.nMultiAlgoFork) {
+        if (pindexLast->nHeight >= params.nMultiAlgoFork) {
             return StabilX(pindexLast, pblock, algo);
-        } else if (nHeight >= DGW3_Start_Block) {
+        } else if (pindexLast->nHeight >= params.DGW3_Start_Block) {
             return DarkGravityWave3(pindexLast, pblock, algo);
         } 
         return GetNextWorkRequired_Legacy(pindexLast, pblock, algo);
 
 }
 
-unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBlock *pblock, int algo)
+unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
 {
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
@@ -37,19 +37,19 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
 
     // Genesis block
     if (pindexLast == NULL)
-        return nProofOfWorkLimit;
+        return nProofOfWorkLimit.GetCompact();
 
     // Only change once per interval
     if ((pindexLast->nHeight+1) % nInterval != 0)
     {
         // Special difficulty rule for testnet:
-        if (TestNet())
-        {
+       // if (TestNet())
+        //{
             // If the new block's timestamp is more than 2* 10 minutes
             // then allow mining of a min-difficulty block.
-            if (pblock->nTime > pindexLast->nTime + nTargetSpacing*2)
-                return nProofOfWorkLimit;
-            else
+         //   if (pblock->nTime > pindexLast->nTime + nTargetSpacing*2)
+           //     return nProofOfWorkLimit.GetCompact();
+           // else
             {
                 // Return the last non-special-min-difficulty-rules-block
                 const CBlockIndex* pindex = pindexLast;
@@ -57,7 +57,7 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
                     pindex = pindex->pprev;
                 return pindex->nBits;
             }
-        }
+        //}
 
         return pindexLast->nBits;
     }
@@ -109,13 +109,15 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
     }
 
     // Retarget
-    CBigNum bnNew;
+    arith_uint256 bnNew;
+    arith_uint256 bnOld;
     bnNew.SetCompact(pindexLast->nBits);
+    bnOld = bnNew;
     bnNew *= nActualTimespan;
     bnNew /= nTargetTimespan;
 
-    if (bnNew > nProofOfWorkLimit(algo))
-        bnNew = nProofOfWorkLimit(algo);
+    if (bnNew > nProofOfWorkLimit)
+        bnNew = nProofOfWorkLimit;
 
     return bnNew.GetCompact();
 }
@@ -273,24 +275,25 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
     }
 } */
 
-unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock *pblock, const Consensus::Params& params, int algo) {
+unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo) 
+{
     /* current difficulty formula, darkcoin - DarkGravity v3, written by Evan Duffield - evan@darkcoin.io */
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
     const CBlockIndex *BlockLastSolved = pindexLast;
     const CBlockIndex *BlockReading = pindexLast;
-    const CBlock *BlockCreating = pblock;
+    const CBlockHeader *BlockCreating = pblock;
     BlockCreating = BlockCreating;
     int64_t nActualTimespan = 0;
     int64_t LastBlockTime = 0;
     int64_t PastBlocksMin = 24;
     int64_t PastBlocksMax = 24;
     int64_t CountBlocks = 0;
-    CBigNum PastDifficultyAverage;
-    CBigNum PastDifficultyAveragePrev;
+    arith_uint256 PastDifficultyAverage;
+    arith_uint256 PastDifficultyAveragePrev;
 
     if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || BlockLastSolved->nHeight < PastBlocksMin) { 
-        return Params().ProofOfWorkLimit(algo).GetCompact(); 
+        return nProofOfWorkLimit.GetCompact(); 
     }
         
     for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
@@ -299,7 +302,7 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
 
         if(CountBlocks <= PastBlocksMin) {
             if (CountBlocks == 1) { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
-            else { PastDifficultyAverage = ((PastDifficultyAveragePrev * CountBlocks)+(CBigNum().SetCompact(BlockReading->nBits))) / (CountBlocks+1); }
+            else { PastDifficultyAverage = ((PastDifficultyAveragePrev * CountBlocks)+(arith_uint256().SetCompact(BlockReading->nBits))) / (CountBlocks+1); }
             PastDifficultyAveragePrev = PastDifficultyAverage;
         }
 
@@ -313,7 +316,7 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
         BlockReading = BlockReading->pprev;
     }
     
-    CBigNum bnNew(PastDifficultyAverage);
+    arith_uint256 bnNew(PastDifficultyAverage);
 
     int64_t nTargetTimespan = CountBlocks*nTargetSpacing;
 
@@ -327,13 +330,13 @@ unsigned int static DarkGravityWave3(const CBlockIndex* pindexLast, const CBlock
     bnNew /= nTargetTimespan;
 
     if (bnNew > nProofOfWorkLimit){
-        bnNew = nProofOfWorkLimit(algo);
+        bnNew = nProofOfWorkLimit;
     }
      
     return bnNew.GetCompact();
 }
 
-unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockIndex* pindexFirst, const Consensus::Params& params, int algo, int nHeight, int64_t nActualTimespan)
+unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
 {
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
@@ -344,7 +347,7 @@ unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockIndex* pindexFir
     
     // Genesis block
     if (pindexLast == NULL)
-        return nProofOfWorkLimit;
+        return nProofOfWorkLimit.GetCompact();
     
     const CBlockIndex* pindexPrev = GetLastBlockIndexForAlgo(pindexLast, algo);
     
@@ -362,7 +365,7 @@ unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockIndex* pindexFir
         {
             LogPrintf("StabilX(Algo=%d): not enough blocks available, using default POW limit\n");
         }
-        return nProofOfWorkLimit; // not enough blocks available
+        return nProofOfWorkLimit.GetCompact(); // not enough blocks available
     }
 
     // Limit adjustment step

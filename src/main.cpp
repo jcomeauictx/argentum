@@ -33,6 +33,8 @@
 #include <boost/filesystem/fstream.hpp>
 #include <boost/math/distributions/poisson.hpp>
 #include <boost/thread.hpp>
+#include <boost/random/uniform_int.hpp>
+#include <boost/random/mersenne_twister.hpp>
 
 using namespace std;
 
@@ -1309,10 +1311,10 @@ int static generateMTRandom(unsigned int s, int range)
 CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams, uint256 prevHash)
 {
 
-if(nHeight <= params.nStartAuxPow)
-{
+    CAmount nSubsidy = 0 * COIN;
 
-    int64_t nSubsidy = 0 * COIN;
+if (nHeight <= consensusParams.nStartAuxPow)
+{
 
     std::string cseed_str = prevHash.ToString().substr(8,7);
     const char* cseed = cseed_str.c_str();
@@ -1343,7 +1345,8 @@ if(nHeight <= params.nStartAuxPow)
     return nSubsidy;
 } 
 else 
-    {return (3 * COIN);}
+    nSubsidy = 3 * COIN;
+    return nSubsidy;
 
 }
 
@@ -1984,26 +1987,26 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     // two in the chain that violate it. This prevents exploiting the issue against nodes during their
     // initial block download.
     // Always enforce BIP30
-    bool fEnforceBIP30 = true; // Enforce on CreateNewBlock invocations which don't have a hash.
+    // bool fEnforceBIP30 = true; // Enforce on CreateNewBlock invocations which don't have a hash.
                           // !((pindex->nHeight==91842 && pindex->GetBlockHash() == uint256S("0x00000000000a4d0a398161ffc163c503763b1f4360639393e0e4c8e300e0caec")) ||
                            // (pindex->nHeight==91880 && pindex->GetBlockHash() == uint256S("0x00000000000743f190a18c5577a3c2d2a1f610ae9601ac046a38084ccb7cd721")));
-    if (fEnforceBIP30) {
+    // if (fEnforceBIP30) {
     BOOST_FOREACH(const CTransaction& tx, block.vtx) {
         const CCoins* coins = view.AccessCoins(tx.GetHash());
         if (coins && !coins->IsPruned())
             return state.DoS(100, error("ConnectBlock(): tried to overwrite transaction"),
                              REJECT_INVALID, "bad-txns-BIP30");
         }
-    }
+    //}
 
     // BIP16 didn't become active until Apr 1 2012
     // Always enforce BIP16
     
     // int64_t nBIP16SwitchTime = 1333238400;
     // BIP16 was always active in Argentum
-    bool fStrictPayToScriptHash = true;
+    // bool fStrictPayToScriptHash = true;
 
-    unsigned int flags = fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE;
+    // unsigned int flags = fStrictPayToScriptHash ? SCRIPT_VERIFY_P2SH : SCRIPT_VERIFY_NONE;
     unsigned int flags = SCRIPT_VERIFY_P2SH;
     
     // Start enforcing the DERSIG (BIP66) rules, for block.nVersion=3 blocks, when 75% of the network has upgraded:
@@ -2050,7 +2053,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                                  REJECT_INVALID, "bad-txns-inputs-missingorspent");
 
             // if (fStrictPayToScriptHash)
-            // {
+             // {
                 // Add in sigops done by pay-to-script-hash inputs;
                 // this is to prevent a "rogue miner" from creating
                 // an incredibly-expensive-to-validate block.
@@ -2094,17 +2097,17 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime1 = GetTimeMicros(); nTimeConnect += nTime1 - nTimeStart;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs-1), nTimeConnect * 0.000001);
 
-    uint256 prevHash = 0;
+    uint256 prevHash = uint256S("0");
     if(pindex->pprev)
     {
         prevHash = pindex->pprev->GetBlockHash();
     }
 
-    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus(), prevHash);
+    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus(), hashPrevBlock);
     if (block.vtx[0].GetValueOut() > blockReward)
         return state.DoS(100,
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
-                               block.vtx[0].GetValueOut(), blockReward, prevHash),
+                               block.vtx[0].GetValueOut(), blockReward),
                                REJECT_INVALID, "bad-cb-amount");
 
     if (!control.Wait())
