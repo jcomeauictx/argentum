@@ -237,9 +237,9 @@ Value getmininginfo(const Array& params, bool fHelp)
             "  \"difficulty\": xxx.xxxxx    (numeric) The current difficulty for configured algorithm\n"
             "  \"difficulty_sha256d\": xxxxxx,   (numeric) the current difficulty for sha256d\n"
             "  \"difficulty_scrypt\": xxxxxx,    (numeric) the current difficulty for scrypt\n"
-            "  \"difficulty_groestl\": xxxxxx,   (numeric) the current difficulty for myr-groestl\n"
-            "  \"difficulty_skein\": xxxxxx,     (numeric) the current difficulty for skein\n"
-            "  \"difficulty_qubit\": xxxxxx,     (numeric) the current difficulty for qubit\n"
+          //  "  \"difficulty_groestl\": xxxxxx,   (numeric) the current difficulty for myr-groestl\n"
+          //  "  \"difficulty_skein\": xxxxxx,     (numeric) the current difficulty for skein\n"
+          //  "  \"difficulty_qubit\": xxxxxx,     (numeric) the current difficulty for qubit\n"
             "  \"errors\": \"...\"          (string) Current errors\n"
             "  \"generate\": true|false     (boolean) If the generation is on or off (see getgenerate or setgenerate calls)\n"
             "  \"genproclimit\": n          (numeric) The processor limit for generation. -1 if no generation. (see getgenerate or setgenerate calls)\n"
@@ -264,10 +264,10 @@ Value getmininginfo(const Array& params, bool fHelp)
     obj.push_back(Pair("difficulty",         (double)GetDifficulty(NULL, miningAlgo)));
     obj.push_back(Pair("difficulty_sha256d", (double)GetDifficulty(NULL, ALGO_SHA256D)));
     obj.push_back(Pair("difficulty_scrypt",  (double)GetDifficulty(NULL, ALGO_SCRYPT)));
-    obj.push_back(Pair("difficulty_groestl", (double)GetDifficulty(NULL, ALGO_GROESTL)));
-    obj.push_back(Pair("difficulty_skein",   (double)GetDifficulty(NULL, ALGO_SKEIN)));
-    obj.push_back(Pair("difficulty_qubit",   (double)GetDifficulty(NULL, ALGO_QUBIT)));
-    obj.push_back(Pair("difficulty_yescrypt",(double)GetDifficulty(NULL, ALGO_YESCRYPT)));
+  //  obj.push_back(Pair("difficulty_groestl", (double)GetDifficulty(NULL, ALGO_GROESTL)));
+  //  obj.push_back(Pair("difficulty_skein",   (double)GetDifficulty(NULL, ALGO_SKEIN)));
+  //  obj.push_back(Pair("difficulty_qubit",   (double)GetDifficulty(NULL, ALGO_QUBIT)));
+  //  obj.push_back(Pair("difficulty_yescrypt",(double)GetDifficulty(NULL, ALGO_YESCRYPT)));
     obj.push_back(Pair("errors",           GetWarnings("statusbar")));
     obj.push_back(Pair("genproclimit",     (int)GetArg("-genproclimit", -1)));
 //    obj.push_back(Pair("networkhashps",    getnetworkhashps(params, false)));
