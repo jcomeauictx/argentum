@@ -19,12 +19,15 @@ static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
 {
-        if (pindexLast->nHeight >= params.nMultiAlgoFork) {
-            return StabilX(pindexLast, pblock, algo);
-        } else if (pindexLast->nHeight >= params.DGW3_Start_Block) {
-            return DarkGravityWave3(pindexLast, pblock, algo);
+        if (pindexLast->nHeight >= params.nMultiAlgoFork)
+        {
+            return StabilX(pindexLast, pblock, params, algo);
         } 
-        return GetNextWorkRequired_Legacy(pindexLast, pblock, algo);
+        else if (pindexLast->nHeight >= params.DGW3_Start_Block)
+        {
+            return DarkGravityWave3(pindexLast, pblock, params, algo);
+        } 
+        return GetNextWorkRequired_Legacy(pindexLast, pblock, params, algo);
 
 }
 
@@ -121,159 +124,6 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
 
     return bnNew.GetCompact();
 }
-
-/* unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
-{
-    const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
-
-    // Genesis block
-    if (pindexLast == NULL)
-    {
-        if(fDebug)
-        {
-            LogPrintf("pindexLast is null. returning nProofOfWorkLimit\n");
-        }
-        return nProofOfWorkLimit.GetCompact();
-    }
-
-    // find previous block with same algo
-    const CBlockIndex* pindexPrev = GetLastBlockIndexForAlgo(pindexLast, algo);
-    
-    // Genesis block
-    if (pindexPrev == NULL)
-    {
-        if(fDebug)
-        {
-            LogPrintf("pindexPrev is null. returning nProofOfWorkLimit\n");
-        }
-        return nProofOfWorkLimit.GetCompact();
-    }
-    
-    const CBlockIndex* pindexFirst = NULL;
-
-    if( (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart1) && (pindexLast->nHeight < params.nBlockTimeWarpPreventStart2) )
-    {
-        // find first block in averaging interval
-        // Go back by what we want to be nAveragingInterval blocks
-        pindexFirst = pindexPrev;
-        for (int i = 0; pindexFirst && i < params.nAveragingInterval - 1; i++)
-        {
-            pindexFirst = pindexFirst->pprev;
-            pindexFirst = GetLastBlockIndexForAlgo(pindexFirst, algo);
-        }
-        if (pindexFirst == NULL)
-            return nProofOfWorkLimit.GetCompact(); // not nAveragingInterval blocks of this algo available
-
-        // check block before first block for time warp
-        const CBlockIndex* pindexFirstPrev = pindexFirst->pprev;
-        if (pindexFirstPrev == NULL)
-            return nProofOfWorkLimit.GetCompact();
-        pindexFirstPrev = GetLastBlockIndexForAlgo(pindexFirstPrev, algo);
-        if (pindexFirstPrev == NULL)
-            return nProofOfWorkLimit.GetCompact();
-        // take previous block if block times are out of order
-        if (pindexFirstPrev->GetBlockTime() > pindexFirst->GetBlockTime())
-        {
-            LogPrintf("  First blocks out of order times, swapping:   %d   %d\n", pindexFirstPrev->GetBlockTime(), pindexFirst->GetBlockTime());
-            pindexFirst = pindexFirstPrev;
-        }
-        
-    }
-    else if ( (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart2) && (pindexLast->nHeight < params.nBlockTimeWarpPreventStart3) )
-    {
-        // find first block in averaging interval
-        // Go back by what we want to be nAveragingInterval blocks
-        pindexFirst = pindexPrev;
-        for (int i = 0; pindexFirst && i < params.nAveragingInterval - 1; i++)
-        {
-            pindexFirst = pindexFirst->pprev;
-            pindexFirst = GetLastBlockIndexForAlgo(pindexFirst, algo);
-        }
-        if (pindexFirst == NULL)
-            return nProofOfWorkLimit.GetCompact(); // not nAveragingInterval blocks of this algo available
-
-        const CBlockIndex* pindexFirstPrev;
-        for ( ;; )
-        {
-            // check blocks before first block for time warp
-            pindexFirstPrev = pindexFirst->pprev;
-            if (pindexFirstPrev == NULL)
-                return nProofOfWorkLimit.GetCompact();
-            pindexFirstPrev = GetLastBlockIndexForAlgo(pindexFirstPrev, algo);
-            if (pindexFirstPrev == NULL)
-                return nProofOfWorkLimit.GetCompact();
-            // take previous block if block times are out of order
-            if (pindexFirstPrev->GetBlockTime() > pindexFirst->GetBlockTime())
-            {
-                LogPrintf("  First blocks out of order times, swapping:   %d   %d\n", pindexFirstPrev->GetBlockTime(), pindexFirst->GetBlockTime());
-                pindexFirst = pindexFirstPrev;
-            }
-            else
-                break;
-        }        
-    }
-    else
-    {
-        // find first block in averaging interval
-        // Go back by what we want to be nAveragingInterval blocks
-        pindexFirst = pindexPrev;
-        for (int i = 0; pindexFirst && i < params.nAveragingInterval - 1; i++)
-        {
-            pindexFirst = pindexFirst->pprev;
-            pindexFirst = GetLastBlockIndexForAlgo(pindexFirst, algo);
-            if (pindexFirst == NULL)
-            {
-                if(fDebug)
-                {
-                    LogPrintf("pindexFirst is null. returning nProofOfWorkLimit\n");
-                }
-                return nProofOfWorkLimit.GetCompact();
-            }
-        }
-    }
-
-    int64_t nActualTimespan;
-    
-    if (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart3)
-    {
-        nActualTimespan = pindexPrev->GetMedianTimePast() - pindexFirst->GetMedianTimePast();
-        if(fDebug)
-        {
-            LogPrintf("  nActualTimespan = %d before bounds   %d   %d\n", nActualTimespan, pindexPrev->GetMedianTimePast(), pindexFirst->GetMedianTimePast());
-        }
-    }
-    else
-    {
-        nActualTimespan = pindexPrev->GetBlockTime() - pindexFirst->GetBlockTime();
-        if(fDebug)
-        {
-            LogPrintf("  nActualTimespan = %d before bounds   %d   %d\n", nActualTimespan, pindexPrev->GetBlockTime(), pindexFirst->GetBlockTime());
-        }
-    }
-    
-    // Time warp mitigation: Don't adjust difficulty if time is negative
-    if ( (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart1) && (pindexLast->nHeight < params.nBlockTimeWarpPreventStart2) )
-    {
-        if (nActualTimespan < 0)
-        {
-            if(fDebug)
-            {
-                LogPrintf("  nActualTimespan negative %d\n", nActualTimespan);
-                LogPrintf("  Keeping: %08x \n", pindexPrev->nBits);
-            }
-            return pindexPrev->nBits;
-        }
-    }
-
-    if (pindexLast->nHeight >= params.Phase2Timespan_Start)
-    {
-        return CalculateNextWorkRequiredV2(pindexPrev, pindexFirst, params, algo, nActualTimespan);
-    }
-    else
-    {
-        return StabilX(pindexPrev, pindexFirst, params, algo, nActualTimespan, pindexLast->nHeight);
-    }
-} */
 
 unsigned int DarkGravityWave3(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo) 
 {
@@ -434,6 +284,159 @@ unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockHeader *pblock, 
 
     return bnNew.GetCompact();
 }
+
+/* unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params, int algo)
+{
+    const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
+
+    // Genesis block
+    if (pindexLast == NULL)
+    {
+        if(fDebug)
+        {
+            LogPrintf("pindexLast is null. returning nProofOfWorkLimit\n");
+        }
+        return nProofOfWorkLimit.GetCompact();
+    }
+
+    // find previous block with same algo
+    const CBlockIndex* pindexPrev = GetLastBlockIndexForAlgo(pindexLast, algo);
+    
+    // Genesis block
+    if (pindexPrev == NULL)
+    {
+        if(fDebug)
+        {
+            LogPrintf("pindexPrev is null. returning nProofOfWorkLimit\n");
+        }
+        return nProofOfWorkLimit.GetCompact();
+    }
+    
+    const CBlockIndex* pindexFirst = NULL;
+
+    if( (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart1) && (pindexLast->nHeight < params.nBlockTimeWarpPreventStart2) )
+    {
+        // find first block in averaging interval
+        // Go back by what we want to be nAveragingInterval blocks
+        pindexFirst = pindexPrev;
+        for (int i = 0; pindexFirst && i < params.nAveragingInterval - 1; i++)
+        {
+            pindexFirst = pindexFirst->pprev;
+            pindexFirst = GetLastBlockIndexForAlgo(pindexFirst, algo);
+        }
+        if (pindexFirst == NULL)
+            return nProofOfWorkLimit.GetCompact(); // not nAveragingInterval blocks of this algo available
+
+        // check block before first block for time warp
+        const CBlockIndex* pindexFirstPrev = pindexFirst->pprev;
+        if (pindexFirstPrev == NULL)
+            return nProofOfWorkLimit.GetCompact();
+        pindexFirstPrev = GetLastBlockIndexForAlgo(pindexFirstPrev, algo);
+        if (pindexFirstPrev == NULL)
+            return nProofOfWorkLimit.GetCompact();
+        // take previous block if block times are out of order
+        if (pindexFirstPrev->GetBlockTime() > pindexFirst->GetBlockTime())
+        {
+            LogPrintf("  First blocks out of order times, swapping:   %d   %d\n", pindexFirstPrev->GetBlockTime(), pindexFirst->GetBlockTime());
+            pindexFirst = pindexFirstPrev;
+        }
+        
+    }
+    else if ( (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart2) && (pindexLast->nHeight < params.nBlockTimeWarpPreventStart3) )
+    {
+        // find first block in averaging interval
+        // Go back by what we want to be nAveragingInterval blocks
+        pindexFirst = pindexPrev;
+        for (int i = 0; pindexFirst && i < params.nAveragingInterval - 1; i++)
+        {
+            pindexFirst = pindexFirst->pprev;
+            pindexFirst = GetLastBlockIndexForAlgo(pindexFirst, algo);
+        }
+        if (pindexFirst == NULL)
+            return nProofOfWorkLimit.GetCompact(); // not nAveragingInterval blocks of this algo available
+
+        const CBlockIndex* pindexFirstPrev;
+        for ( ;; )
+        {
+            // check blocks before first block for time warp
+            pindexFirstPrev = pindexFirst->pprev;
+            if (pindexFirstPrev == NULL)
+                return nProofOfWorkLimit.GetCompact();
+            pindexFirstPrev = GetLastBlockIndexForAlgo(pindexFirstPrev, algo);
+            if (pindexFirstPrev == NULL)
+                return nProofOfWorkLimit.GetCompact();
+            // take previous block if block times are out of order
+            if (pindexFirstPrev->GetBlockTime() > pindexFirst->GetBlockTime())
+            {
+                LogPrintf("  First blocks out of order times, swapping:   %d   %d\n", pindexFirstPrev->GetBlockTime(), pindexFirst->GetBlockTime());
+                pindexFirst = pindexFirstPrev;
+            }
+            else
+                break;
+        }        
+    }
+    else
+    {
+        // find first block in averaging interval
+        // Go back by what we want to be nAveragingInterval blocks
+        pindexFirst = pindexPrev;
+        for (int i = 0; pindexFirst && i < params.nAveragingInterval - 1; i++)
+        {
+            pindexFirst = pindexFirst->pprev;
+            pindexFirst = GetLastBlockIndexForAlgo(pindexFirst, algo);
+            if (pindexFirst == NULL)
+            {
+                if(fDebug)
+                {
+                    LogPrintf("pindexFirst is null. returning nProofOfWorkLimit\n");
+                }
+                return nProofOfWorkLimit.GetCompact();
+            }
+        }
+    }
+
+    int64_t nActualTimespan;
+    
+    if (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart3)
+    {
+        nActualTimespan = pindexPrev->GetMedianTimePast() - pindexFirst->GetMedianTimePast();
+        if(fDebug)
+        {
+            LogPrintf("  nActualTimespan = %d before bounds   %d   %d\n", nActualTimespan, pindexPrev->GetMedianTimePast(), pindexFirst->GetMedianTimePast());
+        }
+    }
+    else
+    {
+        nActualTimespan = pindexPrev->GetBlockTime() - pindexFirst->GetBlockTime();
+        if(fDebug)
+        {
+            LogPrintf("  nActualTimespan = %d before bounds   %d   %d\n", nActualTimespan, pindexPrev->GetBlockTime(), pindexFirst->GetBlockTime());
+        }
+    }
+    
+    // Time warp mitigation: Don't adjust difficulty if time is negative
+    if ( (pindexLast->nHeight >= params.nBlockTimeWarpPreventStart1) && (pindexLast->nHeight < params.nBlockTimeWarpPreventStart2) )
+    {
+        if (nActualTimespan < 0)
+        {
+            if(fDebug)
+            {
+                LogPrintf("  nActualTimespan negative %d\n", nActualTimespan);
+                LogPrintf("  Keeping: %08x \n", pindexPrev->nBits);
+            }
+            return pindexPrev->nBits;
+        }
+    }
+
+    if (pindexLast->nHeight >= params.Phase2Timespan_Start)
+    {
+        return CalculateNextWorkRequiredV2(pindexPrev, pindexFirst, params, algo, nActualTimespan);
+    }
+    else
+    {
+        return StabilX(pindexPrev, pindexFirst, params, algo, nActualTimespan, pindexLast->nHeight);
+    }
+} */
 
 /*
 unsigned int CalculateNextWorkRequiredV2(const CBlockIndex* pindexPrev, const CBlockIndex* pindexFirst, const Consensus::Params& params, int algo, int64_t nActualTimespan)
