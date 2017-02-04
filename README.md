@@ -35,7 +35,7 @@ OSX and Unix. Basic requirements:
 * GCC and binuntils
 * Git
 * Boost C++ libraries
-* Berkeley DB - Should be version 4.8, newer versions are known to work but not guaranteed
+* Berkeley DB - Should be version 5.1.29, newer versions are known to work but not guaranteed
 * libssl (part of openssl)
 * [miniupnpc](http://miniupnp.free.fr/) for optional UPNP support
 
@@ -50,7 +50,7 @@ A common question is how to build from Ubuntu, instructions follow:
 1. sudo add-apt-repository ppa:bitcoin/bitcoin -y
 2. sudo apt-get update
 3. sudo apt-get install build-essential curl git libminiupnpc-dev libssl-dev m4 -y
-4. sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
+4. sudo apt-get install libdb5.1-dev libdb5.1++-dev -y
 5. sudo apt-get install libprotoc-dev libprotobuf-dev -y
 6. sudo apt-get install libtool automake autoconf make pkg-config -y
 7. sudo apt-get install libpng-dev -y
