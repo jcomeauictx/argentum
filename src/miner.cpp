@@ -693,7 +693,7 @@ void static ScryptMiner(CWallet *pwallet)
         }
     }
 }
-
+/*
 void static GenericMiner(CWallet *pwallet, int algo)
 {
     // Each thread has its own key and counter
@@ -784,7 +784,7 @@ void static GenericMiner(CWallet *pwallet, int algo)
         }
     }
 }
-
+*/
 void static ThreadMiner(CWallet *pwallet)
 {
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
