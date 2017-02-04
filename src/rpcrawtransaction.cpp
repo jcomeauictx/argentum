@@ -389,7 +389,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
             "     ]\n"
             "2. \"addresses\"           (string, required) a json object with addresses as keys and amounts as values\n"
             "    {\n"
-            "      \"address\": x.xxx   (numeric, required) The key is the argentum address, the value is the XMY amount\n"
+            "      \"address\": x.xxx   (numeric, required) The key is the argentum address, the value is the ARG amount\n"
             "      ,...\n"
             "    }\n"
 
