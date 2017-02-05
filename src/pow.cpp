@@ -36,16 +36,22 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
     // argentum difficulty adjustment protocol switch
-   int nHeight = pindexLast->nHeight + 1;
+    int nHeight = pindexLast->nHeight + 1;
 
     // Genesis block
     if (pindexLast == NULL)
+    {
+        if(fDebug)
+        {
+            LogPrintf("pindexLast is null. returning nProofOfWorkLimit\n");
+        }
         return nProofOfWorkLimit.GetCompact();
+    }
 
     // Only change once per interval
     if ((pindexLast->nHeight+1) % nInterval != 0)
     {
-        // Special difficulty rule for testnet:
+       /* // Special difficulty rule for testnet:
        // if (TestNet())
         //{
             // If the new block's timestamp is more than 2* 10 minutes
@@ -60,7 +66,7 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
                     pindex = pindex->pprev;
                 return pindex->nBits;
             }
-        //}
+        //}*/
 
         return pindexLast->nBits;
     }
