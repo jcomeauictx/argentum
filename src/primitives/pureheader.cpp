@@ -60,7 +60,7 @@ int GetAlgo(int nVersion)
         case BLOCK_VERSION_YESCRYPT:
             return ALGO_YESCRYPT;*/
     }
-    return ALGO_SHA256D;
+    return ALGO_SCRYPT;
 }
 
 std::string GetAlgoName(int Algo)

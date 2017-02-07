@@ -12,7 +12,9 @@
 enum { 
     ALGO_SHA256D  = 0,
     ALGO_SCRYPT   = 1,
-    NUM_ALGOS };
+    NUM_ALGOS_IMPL };
+
+const int NUM_ALGOS = 2;
 
 enum
 {
