@@ -62,7 +62,7 @@ void OptionsModel::Init()
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
     if (!settings.contains("strThirdPartyTxUrls"))
-        settings.setValue("strThirdPartyTxUrls", "http://insight-myr.cryptap.us/tx/%s");
+        settings.setValue("strThirdPartyTxUrls", "https://chainz.cryptoid.info/arg/tx.dws?%s");
     strThirdPartyTxUrls = settings.value("strThirdPartyTxUrls", "").toString();
 
     if (!settings.contains("fCoinControlFeatures"))
