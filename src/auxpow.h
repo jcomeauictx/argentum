@@ -88,7 +88,7 @@ public:
         const CBlockIndex* pindexRet;
         return GetDepthInMainChainINTERNAL(pindexRet) > 0;
     }
-    int GetBlocksToMaturity() const;
+    int GetBlocksToMaturity(int nHeight) const;
     bool AcceptToMemoryPool(bool fLimitFree = true, bool fRejectAbsurdFee = true);
 };
 

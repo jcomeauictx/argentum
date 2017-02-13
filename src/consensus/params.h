@@ -34,15 +34,16 @@ struct Params {
     int64_t nBlockSequentialAlgoRuleStart2;
     int nBlockSequentialAlgoMaxCount1;
     int nBlockSequentialAlgoMaxCount2;
-    //int nBlockSequentialAlgoMaxCount3;
     //int64_t nBlockAlgoWorkWeightStart;
     //int64_t nBlockAlgoNormalisedWorkStart;
     //int64_t nBlockAlgoNormalisedWorkDecayStart1;
     //int64_t nBlockAlgoNormalisedWorkDecayStart2;
     //int64_t nGeoAvgWork_Start;
     int64_t nMultiAlgoFork;
-    int64_t DGW3_Start_Block;
-    
+    int64_t nDGW3StartBlock;
+    int64_t nCoinbaseMaturityV2Start;
+    int64_t nCheckProof;
+
     int64_t DifficultyAdjustmentInterval() const { return nPowTargetTimespan / nPowTargetSpacingV2; }
     
     /** Auxpow parameters */

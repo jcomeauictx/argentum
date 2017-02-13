@@ -87,12 +87,14 @@ int CMerkleTx::GetDepthInMainChain(const CBlockIndex*& pindexRet) const
     return nResult;
 }
 
-int CMerkleTx::GetBlocksToMaturity() const
+int CMerkleTx::GetBlocksToMaturity(int nHeight) const
 {
     if (!IsCoinBase())
         return 0;
     //int nCoinbaseMaturity = Params().GetConsensus(chainActive.Height()).nCoinbaseMaturity;
-    return std::max(0, (COINBASE_MATURITY+1) - GetDepthInMainChain());
+    if (nHeight < Params().GetConsensus().nCoinbaseMaturityV2Start)
+        return std::max(0, (COINBASE_MATURITY+1) - GetDepthInMainChain());
+    return std::max(0, (COINBASE_MATURITY_V2+1) - GetDepthInMainChain());
 }
 
 

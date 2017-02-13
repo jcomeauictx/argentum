@@ -36,7 +36,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 20);
-        consensus.nPowTargetTimespan = 7 * 7 * 45 * 45; // 27.5 hrs; network hashrate average from the last 37.5 mins
+        consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacingV1 = 32; // target time for block spacing across all algorithms
         consensus.nPowTargetSpacingV2 = 45; // new target time for block spacing across all algorithms
         consensus.nAveragingInterval = 10; // number of blocks to take the timespan of
@@ -52,19 +52,20 @@ public:
         //consensus.nMaxAdjustUpV2 = 4; // 4% adjustment up     
         
         consensus.nBlockSequentialAlgoRuleStart1 = 1930000; // block where sequential algo rule starts
-        consensus.nBlockSequentialAlgoRuleStart2 = 3032000; // block where sequential algo rule starts
+        consensus.nBlockSequentialAlgoRuleStart2 = 2032000; // block where sequential algo rule starts
         consensus.nBlockSequentialAlgoMaxCount1 = 3; // maximum sequential blocks of same algo
         consensus.nBlockSequentialAlgoMaxCount2 = 6; // maximum sequential blocks of same algo
-        //consensus.nBlockSequentialAlgoMaxCount3 = 6; // maximum sequential blocks of same algo
         
         //consensus.nBlockAlgoWorkWeightStart = 142000; // block where algo work weighting starts
         //consensus.nBlockAlgoNormalisedWorkStart = 740000; // block where algo combined weight starts
         //consensus.nBlockAlgoNormalisedWorkDecayStart1 = 866000; // block where weight decay starts
         //consensus.nBlockAlgoNormalisedWorkDecayStart2 = 932000; // block where weight decay starts
         //consensus.nGeoAvgWork_Start = 4000000; // TODO
-        consensus.DGW3_Start_Block = 1635000; 
+        consensus.nDGW3StartBlock = 1635000; 
         consensus.nMultiAlgoFork = 1930000; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
-        
+        consensus.nCoinbaseMaturityV2Start = 2400000;
+        consensus.nCheckProof = 1835836;
+
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -196,8 +197,9 @@ public:
         //consensus.nBlockAlgoNormalisedWorkDecayStart1 = 0; // block where weight decay starts
         //consensus.nBlockAlgoNormalisedWorkDecayStart2 = 0; // block where weight decay starts
         //consensus.nGeoAvgWork_Start = 150;
-        consensus.DGW3_Start_Block = 50; 
+        consensus.nDGW3StartBlock = 50; 
         consensus.nMultiAlgoFork = 150; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
+        consensus.nCoinbaseMaturityV2Start = 200;
 
         pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;
