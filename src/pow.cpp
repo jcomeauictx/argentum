@@ -23,7 +23,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         {
             return StabilX(pindexLast, pblock, params, algo);
         } 
-        else if (pindexLast->nHeight >= params.DGW3_Start_Block)
+        else if (pindexLast->nHeight >= params.nDGW3StartBlock)
         {
             return DarkGravityWave3(pindexLast, pblock, params, algo);
         } 
@@ -196,10 +196,10 @@ unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockHeader *pblock, 
 {
     const arith_uint256 nProofOfWorkLimit = UintToArith256(params.powLimit);
 
-    int64_t nTargetSpacingPerAlgo = params.nPowTargetSpacingV2 * NUM_ALGOS; // 45 * 2 = 90s per algo
+    int64_t nTargetSpacingPerAlgo = params.nPowTargetSpacingV2 * NUM_ALGOS; // 90 Seconds (NUM_ALGOS * 45 seconds)
     int64_t nAveragingTargetTimespan = params.nAveragingInterval * nTargetSpacingPerAlgo; // 10 * 90 = 900s, 15 minutes
-    int64_t nMinActualTimespanV2 = nAveragingTargetTimespan * (100 - params.nMaxAdjustUp) / 100;
-    int64_t nMaxActualTimespanV2 = nAveragingTargetTimespan * (100 + params.nMaxAdjustDown) / 100;
+    int64_t nMinActualTimespan = nAveragingTargetTimespan * (100 - params.nMaxAdjustUp) / 100;
+    int64_t nMaxActualTimespan = nAveragingTargetTimespan * (100 + params.nMaxAdjustDown) / 100;
     
     // Genesis block
     if (pindexLast == NULL)
@@ -230,26 +230,24 @@ unsigned int StabilX(const CBlockIndex* pindexLast, const CBlockHeader *pblock, 
     nActualTimespan = nAveragingTargetTimespan + (nActualTimespan - nAveragingTargetTimespan)/6;
     if (fDebug)
     {
-        LogPrintf("StabilX(Algo=%d): nActualTimespan = %d before bounds (%d - %d)\n", algo, nActualTimespan, nMinActualTimespanV2, nMaxActualTimespanV2);
+        LogPrintf("StabilX(Algo=%d): nActualTimespan = %d before bounds (%d - %d)\n", algo, nActualTimespan, nMinActualTimespan, nMaxActualTimespan);
     }
-    if (nActualTimespan < nMinActualTimespanV2)
-        nActualTimespan = nMinActualTimespanV2;
-    if (nActualTimespan > nMaxActualTimespanV2)
-        nActualTimespan = nMaxActualTimespanV2;
+    if (nActualTimespan < nMinActualTimespan)
+        nActualTimespan = nMinActualTimespan;
+    if (nActualTimespan > nMaxActualTimespan)
+        nActualTimespan = nMaxActualTimespan;
     if (fDebug)
     {
-        LogPrintf("StabilX(Algo=%d): nActualTimespan = %d after bounds (%d - %d)\n", algo, nActualTimespan, nMinActualTimespanV2, nMaxActualTimespanV2);
+        LogPrintf("StabilX(Algo=%d): nActualTimespan = %d after bounds (%d - %d)\n", algo, nActualTimespan, nMinActualTimespan, nMaxActualTimespan);
     }
     
     // Global retarget
     arith_uint256 bnNew;
     arith_uint256 bnOld;
-    bnNew.SetCompact(pindexPrev->nBits);
+    bnNew.SetCompact(pindexPrevAlgo->nBits);
     bnOld = bnNew;
     bnNew *= nActualTimespan;
     bnNew /= nAveragingTargetTimespan;
-    if (bnNew > nProofOfWorkLimit)
-        bnNew = nProofOfWorkLimit;
 
     // Per-algo retarget
     int nAdjustments = pindexPrevAlgo->nHeight - pindexLast->nHeight + NUM_ALGOS - 1;
@@ -488,6 +486,8 @@ unsigned int CalculateNextWorkRequiredV2(const CBlockIndex* pindexPrev, const CB
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params)
 {
+    CBlockIndex* pindexPrev = NULL;
+    int nHeight = pindexPrev->nHeight+1;
     bool fNegative;
     bool fOverflow;
     arith_uint256 bnTarget;
@@ -499,9 +499,10 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
         return error("CheckProofOfWork(): nBits below minimum work");
 
     // Check proof of work matches claimed amount
+    if (nHeight < params.nCheckProof || nHeight > params.nMultiAlgoFork){
     if (UintToArith256(hash) > bnTarget)
         return error("CheckProofOfWork(): hash doesn't match nBits");
-
+        }
     return true;
 }
 
@@ -687,62 +688,69 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
 bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& params)
 {
     int algo = block.GetAlgo();
+    if (nHeight >= params.nStartAuxPow){
+
     /* Except for legacy blocks with full version 1, ensure that
        the chain ID is correct.  Legacy blocks are not allowed since
        the merge-mining start, which is checked in AcceptBlockHeader
        where the height is known.  */
-    if (!block.nVersion.IsLegacy() && params.fStrictChainId && block.nVersion.GetChainId() != params.nAuxpowChainId)
-        return error("%s : block does not have our chain ID"
-                     " (got %d, expected %d, full nVersion %d)",
-                     __func__,
-                     block.nVersion.GetChainId(),
-                     params.nAuxpowChainId,
-                     block.nVersion.GetFullVersion());
+        if (!block.nVersion.IsLegacy() && params.fStrictChainId && block.nVersion.GetChainId() != params.nAuxpowChainId)
+            return error("%s : block does not have our chain ID"
+                         " (got %d, expected %d, full nVersion %d)",
+                         __func__,
+                         block.nVersion.GetChainId(),
+                         params.nAuxpowChainId,
+                         block.nVersion.GetFullVersion());
 
-    /* If there is no auxpow, just check the block hash.  */
-    if (!block.auxpow) {
-        if (block.nVersion.IsAuxpow())
-            return error("%s : no auxpow on block with auxpow version",
-                         __func__);
+        /* If there is no auxpow, just check the block hash.  */
+        if (!block.auxpow) {
+            if (block.nVersion.IsAuxpow())
+                return error("%s : no auxpow on block with auxpow version",
+                             __func__);
 
-        if (!CheckProofOfWork(block.GetPoWHash(algo), block.nBits, params))
-            return error("%s : non-AUX proof of work failed", __func__);
+            if (!CheckProofOfWork(block.GetPoWHash(algo), block.nBits, params))
+                return error("%s : non-AUX proof of work failed", __func__);
+        
+            return true;
+        }
+
+        /* We have auxpow.  Check it.  */
+
+        if (!block.nVersion.IsAuxpow())
+            return error("%s : auxpow on block with non-auxpow version", __func__);
+
+        if (!block.auxpow->check(block.GetHash(), block.nVersion.GetChainId(), params))
+            return error("%s : AUX POW is not valid", __func__);
+        
+        if(fDebug)
+        {
+            bool fNegative;
+            bool fOverflow;
+            arith_uint256 bnTarget;
+            bnTarget.SetCompact(block.nBits, &fNegative, &fOverflow);
+            
+            LogPrintf("DEBUG: proof-of-work submitted  \n  parent-PoWhash: %s\n  target: %s  bits: %08x \n",
+            block.auxpow->getParentBlockPoWHash(algo).ToString().c_str(),
+            bnTarget.ToString().c_str(),
+            bnTarget.GetCompact());
+        }
+        
+        if (!(algo == ALGO_SHA256D || algo == ALGO_SCRYPT) )
+        {
+            return error("%s : AUX POW is not allowed on this algo", __func__);
+        }
+        
+        if (!CheckProofOfWork(block.auxpow->getParentBlockPoWHash(algo), block.nBits, params))
+        {
+            return error("%s : AUX proof of work failed", __func__);
+        }
 
         return true;
-    }
-
-    /* We have auxpow.  Check it.  */
-
-    if (!block.nVersion.IsAuxpow())
-        return error("%s : auxpow on block with non-auxpow version", __func__);
-
-    if (!block.auxpow->check(block.GetHash(), block.nVersion.GetChainId(), params))
-        return error("%s : AUX POW is not valid", __func__);
-    
-    if(fDebug)
+        }
+    else 
     {
-        bool fNegative;
-        bool fOverflow;
-        arith_uint256 bnTarget;
-        bnTarget.SetCompact(block.nBits, &fNegative, &fOverflow);
-        
-        LogPrintf("DEBUG: proof-of-work submitted  \n  parent-PoWhash: %s\n  target: %s  bits: %08x \n",
-        block.auxpow->getParentBlockPoWHash(algo).ToString().c_str(),
-        bnTarget.ToString().c_str(),
-        bnTarget.GetCompact());
+        return true;
     }
-    
-    if (!(algo == ALGO_SHA256D || algo == ALGO_SCRYPT) )
-    {
-        return error("%s : AUX POW is not allowed on this algo", __func__);
-    }
-    
-    if (!CheckProofOfWork(block.auxpow->getParentBlockPoWHash(algo), block.nBits, params))
-    {
-        return error("%s : AUX proof of work failed", __func__);
-    }
-
-    return true;
 }
 
 int64_t GetBlockProofEquivalentTime(const CBlockIndex& to, const CBlockIndex& from, const CBlockIndex& tip, const Consensus::Params& params)
