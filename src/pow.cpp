@@ -486,8 +486,6 @@ unsigned int CalculateNextWorkRequiredV2(const CBlockIndex* pindexPrev, const CB
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params)
 {
-    CBlockIndex* pindexPrev = NULL;
-    int nHeight = pindexPrev->nHeight+1;
     bool fNegative;
     bool fOverflow;
     arith_uint256 bnTarget;
@@ -499,10 +497,11 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
         return error("CheckProofOfWork(): nBits below minimum work");
 
     // Check proof of work matches claimed amount
-    if (nHeight < params.nCheckProof || nHeight > params.nMultiAlgoFork){
+    // TODO this needs to be implemented due to AuxPow and multi-alto being broken upon release (Argentum)
+    //if (nHeight < params.nCheckProof || nHeight > params.nMultiAlgoFork){
     if (UintToArith256(hash) > bnTarget)
         return error("CheckProofOfWork(): hash doesn't match nBits");
-        }
+        //}
     return true;
 }
 
@@ -688,7 +687,8 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
 bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& params)
 {
     int algo = block.GetAlgo();
-    // TODO if (nHeight >= params.nStartAuxPow){
+    // TODO if (nHeight >= params.nStartAuxPow){ 
+    // this check needs to be delayed until nStartAuxPow (for Argentum)
 
     /* Except for legacy blocks with full version 1, ensure that
        the chain ID is correct.  Legacy blocks are not allowed since
@@ -746,11 +746,6 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
         }
 
         return true;
-        
-/*    else 
-    {
-        return true;
-    }*/
 }
 
 int64_t GetBlockProofEquivalentTime(const CBlockIndex& to, const CBlockIndex& from, const CBlockIndex& tip, const Consensus::Params& params)
