@@ -36,7 +36,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.powLimit = ArithToUint256(~arith_uint256(0) >> 20);
-        consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
+        consensus.nPowTargetTimespan = 10 * 90; // 15 mins
         consensus.nPowTargetSpacingV1 = 32; // target time for block spacing across all algorithms
         consensus.nPowTargetSpacingV2 = 45; // new target time for block spacing across all algorithms
         consensus.nAveragingInterval = 10; // number of blocks to take the timespan of
@@ -64,7 +64,8 @@ public:
         consensus.nDGW3StartBlock = 1635000; 
         consensus.nMultiAlgoFork = 1930000; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
         consensus.nCoinbaseMaturityV2Start = 2400000;
-        consensus.nCheckProof = 1835836;
+        consensus.nCheckProof = 0;
+        consensus.nCheckProof1 = 1796710;
 
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
@@ -121,7 +122,7 @@ public:
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,151);  // 0x97
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x8000002D).convert_to_container<std::vector<unsigned char> >(); // Argentum BIP 44 index is 45
+        base58Prefixes[EXT_COIN_TYPE] =   boost::assign::list_of(0x8000002D).convert_to_container<std::vector<unsigned char> >(); // Argentum BIP 44 index is 45
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
@@ -200,6 +201,7 @@ public:
         consensus.nDGW3StartBlock = 50; 
         consensus.nMultiAlgoFork = 150; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
         consensus.nCoinbaseMaturityV2Start = 200;
+        consensus.nCheckProof = 200;
 
         pchMessageStart[0] = 0xfc;
         pchMessageStart[1] = 0xc1;

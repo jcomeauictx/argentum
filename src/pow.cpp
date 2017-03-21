@@ -12,6 +12,7 @@
 #include "uint256.h"
 #include "util.h"
 #include "bignum.h"
+#include "main.h"
 
 static const int64_t nTargetTimespan = 32 * 250; // Argentum: every 250 blocks
 static const int64_t nTargetSpacing = 32; // Argentum: 32 sec
@@ -492,16 +493,22 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
 
     bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
 
+    LOCK(cs_main);
+    int nHeight = chainActive.Height();
+
     // Check range
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit))
         return error("CheckProofOfWork(): nBits below minimum work");
 
     // Check proof of work matches claimed amount
-    // TODO this needs to be implemented due to AuxPow and multi-alto being broken upon release (Argentum)
-    //if (nHeight < params.nCheckProof || nHeight > params.nMultiAlgoFork){
-    if (UintToArith256(hash) > bnTarget)
-        return error("CheckProofOfWork(): hash doesn't match nBits");
-        //}
+    if (nHeight > params.nCoinbaseMaturityV2Start){
+        if (UintToArith256(hash) > bnTarget)
+            return error("CheckProofOfWork1(): hash doesn't match nBits, nHeight=%d", nHeight);}
+
+    if (nHeight >= params.nCheckProof && nHeight < params.nCheckProof1){
+        if (UintToArith256(hash) > bnTarget)
+            return error("CheckProofOfWork2(): hash doesn't match nBits, nHeight=%d", nHeight);}
+
     return true;
 }
 
@@ -522,11 +529,13 @@ arith_uint256 GetBlockProofBase(const CBlockIndex& block)
 
 /*int GetAlgoWorkFactor(int algo)
 {
-    if (!TestNet() && (nHeight < params.nMultiAlgoFork))
+    const CChainParams& chainparams = Params();
+
+    if (chainActive.Height() < chainparams.GetConsensus().nMultiAlgoFork)
     {
         return 1;
     }
-    switch (GetAlgo())
+    switch (algo)
     {
         case ALGO_SHA256D:
             return 1; 
@@ -535,6 +544,7 @@ arith_uint256 GetBlockProofBase(const CBlockIndex& block)
             return 1024 * 4;
         default:
             return 1;
+        }
 }*/
 
 arith_uint256 GetPrevWorkForAlgo(const CBlockIndex& block, int algo)
@@ -660,7 +670,7 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
     int nHeight = block.nHeight;
     int nAlgo = block.GetAlgo();
     
-    /*if (nHeight >= chainparams.GetConsensus().nGeoAvgWork_Start) // TODO Argentum
+    /*if (nHeight > chainparams.GetConsensus().nGeoAvgWork_Start) // TODO Argentum
     {
         bnTarget = GetGeometricMeanPrevWork(block);
     }*/
@@ -673,7 +683,6 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
             {     
                 nBlockWork += GetPrevWorkForAlgo(block, algo);
             }
-            
         }
         bnTarget = nBlockWork / NUM_ALGOS;
     }
@@ -687,13 +696,13 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
 bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& params)
 {
     int algo = block.GetAlgo();
-    // TODO if (nHeight >= params.nStartAuxPow){ 
-    // this check needs to be delayed until nStartAuxPow (for Argentum)
-
     /* Except for legacy blocks with full version 1, ensure that
        the chain ID is correct.  Legacy blocks are not allowed since
        the merge-mining start, which is checked in AcceptBlockHeader
        where the height is known.  */
+    LOCK(cs_main);
+    int nHeight = chainActive.Height();
+    if (nHeight >= params.nStartAuxPow){
         if (!block.nVersion.IsLegacy() && params.fStrictChainId && block.nVersion.GetChainId() != params.nAuxpowChainId)
             return error("%s : block does not have our chain ID"
                          " (got %d, expected %d, full nVersion %d)",
@@ -701,8 +710,8 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
                          block.nVersion.GetChainId(),
                          params.nAuxpowChainId,
                          block.nVersion.GetFullVersion());
-
         /* If there is no auxpow, just check the block hash.  */
+    }
         if (!block.auxpow) {
             if (block.nVersion.IsAuxpow())
                 return error("%s : no auxpow on block with auxpow version",
@@ -721,7 +730,7 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
 
         if (!block.auxpow->check(block.GetHash(), block.nVersion.GetChainId(), params))
             return error("%s : AUX POW is not valid", __func__);
-        
+
         if(fDebug)
         {
             bool fNegative;
@@ -745,7 +754,7 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
             return error("%s : AUX proof of work failed", __func__);
         }
 
-        return true;
+    return true;
 }
 
 int64_t GetBlockProofEquivalentTime(const CBlockIndex& to, const CBlockIndex& from, const CBlockIndex& tip, const Consensus::Params& params)

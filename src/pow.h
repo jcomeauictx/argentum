@@ -7,6 +7,8 @@
 #define BITCOIN_POW_H
 
 #include "consensus/params.h"
+#include "chain.h"
+#include "sync.h"
 
 #include <stdint.h>
 
