@@ -737,7 +737,7 @@ Value getbalance(const Array& params, bool fHelp)
         for (map<uint256, CWalletTx>::iterator it = pwalletMain->mapWallet.begin(); it != pwalletMain->mapWallet.end(); ++it)
         {
             const CWalletTx& wtx = (*it).second;
-            if (!CheckFinalTx(wtx) || wtx.GetBlocksToMaturity(chainActive.Height() - wtx.GetDepthInMainChain()) > 0 || wtx.GetDepthInMainChain() < 0)
+            if (!CheckFinalTx(wtx) || wtx.GetBlocksToMaturity(chainActive.Height() - wtx.GetDepthInMainChain()) > 0)
                 continue;
 
             CAmount allFee;
@@ -1536,7 +1536,7 @@ Value listaccounts(const Array& params, bool fHelp)
         list<COutputEntry> listReceived;
         list<COutputEntry> listSent;
         int nDepth = wtx.GetDepthInMainChain();
-        if (wtx.GetBlocksToMaturity(chainActive.Height() - wtx.GetDepthInMainChain()) > 0 || nDepth < 0)
+        if (wtx.GetBlocksToMaturity(chainActive.Height()  - nDepth) > 0 || nDepth < 0)
             continue;
         wtx.GetAmounts(listReceived, listSent, nFee, strSentAccount, includeWatchonly);
         mapAccountBalances[strSentAccount] -= nFee;

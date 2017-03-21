@@ -133,11 +133,12 @@ QString TransactionDesc::toHTML(CWallet *wallet, CWalletTx &wtx, TransactionReco
         // Coinbase
         //
         CAmount nUnmatured = 0;
+        int nDepth = wtx.GetDepthInMainChain();
         BOOST_FOREACH(const CTxOut& txout, wtx.vout)
             nUnmatured += wallet->GetCredit(txout, ISMINE_ALL);
         strHTML += "<b>" + tr("Credit") + ":</b> ";
         if (wtx.IsInMainChain())
-            strHTML += BitcoinUnits::formatHtmlWithUnit(unit, nUnmatured)+ " (" + tr("matures in %n more block(s)", "", wtx.GetBlocksToMaturity(chainActive.Height())) + ")";
+            strHTML += BitcoinUnits::formatHtmlWithUnit(unit, nUnmatured)+ " (" + tr("matures in %n more block(s)", "", wtx.GetBlocksToMaturity(chainActive.Height() - nDepth)) + ")";
         else
             strHTML += "(" + tr("not accepted") + ")";
         strHTML += "<br>";

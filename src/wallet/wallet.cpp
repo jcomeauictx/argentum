@@ -1189,7 +1189,7 @@ CAmount CWalletTx::GetDebit(const isminefilter& filter) const
 CAmount CWalletTx::GetCredit(const isminefilter& filter) const
 {
     // Must wait until coinbase is safely deep enough in the chain before valuing it
-    if (IsCoinBase() && GetBlocksToMaturity((chainActive.Height())) > 0)
+    if (IsCoinBase() && GetBlocksToMaturity(chainActive.Height() - GetDepthInMainChain()) > 0)
         return 0;
 
     int64_t credit = 0;
@@ -1221,7 +1221,7 @@ CAmount CWalletTx::GetCredit(const isminefilter& filter) const
 
 CAmount CWalletTx::GetImmatureCredit(bool fUseCache) const
 {
-    if (IsCoinBase() && GetBlocksToMaturity((chainActive.Height())) > 0 && IsInMainChain())
+    if (IsCoinBase() && GetBlocksToMaturity(chainActive.Height() - GetDepthInMainChain()) > 0 && IsInMainChain())
     {
         if (fUseCache && fImmatureCreditCached)
             return nImmatureCreditCached;
@@ -1239,7 +1239,7 @@ CAmount CWalletTx::GetAvailableCredit(bool fUseCache) const
         return 0;
 
     // Must wait until coinbase is safely deep enough in the chain before valuing it
-    if (IsCoinBase() && GetBlocksToMaturity(chainActive.Height()) > 0)
+    if (IsCoinBase() && GetBlocksToMaturity(chainActive.Height() - GetDepthInMainChain()) > 0)
         return 0;
 
     if (fUseCache && fAvailableCreditCached)
@@ -2290,14 +2290,14 @@ std::map<CTxDestination, CAmount> CWallet::GetAddressBalances()
         BOOST_FOREACH(PAIRTYPE(uint256, CWalletTx) walletEntry, mapWallet)
         {
             CWalletTx *pcoin = &walletEntry.second;
+            int nDepth = pcoin->GetDepthInMainChain();
 
             if (!CheckFinalTx(*pcoin) || !pcoin->IsTrusted())
                 continue;
 
-            if (pcoin->IsCoinBase() && pcoin->GetBlocksToMaturity(chainActive.Height()) > 0)
+            if (pcoin->IsCoinBase() && pcoin->GetBlocksToMaturity(chainActive.Height() - nDepth) > 0)
                 continue;
 
-            int nDepth = pcoin->GetDepthInMainChain();
             if (nDepth < (pcoin->IsFromMe(ISMINE_ALL) ? 0 : 1))
                 continue;
 
