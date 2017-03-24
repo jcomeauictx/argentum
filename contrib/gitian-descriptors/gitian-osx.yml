@@ -20,7 +20,7 @@ packages:
 - "libbz2-dev"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/argentumproject/argentum.git"
+- "url": "https://github.com/protonn/argentum.git"
   "dir": "argentum"
 files:
 - "MacOSX10.9.sdk.tar.gz"
