@@ -169,8 +169,8 @@ Var vänlig och försök igen.</translation>
         <translation>Är du säker på att du vill kryptera din plånbok?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
-        <translation>Argentum Core kommer att stängas för att slutföra krypteringsprocessen. Kom ihåg att plånbokskryptering inte garanterar fullt skydd mot skadlig kod på din dator.</translation>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Argentum kommer att stängas för att slutföra krypteringsprocessen. Kom ihåg att plånbokskryptering inte garanterar fullt skydd mot skadlig kod på din dator.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -296,8 +296,8 @@ Var vänlig och försök igen.</translation>
         <translation>Öppna &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core-klient</translation>
+        <source>Argentum client</source>
+        <translation>Argentum-klient</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -348,8 +348,8 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Ta emot</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Visa information om Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Visa information om Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -388,20 +388,20 @@ Var vänlig och försök igen.</translation>
         <translation>Verktygsfält för tabbar</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Begär betalning (genererar QR-koder och argentum-URI)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;Om Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;Om Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
-        <translation>Ändra konfigurationsalternativ för Argentum Core</translation>
+        <source>Modify configuration options for Argentum</source>
+        <translation>Ändra konfigurationsalternativ för Argentum</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -420,7 +420,7 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Kommandoradsalternativ</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
         <translation>Visa Argentum Cores hjälpmeddelande för att få en lista med möjliga Argentum-kommandoradsalternativ.</translation>
     </message>
     <message numerus="yes">
@@ -841,8 +841,8 @@ Var vänlig och försök igen.</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
@@ -853,8 +853,8 @@ Var vänlig och försök igen.</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Om Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Om Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -876,16 +876,16 @@ Var vänlig och försök igen.</translation>
         <translation>Välkommen</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Välkommen till Argentum Core.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Välkommen till Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
-        <translation>Eftersom detta är första gången programmet startas får du välja var Argentum Core skall lagra sina data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
+        <translation>Eftersom detta är första gången programmet startas får du välja var Argentum skall lagra sina data.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Argentum Core kommer att ladda ner och spara en kopia av Argentum-blockkedjan. Åtminstone %1GB av data kommer att sparas i denna katalog, och den kommer att växa över tiden. Plånboken kommer också att sparas i denna katalog.</translation>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum kommer att ladda ner och spara en kopia av Argentum-blockkedjan. Åtminstone %1GB av data kommer att sparas i denna katalog, och den kommer att växa över tiden. Plånboken kommer också att sparas i denna katalog.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -896,8 +896,8 @@ Var vänlig och försök igen.</translation>
         <translation>Använd en anpassad datakatalog:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -978,8 +978,8 @@ Var vänlig och försök igen.</translation>
         <translation>Minimera istället för att stänga programmet när fönstret stängs. När detta alternativ är aktiverat stängs programmet endast genom att välja Stäng i menyn.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
-        <translation>Gränssnittets språk kan väljas här. Denna inställning träder i kraft efter omstart av Argentum Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
+        <translation>Gränssnittets språk kan väljas här. Denna inställning träder i kraft efter omstart av Argentum.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1006,12 +1006,12 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Nätverk</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
-        <translation>Kör Argentum Core automatiskt vid systeminloggning.</translation>
+        <source>Automatically start Argentum after logging in to the system.</source>
+        <translation>Kör Argentum automatiskt vid systeminloggning.</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
-        <translation>&amp;Kör Argentum Core vid systeminloggning</translation>
+        <source>&amp;Start Argentum on system login</source>
+        <translation>&amp;Kör Argentum vid systeminloggning</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1440,8 +1440,8 @@ Var vänlig och försök igen.</translation>
         <translation>Aktuellt antal block</translation>
     </message>
     <message>
-        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öppna felsökningsloggfilen för Argentum Core från den nuvarande datakatalogen. Detta kan ta några sekunder om loggfilen är stor.</translation>
+        <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öppna felsökningsloggfilen för Argentum från den nuvarande datakatalogen. Detta kan ta några sekunder om loggfilen är stor.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1560,8 +1560,8 @@ Var vänlig och försök igen.</translation>
         <translation>Rensa konsollen</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
-        <translation>Välkommen till RPC-konsolen för Argentum Core.</translation>
+        <source>Welcome to the Argentum RPC console.</source>
+        <translation>Välkommen till RPC-konsolen för Argentum.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2130,8 +2130,8 @@ Var vänlig och försök igen.</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>Argentum Core stängs av...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>Argentum stängs av...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2280,12 +2280,12 @@ Var vänlig och försök igen.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Kärna</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Argentum Core-utvecklarna</translation>
+        <source>The Argentum developers</source>
+        <translation>Argentum-utvecklarna</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2834,8 +2834,8 @@ Var vänlig och försök igen.</translation>
         <translation>Detta är ett förhands testbygge - använd på egen risk - använd inte för mining eller handels applikationer</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
-        <translation>Det går inte att binda till %s på den här datorn. Argentum Core är förmodligen redan igång.</translation>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
+        <translation>Det går inte att binda till %s på den här datorn. Argentum är förmodligen redan igång.</translation>
     </message>
     <message>
         <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
@@ -3026,8 +3026,8 @@ Var vänlig och försök igen.</translation>
         <translation>Bind till angiven adress för att lyssna på JSON-RPC anslutningar. Använd [värd]:port notation for IPv6. Denna option kan specificeras flera gånger (förvalt: bind till alla gränssnitt)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
-        <translation>Kan inte låsa data-mappen %s. Argentum Core körs förmodligen redan.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
+        <translation>Kan inte låsa data-mappen %s. Argentum körs förmodligen redan.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3118,8 +3118,8 @@ till exempel: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>Varning: -maxtxfee är satt väldigt hög! Så höga avgifter kan betalas för en enstaka transaktion.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
-        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Argentum Core inte att fungera korrekt.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum will not work properly.</source>
+        <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer Argentum inte att fungera korrekt.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3158,16 +3158,16 @@ till exempel: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>Anslut genom SOCKS5 proxy</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
-        <translation>Copyright (C) 2009-%i Argentum Core Utvecklarna</translation>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
+        <translation>Copyright (C) 2009-%i Argentum Utvecklarna</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Kunde inte tolka -rpcbind värdet %s som en nätverksadress</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
-        <translation>Fel vid inläsningen av wallet.dat: Kontofilen kräver en senare version av Argentum Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
+        <translation>Fel vid inläsningen av wallet.dat: Kontofilen kräver en senare version av Argentum</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3190,8 +3190,8 @@ till exempel: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
-        <translation>Initieringschecken fallerade. Argentum Core stängs av...</translation>
+        <source>Initialization sanity check failed. Argentum is shutting down.</source>
+        <translation>Initieringschecken fallerade. Argentum stängs av...</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3326,8 +3326,8 @@ till exempel: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>Användarnamn för JSON-RPC-anslutningar</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
-        <translation>Kontot behöver sparas om: Starta om Argentum Core för att fullfölja</translation>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
+        <translation>Kontot behöver sparas om: Starta om Argentum för att fullfölja</translation>
     </message>
     <message>
         <source>Warning</source>

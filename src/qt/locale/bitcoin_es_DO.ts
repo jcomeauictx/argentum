@@ -359,7 +359,7 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Núcleo de Argentum</translation>
     </message>
     <message>
@@ -367,7 +367,7 @@
         <translation>Solicitar pagos (genera codigo QR y URL's de Argentum)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
+        <source>&amp;About Argentum</source>
         <translation>&amp;Acerca del Núcleo de Argentum</translation>
     </message>
     <message>
@@ -714,7 +714,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Núcleo de Argentum</translation>
     </message>
     <message>
@@ -722,7 +722,7 @@
         <translation>versión</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>Acerca del Núcleo de Argentum</translation>
     </message>
     <message>
@@ -745,15 +745,15 @@
         <translation>Bienvenido</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
+        <source>Welcome to Argentum.</source>
         <translation>Bienvenido al Núcleo de Argentum</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
         <translation>Al ser la primera vez que se ejecuta el programa, puede elegir dónde almacenará sus datos Argentum-Qt.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Argentum-Qt va a descargar y guardar una copia de la cadena de bloques de Argentum. Se almacenará al menos %1GB de datos en este directorio, que irá creciendo con el tiempo. El monedero se guardará también en este directorio.</translation>
     </message>
     <message>
@@ -765,7 +765,7 @@
         <translation>Utilice un directorio de datos personalizado:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Núcleo de Argentum</translation>
     </message>
     <message>
@@ -1657,11 +1657,11 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Núcleo de Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
+        <source>The Argentum developers</source>
         <translation>Los desarrolladores del Núcleo de Argentum</translation>
     </message>
     <message>

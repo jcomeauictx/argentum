@@ -287,8 +287,8 @@
         <translation>&amp;URI azonosító megnyitása...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core kliens</translation>
+        <source>Argentum client</source>
+        <translation>Argentum kliens</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -339,8 +339,8 @@
         <translation>&amp;Fogadás</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Argentum Core információ megjelenítése</translation>
+        <source>Show information about Argentum</source>
+        <translation>Argentum információ megjelenítése</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -379,16 +379,16 @@
         <translation>Fül eszköztár</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Fizetési kérelem (QR-kódot és "argentum:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;A Argentum Core-ról</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;A Argentum-ról</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -407,8 +407,8 @@
         <translation>Paran&amp;cssor kapcsolók</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>A Argentum Core súgóüzenet megjelenítése a Argentum lehetséges parancssori kapcsolóival.</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>A Argentum súgóüzenet megjelenítése a Argentum lehetséges parancssori kapcsolóival.</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -766,8 +766,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
@@ -778,8 +778,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>A Argentum Core-ról</translation>
+        <source>About Argentum</source>
+        <translation>A Argentum-ról</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -801,12 +801,12 @@
         <translation>Üdvözlünk</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Üdvözlünk a Argentum Core-ban.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Üdvözlünk a Argentum-ban.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>A Argentum Core le fogja tölteni és tárolni fogja a Argentum blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>A Argentum le fogja tölteni és tárolni fogja a Argentum blokklánc egy másolatát. Legalább %1GB adat lesz tárolva ebben a mappában, és ez folyamatosan nőni fog. A tárca szintén itt lesz tárolva.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -817,8 +817,8 @@
         <translation>Saját adatkönyvtár használata:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -891,7 +891,7 @@
         <translation>&amp;Hálózat</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
+        <source>&amp;Start Argentum on system login</source>
         <translation>A Argentum elindítása bejelentkezéskor</translation>
     </message>
     <message>
@@ -1552,8 +1552,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>A Argentum Core leáll...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>A Argentum leáll...</translation>
     </message>
     </context>
 <context>
@@ -1646,12 +1646,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>A Argentum Core fejlesztői</translation>
+        <source>The Argentum developers</source>
+        <translation>A Argentum fejlesztői</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2149,8 +2149,8 @@
         <translation>Adatkönyvtár kiválasztása induláskor (alapbeállítás: 0)</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
-        <translation>Copyright (C) 2009-%i A Argentum Core Fejlesztői</translation>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
+        <translation>Copyright (C) 2009-%i A Argentum Fejlesztői</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

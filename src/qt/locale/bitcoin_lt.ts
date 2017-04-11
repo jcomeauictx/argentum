@@ -263,8 +263,8 @@
         <translation>Atidaryti &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core klientas</translation>
+        <source>Argentum client</source>
+        <translation>Argentum klientas</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -315,8 +315,8 @@
         <translation>&amp;Gauti</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Rodyti informaciją apie Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Rodyti informaciją apie Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -347,12 +347,12 @@
         <translation>Kortelių įrankinė</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum branduolys</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;Apie Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;Apie Argentum</translation>
     </message>
     <message>
         <source>Error</source>
@@ -606,7 +606,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum branduolys</translation>
     </message>
     <message>
@@ -614,8 +614,8 @@
         <translation>versija</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Apie Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Apie Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -637,11 +637,11 @@
         <translation>Sveiki</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Sveiki atvykę į Argentum Core.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Sveiki atvykę į Argentum.</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum branduolys</translation>
     </message>
     <message>
@@ -1229,7 +1229,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum branduolys</translation>
     </message>
     <message>

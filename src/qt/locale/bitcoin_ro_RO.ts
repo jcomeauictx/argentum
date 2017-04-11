@@ -168,7 +168,7 @@
         <translation>Sigur doriţi să criptaţi portofelul dvs.?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
         <translation>Argentum se va închide acum pentru a termina procesul de criptare. Ţineţi minte că criptarea portofelului nu vă poate proteja în totalitate de furtul monedelor de către programe dăunătoare care vă infectează calculatorul.</translation>
     </message>
     <message>
@@ -295,8 +295,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Clientul Argentum Core</translation>
+        <source>Argentum client</source>
+        <translation>Clientul Argentum</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -347,8 +347,8 @@
         <translation>P&amp;rimeşte</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Arată informaţii despre Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Arată informaţii despre Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -387,7 +387,7 @@
         <translation>Bara de unelte</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Nucleul Argentum</translation>
     </message>
     <message>
@@ -395,11 +395,11 @@
         <translation>Cereţi plăţi (generează coduri QR şi argentum-uri: URls)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
+        <source>&amp;About Argentum</source>
         <translation>&amp;Despre Nucleul Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
+        <source>Modify configuration options for Argentum</source>
         <translation>Modifică opţiunile de configurare pentru Argentum</translation>
     </message>
     <message>
@@ -419,8 +419,8 @@
         <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Arată mesajul de ajutor Argentum Core pentru a obţine o listă cu opţiunile posibile de linii de comandă Argentum</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Arată mesajul de ajutor Argentum pentru a obţine o listă cu opţiunile posibile de linii de comandă Argentum</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Argentum network</source>
@@ -836,7 +836,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Nucleul Argentum</translation>
     </message>
     <message>
@@ -848,7 +848,7 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>Despre Nucleul Argentum</translation>
     </message>
     <message>
@@ -871,11 +871,11 @@
         <translation>Bun venit</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
+        <source>Welcome to Argentum.</source>
         <translation>Bine aţi venit la Nucleul Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
         <translation>Dacă aceasta este prima dată cînd programul este lansat, puteţi alege unde Nucleul Argentum va stoca datele.</translation>
     </message>
     <message>
@@ -887,7 +887,7 @@
         <translation>Foloseşte un dosar de date personalizat:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Nucleul Argentum</translation>
     </message>
     <message>
@@ -969,7 +969,7 @@
         <translation>Minimizează fereastra în locul părăsirii programului în momentul închiderii ferestrei. Cînd acestă opţiune e activă, aplicaţia se va opri doar în momentul selectării comenzii 'Închide aplicaţia' din menu.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
         <translation>Limba interfeţei utilizatorului poate fi setată aici. Această setare va avea efect după repornirea Nucleului Argentum.</translation>
     </message>
     <message>
@@ -997,7 +997,7 @@
         <translation>Reţea</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
+        <source>&amp;Start Argentum on system login</source>
         <translation>Porneşte Nucleul Argentum la pornirea sistemului</translation>
     </message>
     <message>
@@ -1523,7 +1523,7 @@
         <translation>Curăţă consola</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
+        <source>Welcome to the Argentum RPC console.</source>
         <translation>Bun venit la consola Nucleului Argentum RPC.</translation>
     </message>
     <message>
@@ -2049,7 +2049,7 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
+        <source>Argentum is shutting down...</source>
         <translation>Nucleul Argentum se închide...</translation>
     </message>
     <message>
@@ -2191,11 +2191,11 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Nucleul Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
+        <source>The Argentum developers</source>
         <translation>Dezvoltatorii Nucleului Argentum</translation>
     </message>
     <message>
@@ -2721,7 +2721,7 @@
         <translation>Aceasta este o versiune de test preliminară - vă asumaţi riscul folosind-o - nu folosiţi pentru minerit sau aplicaţiile comercianţilor</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
         <translation>Nu se poate lega la %s pe acest calculator. Nucleul Argentum probabil deja rulează.</translation>
     </message>
     <message>
@@ -2881,7 +2881,7 @@
         <translation>A apărut o eroare la setarea adresei RPC %s portul %u pentru ascultare: %s</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
         <translation>Nu se poate obţine blocarea folderului cu date %s. Nucleul Argentum probabil deja rulează.</translation>
     </message>
     <message>
@@ -2909,7 +2909,7 @@
         <translation>Conectare prin proxy SOCKS5</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
         <translation>Copyright (C) 2009-%i Dezvoltatorii Argentum</translation>
     </message>
     <message>
@@ -2929,7 +2929,7 @@
         <translation>Informaţie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
+        <source>Initialization sanity check failed. Argentum is shutting down.</source>
         <translation>Nu s-a reuşit iniţierea verificării sănătăţii. Nucleul Argentum se opreşte.</translation>
     </message>
     <message>
@@ -3037,7 +3037,7 @@
         <translation>Utilizator pentru conexiunile JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
         <translation>Portofelul necesită rescrierea: reporniţi Nucleul Argentum pentru completare</translation>
     </message>
     <message>

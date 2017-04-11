@@ -359,16 +359,16 @@
         <translation>ბარათების პანელი</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>გადახდის მოთხოვნა (შეიქმნება QR-კოდები და argentum: ბმულები)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>Argentum Core-ს შეს&amp;ახებ</translation>
+        <source>&amp;About Argentum</source>
+        <translation>Argentum-ს შეს&amp;ახებ</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -387,8 +387,8 @@
         <translation>საკომანდო სტრიქონის ოპ&amp;ციები</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Argentum Core-ს დახმარების ჩვენება Argentum-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Argentum-ს დახმარების ჩვენება Argentum-ის საკომანდო სტრიქონის დასაშვები ოპციების სანახავად</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -722,16 +722,16 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
         <translation>ვერსია</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Argentum Core-ს შესახებ</translation>
+        <source>About Argentum</source>
+        <translation>Argentum-ს შესახებ</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -753,12 +753,12 @@
         <translation>მოგესალმებით</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>მოგესალმებათ Argentum Core.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>მოგესალმებათ Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
-        <translation>ეს პროგრამის პირველი გაშვებაა; შეგიძლიათ მიუთითოთ, სად შეინახოს მონაცემები Argentum Core-მ.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
+        <translation>ეს პროგრამის პირველი გაშვებაა; შეგიძლიათ მიუთითოთ, სად შეინახოს მონაცემები Argentum-მ.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -769,8 +769,8 @@
         <translation>მითითებული კატალოგის გამოყენება:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1599,8 +1599,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>Argentum Core იხურება...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>Argentum იხურება...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1733,12 +1733,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Argentum Core-ს ავტორები</translation>
+        <source>The Argentum developers</source>
+        <translation>Argentum-ს ავტორები</translation>
     </message>
     <message>
         <source>[testnet]</source>

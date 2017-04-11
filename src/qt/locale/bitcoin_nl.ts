@@ -168,8 +168,8 @@
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
-        <translation>Argentum Core zal nu afsluiten om het versleutelingsproces te voltooien. Hou er rekening mee dat versleuteling van je portemonnee je niet volledig beschermt tegen diefstal van jouw argentums door malware op je computer.</translation>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Argentum zal nu afsluiten om het versleutelingsproces te voltooien. Hou er rekening mee dat versleuteling van je portemonnee je niet volledig beschermt tegen diefstal van jouw argentums door malware op je computer.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,7 +295,7 @@
         <translation>Open &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
+        <source>Argentum client</source>
         <translation>Argentum Kern applicatie</translation>
     </message>
     <message>
@@ -347,7 +347,7 @@
         <translation>&amp;Ontvangen</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
+        <source>Show information about Argentum</source>
         <translation>Toon informatie over argentum kern</translation>
     </message>
     <message>
@@ -387,7 +387,7 @@
         <translation>Tab-werkbalk</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Kern</translation>
     </message>
     <message>
@@ -395,12 +395,12 @@
         <translation>Vraag betaling aan (genereert QR codes en argentum: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;Over Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;Over Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
-        <translation>Wijzig configuratieopties voor Argentum Core</translation>
+        <source>Modify configuration options for Argentum</source>
+        <translation>Wijzig configuratieopties voor Argentum</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -419,8 +419,8 @@
         <translation>&amp;Commandoregel-opties</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Toon het Argentum Core hulpbericht om een lijst te krijgen met mogelijke Argentum commandoregelopties</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Toon het Argentum hulpbericht om een lijst te krijgen met mogelijke Argentum commandoregelopties</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Argentum network</source>
@@ -844,7 +844,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Kern</translation>
     </message>
     <message>
@@ -856,8 +856,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Over Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Over Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -879,16 +879,16 @@
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Welkom bij Argentum Core</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Welkom bij Argentum</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
-        <translation>Omdat dit de eerste keer is dat het programma gestart is, kunt u nu kiezen waar Argentum Core de data moet opslaan.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
+        <translation>Omdat dit de eerste keer is dat het programma gestart is, kunt u nu kiezen waar Argentum de data moet opslaan.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Argentum Core zal een kopie van de Argentum blokketen downloaden en opslaan. Tenminste %1 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum zal een kopie van de Argentum blokketen downloaden en opslaan. Tenminste %1 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee wordt ook in deze map opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -899,7 +899,7 @@
         <translation>Gebruik een persoonlijke gegevensmap:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Kern</translation>
     </message>
     <message>
@@ -981,7 +981,7 @@
         <translation>Minimaliseren in plaats van de applicatie af te sluiten wanneer het venster is afgesloten. Als deze optie is ingeschakeld, zal de toepassing pas worden afgesloten na het selecteren van Exit in het menu.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
         <translation>Stel hier de taal van de applicatie in. Deze instelling zal van kracht worden na het herstarten van de applicatie.</translation>
     </message>
     <message>
@@ -1009,11 +1009,11 @@
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <source>Automatically start Argentum after logging in to the system.</source>
         <translation>Argentum Kern automatisch starten bij inloggen.</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
+        <source>&amp;Start Argentum on system login</source>
         <translation>&amp;Start Argentum Kern tijdens login.</translation>
     </message>
     <message>
@@ -1439,8 +1439,8 @@
         <translation>Huidig aantal blokken</translation>
     </message>
     <message>
-        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het Argentum Core debug logbestand van de huidige gegevens directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Argentum debug logbestand van de huidige gegevens directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1555,8 +1555,8 @@
         <translation>Maak console leeg</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
-        <translation>Welkom op de Argentum Core RPC console.</translation>
+        <source>Welcome to the Argentum RPC console.</source>
+        <translation>Welkom op de Argentum RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2113,8 +2113,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>Argentum Core is aan het afsluiten...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>Argentum is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2259,12 +2259,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Kern</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>De Argentum Core ontwikkelaars</translation>
+        <source>The Argentum developers</source>
+        <translation>De Argentum ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2801,8 +2801,8 @@
         <translation>Dit is een pre-release testversie - gebruik op eigen risico! Gebruik deze niet voor het delven van munten of handelsdoeleinden</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
-        <translation>Niet in staat om %s te verbinden op deze computer. Argentum Core draait waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
+        <translation>Niet in staat om %s te verbinden op deze computer. Argentum draait waarschijnlijk al.</translation>
     </message>
     <message>
         <source>WARNING: check your network connection, %d blocks received in the last %d hours (%d expected)</source>
@@ -2981,8 +2981,8 @@
         <translation>Bind aan gegeven adres om te luisteren voor JSON-RPC verbindingen. Gebruik [host]:poort notatie voor IPv6. Deze optie kan meerdere keren gespecificeerd worden (standaard: bind aan alle interfaces.</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
-        <translation>Kan geen lock verkrijgen op gegevensmap %s. Argentum Core draait waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
+        <translation>Kan geen lock verkrijgen op gegevensmap %s. Argentum draait waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3065,8 +3065,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com</transl
         <translation>Let op: -maxtxfee is erg hoog ingesteld! Transactiekosten van dergelijke groottes kunnen in een enkele transactie worden betaald.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer dat de datum en tijd van uw computer correct zijn ingesteld! Bij een onjuist ingestelde klok zal Argentum Core niet goed werken.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum will not work properly.</source>
+        <translation>Waarschuwing: Controleer dat de datum en tijd van uw computer correct zijn ingesteld! Bij een onjuist ingestelde klok zal Argentum niet goed werken.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3097,16 +3097,16 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com</transl
         <translation>Verbind door SOCKS5 proxy</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
-        <translation>Auteursrecht (C) 2009-%i De Argentum Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
+        <translation>Auteursrecht (C) 2009-%i De Argentum Ontwikkelaars</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Niet mogelijk om -rpcbind waarde %s te verwerken als netwerk adres</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
-        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Argentum Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
+        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Argentum</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3125,8 +3125,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com</transl
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
-        <translation>Initialisatie sanity check mislukt. Argentum Core is aan het afsluiten.</translation>
+        <source>Initialization sanity check failed. Argentum is shutting down.</source>
+        <translation>Initialisatie sanity check mislukt. Argentum is aan het afsluiten.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3249,8 +3249,8 @@ Voorbeeld: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com</transl
         <translation>Gebruikersnaam voor JSON-RPC-verbindingen</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
-        <translation>Portemonnee moest herschreven worden: Herstart Argentum Core om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
+        <translation>Portemonnee moest herschreven worden: Herstart Argentum om te voltooien</translation>
     </message>
     <message>
         <source>Warning</source>

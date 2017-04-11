@@ -17,7 +17,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Argentum"
-            VALUE "FileDescription",    "argentum-cli (JSON-RPC client for Argentum Core)"
+            VALUE "FileDescription",    "argentum-cli (JSON-RPC client for Argentum)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "argentum-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR

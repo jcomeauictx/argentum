@@ -283,7 +283,7 @@
         <translation>افتح &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
+        <source>Argentum client</source>
         <translation>عميل bitcion core</translation>
     </message>
     <message>
@@ -327,7 +327,7 @@
         <translation>&amp;استقبل</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
+        <source>Show information about Argentum</source>
         <translation>  اظهار معلومات حول bitcion core</translation>
     </message>
     <message>
@@ -359,12 +359,12 @@
         <translation>شريط أدوات علامات التبويب</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>جوهر البيت كوين</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>حول argentum core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>حول Argentum</translation>
     </message>
     <message>
         <source>Error</source>
@@ -602,7 +602,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>جوهر البيت كوين</translation>
     </message>
     <message>
@@ -610,7 +610,7 @@
         <translation>النسخة</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>عن جوهر البيت كوين</translation>
     </message>
     <message>
@@ -633,7 +633,7 @@
         <translation>استخدام دليل بيانات مخصص:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>جوهر البيت كوين</translation>
     </message>
     <message>
@@ -1265,11 +1265,11 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>جوهر البيت كوين</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
+        <source>The Argentum developers</source>
         <translation>مطوري جوهر البيت كوين</translation>
     </message>
     <message>

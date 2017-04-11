@@ -151,7 +151,7 @@ cd db-5.1.29.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --disable-replication --prefix=$BDB_PREFIX
 make install
 
-# Configure Argentum Core to use our own-built instance of BDB
+# Configure Argentum to use our own-built instance of BDB
 cd $BITCOIN_ROOT
 ./autogen.sh
 ./configure --enable-hardening --disable-tests --disable-upnp-default LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"

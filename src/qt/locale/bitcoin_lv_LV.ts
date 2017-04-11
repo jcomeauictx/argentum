@@ -263,8 +263,8 @@
         <translation>Atvērt &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core klients</translation>
+        <source>Argentum client</source>
+        <translation>Argentum klients</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -315,8 +315,8 @@
         <translation>&amp;Saņemt</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Parādīt informāciju par Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Parādīt informāciju par Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -355,16 +355,16 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Pieprasīt maksājumus (izveido QR kodu un argentum: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>Par &amp;Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>Par &amp;Argentum</translation>
     </message>
     <message>
         <source>Open a argentum: URI or payment request</source>
@@ -678,8 +678,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
@@ -690,8 +690,8 @@
         <translation>(%1-biti)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Par Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Par Argentum</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -709,8 +709,8 @@
         <translation>Sveiciens</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Sveicināts Argentum Core</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Sveicināts Argentum</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -721,8 +721,8 @@
         <translation>Izmantot pielāgotu datu mapi:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1491,8 +1491,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>Argentum Core tiek izslēgta...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>Argentum tiek izslēgta...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1621,12 +1621,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Argentum Core izstrādātāji</translation>
+        <source>The Argentum developers</source>
+        <translation>Argentum izstrādātāji</translation>
     </message>
     <message>
         <source>[testnet]</source>

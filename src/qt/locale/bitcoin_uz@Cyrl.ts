@@ -287,7 +287,7 @@
         <translation>Интернет манзилни очиш</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
+        <source>Argentum client</source>
         <translation>Argentum асос мижози</translation>
     </message>
     <message>
@@ -339,8 +339,8 @@
         <translation>&amp;Қабул қилиш</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Argentum Core ҳақидаги маълумотларни кўрсатиш</translation>
+        <source>Show information about Argentum</source>
+        <translation>Argentum ҳақидаги маълумотларни кўрсатиш</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -379,16 +379,16 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Тўловлар (QR кодлари ва argentum ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>Argentum Core &amp;ҳақида</translation>
+        <source>&amp;About Argentum</source>
+        <translation>Argentum &amp;ҳақида</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -407,8 +407,8 @@
         <translation>&amp;Буйруқлар сатри мосламалари</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Мавжуд Argentum буйруқлар матни мосламалари билан  Argentum Core ёрдам хабарларини олиш рўйхатини кўрсатиш</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Мавжуд Argentum буйруқлар матни мосламалари билан  Argentum ёрдам хабарларини олиш рўйхатини кўрсатиш</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Argentum network</source>
@@ -774,8 +774,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
@@ -786,8 +786,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Argentum Core ҳақида</translation>
+        <source>About Argentum</source>
+        <translation>Argentum ҳақида</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -805,16 +805,16 @@
         <translation>Хуш келибсиз</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>"Argentum Core"га хуш келибсиз.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>"Argentum"га хуш келибсиз.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
-        <translation>Биринчи марта дастур ишга тушгани каби сиз Argentum Core маълумотларини жойлаштирадиган жойни танлашингиз мумкин.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
+        <translation>Биринчи марта дастур ишга тушгани каби сиз Argentum маълумотларини жойлаштирадиган жойни танлашингиз мумкин.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Argentum Core юклаб олинади ва Argentum блок занжири нусхаси жойлаштирилади. Камида %1GB  маълумот ушбу директорияга жойлаштирилади ва вақт давомида ўсиб боради. Ҳамён ҳам ушбу директорияда жойлашади.</translation>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum юклаб олинади ва Argentum блок занжири нусхаси жойлаштирилади. Камида %1GB  маълумот ушбу директорияга жойлаштирилади ва вақт давомида ўсиб боради. Ҳамён ҳам ушбу директорияда жойлашади.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -825,8 +825,8 @@
         <translation>Бошқа маълумотлар директориясида фойдаланинг:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1557,12 +1557,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Argentum Core дастурчилари</translation>
+        <source>The Argentum developers</source>
+        <translation>Argentum дастурчилари</translation>
     </message>
     <message>
         <source>[testnet]</source>

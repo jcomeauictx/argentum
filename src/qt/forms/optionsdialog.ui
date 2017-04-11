@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start Argentum Core after logging in to the system.</string>
+          <string>Automatically start Argentum after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start Argentum Core on system login</string>
+          <string>&amp;Start Argentum on system login</string>
          </property>
         </widget>
        </item>

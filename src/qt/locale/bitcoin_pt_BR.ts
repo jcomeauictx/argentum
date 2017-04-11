@@ -168,7 +168,7 @@
         <translation>Tem certeza de que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
         <translation>O Argentum irá fechar agora para terminar o processo de criptografia. Lembre-se que criptografando sua carteira não te protege totalmente de ter seus argentums roubados por um malware que infectar seu computador.</translation>
     </message>
     <message>
@@ -295,7 +295,7 @@
         <translation>Abrir &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
+        <source>Argentum client</source>
         <translation>Cliente Argentum</translation>
     </message>
     <message>
@@ -347,7 +347,7 @@
         <translation>&amp;Receber</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
+        <source>Show information about Argentum</source>
         <translation>Mostrar informações sobre Argentum</translation>
     </message>
     <message>
@@ -387,7 +387,7 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum</translation>
     </message>
     <message>
@@ -395,11 +395,11 @@
         <translation>Solicitações de pagamentos (gera códigos QR e argentum: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
+        <source>&amp;About Argentum</source>
         <translation>&amp;Sobre Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
+        <source>Modify configuration options for Argentum</source>
         <translation>Modificar opções de configuração do Argentum</translation>
     </message>
     <message>
@@ -419,7 +419,7 @@
         <translation>Opções de linha de &amp;comando</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
         <translation>Mostra a mensagem de ajuda do Argentum para pegar a lista com os comandos possíveis</translation>
     </message>
     <message numerus="yes">
@@ -840,7 +840,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum</translation>
     </message>
     <message>
@@ -852,7 +852,7 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>Sobre o Argentum</translation>
     </message>
     <message>
@@ -875,15 +875,15 @@
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
+        <source>Welcome to Argentum.</source>
         <translation>Bem vindo ao Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
         <translation>A primeira vez que o programa é aberto você pode escolher onde o Argentum vai guardar os dados.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>O Argentum vai fazer download e salvar uma cópia da cadeia de blocos do Argentum: Blockchain. Pelo menos %1 GB de dados serão armazenados nesse diretório e isso aumentará ao longo do tempo. Sua carteira também será armazenada nesse diretório.</translation>
     </message>
     <message>
@@ -895,7 +895,7 @@
         <translation>Use um diretório de dados personalizado:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum</translation>
     </message>
     <message>
@@ -977,8 +977,8 @@
         <translation>Minimizar em vez de fechar o programa quando a janela for fechada. Quando essa opção estiver ativa, o programa só será fechado somente pela opção Sair no menu Arquivo.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
-        <translation>A linguagem da interface do usuário pode ser alterada aqui. A mudança ocorrerá após o reinício do Argentum Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
+        <translation>A linguagem da interface do usuário pode ser alterada aqui. A mudança ocorrerá após o reinício do Argentum.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1005,11 +1005,11 @@
         <translation>Rede</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <source>Automatically start Argentum after logging in to the system.</source>
         <translation>Inicar automaticamente o Argentum ao logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
+        <source>&amp;Start Argentum on system login</source>
         <translation>&amp;Iniciar Argentum no login do sistema</translation>
     </message>
     <message>
@@ -1427,7 +1427,7 @@
         <translation>Quantidade atual de blocos</translation>
     </message>
     <message>
-        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir o arquivo de log de depuração do Argentum na pasta de dados atual. Isso pode demorar para arquivos grandes.</translation>
     </message>
     <message>
@@ -1543,7 +1543,7 @@
         <translation>Limpar console</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
+        <source>Welcome to the Argentum RPC console.</source>
         <translation>Bem vindo ao console de RPC do Argentum.</translation>
     </message>
     <message>
@@ -2117,7 +2117,7 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
+        <source>Argentum is shutting down...</source>
         <translation>Argentum está desligando...</translation>
     </message>
     <message>
@@ -2259,11 +2259,11 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
+        <source>The Argentum developers</source>
         <translation>Programadores do Argentum</translation>
     </message>
     <message>
@@ -2805,7 +2805,7 @@
         <translation>Este pode ser um build de teste pré-lançamento - use por sua conta e risco - não use para mineração ou aplicações de comércio.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
         <translation>Impossível ouvir em %s neste computador. Provavelmente o Argentum já está sendo executado.</translation>
     </message>
     <message>
@@ -2985,7 +2985,7 @@
         <translation>Vincular ao endereço fornecido e sempre escutar nele. Use a notação [host]:port para IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
         <translation>Não foi possível obter acesso exclusivo ao diretório de dados %s. Provavelmente Argentum já está sendo executado.</translation>
     </message>
     <message>
@@ -3061,15 +3061,15 @@ por exemplo: alertnotify=echo %%s | mail -s "Alerta do Argentum" admin@foo.com.b
         <translation>Connecte-se através de um proxy SOCKS5</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
-        <translation>Copyright (C) 2009-%i Desenvolvedores Argentum Core</translation>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
+        <translation>Copyright (C) 2009-%i Desenvolvedores Argentum</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Impossível interpretar o valor -rpcbind %s como um endereço da rede</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
         <translation>Erro ao carregar wallet.dat: A carteira requer a nova versão do Argentum</translation>
     </message>
     <message>
@@ -3205,7 +3205,7 @@ por exemplo: alertnotify=echo %%s | mail -s "Alerta do Argentum" admin@foo.com.b
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
         <translation>Sua carteira precisou ser reescrita: favor reiniciar o Argentum para completar</translation>
     </message>
     <message>

@@ -267,7 +267,7 @@
         <translation>Buka &amp;URI</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
+        <source>Argentum client</source>
         <translation>Client Argentum Inti</translation>
     </message>
     <message>
@@ -319,7 +319,7 @@
         <translation>&amp;Menerima</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
+        <source>Show information about Argentum</source>
         <translation>Tampilkan informasi tentang Argentum Inti</translation>
     </message>
     <message>
@@ -359,16 +359,16 @@
         <translation>Baris tab</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Permintaan pembayaran (membangkitkan kode QR dan argentum: URIs)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;Mengenai Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;Mengenai Argentum</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -387,8 +387,8 @@
         <translation>&amp;pilihan Perintah-baris</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Tampilkan pesan bantuan Argentum Core untuk memberikan daftar pilihan perintah-baris yang memungkinkan dalam aplikasi Argentum</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Tampilkan pesan bantuan Argentum untuk memberikan daftar pilihan perintah-baris yang memungkinkan dalam aplikasi Argentum</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Argentum network</source>
@@ -742,16 +742,16 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
         <translation>versi</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Mengenai Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Mengenai Argentum</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -769,8 +769,8 @@
         <translation>Selamat Datang</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Selamat Datang ke Argentum Core</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Selamat Datang ke Argentum</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -781,8 +781,8 @@
         <translation>Menggunakan direktori data yang dipilih Anda:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1591,8 +1591,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>Argentum Core sementara dimatikan...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>Argentum sementara dimatikan...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1717,12 +1717,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Pembangun Argentum Core</translation>
+        <source>The Argentum developers</source>
+        <translation>Pembangun Argentum</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2199,8 +2199,8 @@
         <translation>Jalankan perintah ketika perubahan transaksi dompet (%s di cmd digantikan oleh TxID)</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
-        <translation>Tidak bisa mengikat dengan %s di computer ini. Kemungkinan Argentum Core sudah mulai.</translation>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
+        <translation>Tidak bisa mengikat dengan %s di computer ini. Kemungkinan Argentum sudah mulai.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -2319,8 +2319,8 @@
         <translation>Impor blok dari eksternal berkas blk000???.dat</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
-        <translation>Tidak bisa mengunci data directory %s. Kemungkinan Argentum Core sudah mulai.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
+        <translation>Tidak bisa mengunci data directory %s. Kemungkinan Argentum sudah mulai.</translation>
     </message>
     <message>
         <source>Information</source>

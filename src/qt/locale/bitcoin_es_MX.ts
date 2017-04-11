@@ -315,7 +315,7 @@
         <translation>Pestañas</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>nucleo Argentum</translation>
     </message>
     <message>
@@ -323,7 +323,7 @@
         <translation>opciones de la &amp;Linea de comandos</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
         <translation>Mostrar mensaje de ayuda del nucleo de Argentum para optener una lista con los posibles comandos  de Argentum</translation>
     </message>
     <message>
@@ -474,7 +474,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>nucleo Argentum</translation>
     </message>
     <message>
@@ -486,8 +486,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Acerca de Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Acerca de Argentum</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -501,7 +501,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>nucleo Argentum</translation>
     </message>
     </context>
@@ -751,7 +751,7 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
+        <source>Argentum is shutting down...</source>
         <translation>Apagando el nucleo de Argentum...</translation>
     </message>
     <message>
@@ -777,12 +777,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>nucleo Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Los desarrolladores de Argentum Core</translation>
+        <source>The Argentum developers</source>
+        <translation>Los desarrolladores de Argentum</translation>
     </message>
     </context>
 <context>

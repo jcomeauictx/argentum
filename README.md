@@ -1,4 +1,4 @@
-Argentum Core integration/staging tree
+Argentum integration/staging tree
 ========================================
 
 [Website](http://www.argentum.io)
@@ -14,7 +14,7 @@ What is Argentum?
 Argentum is an experimental new digital currency that enables instant payments to
 anyone, anywhere in the world. Argentum uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Argentum Core is the name of open source
+out collectively by the network. Argentum is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately usable, binary version of
@@ -23,7 +23,7 @@ the Argentum-Core Core software, see http://www.argentum.io/
 License
 -------
 
-Argentum Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Argentum is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
 Building
@@ -63,7 +63,6 @@ A common question is how to build from Ubuntu, instructions follow:
 14. ./autogen.sh
 15. ./configure --enable-hardening --disable-tests --disable-upnp-default
 16. make
-See /doc/build_unix.md to build Berkeley DB 5.1.29
 Other Build Notes:
 
 If you are compiling yourself, please configure with something like this:
@@ -107,7 +106,7 @@ that run in -regest mode.
 
 **DEBUG_LOCKORDER**
 
-Argentum Core is a multithreaded application, and deadlocks or other multithreading bugs
+Argentum is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks
 are held, and adds warning to the debug.log file if inconsistencies are detected.

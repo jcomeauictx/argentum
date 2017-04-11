@@ -323,7 +323,7 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentumi tuumik</translation>
     </message>
     <message numerus="yes">
@@ -580,7 +580,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentumi tuumik</translation>
     </message>
     <message>
@@ -588,7 +588,7 @@
         <translation>versioon</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>Kirjeldus Argentumi Tuumast</translation>
     </message>
     <message>
@@ -611,7 +611,7 @@
         <translation>Teretulemast</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentumi tuumik</translation>
     </message>
     <message>
@@ -1255,11 +1255,11 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentumi tuumik</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
+        <source>The Argentum developers</source>
         <translation>Argentumi Tuuma arendajad</translation>
     </message>
     <message>

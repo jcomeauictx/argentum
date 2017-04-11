@@ -168,7 +168,7 @@
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
         <translation>Şifreleme işlemini tamamlamak için Argentum Çekirdeği şimdi kapanacaktır. Cüzdanınızı şifrelemenin, Argentumlerinizin bilgisayara bulaşan kötücül bir yazılım tarafından çalınmaya karşı tamamen koruyamayacağını unutmayınız.</translation>
     </message>
     <message>
@@ -295,7 +295,7 @@
         <translation>&amp;URI aç...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
+        <source>Argentum client</source>
         <translation>Argentum Çekirdeği istemcisi</translation>
     </message>
     <message>
@@ -347,7 +347,7 @@
         <translation>&amp;Al</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
+        <source>Show information about Argentum</source>
         <translation>Argentum Çekirdeği hakkında bilgi göster</translation>
     </message>
     <message>
@@ -387,7 +387,7 @@
         <translation>Sekme araç çubuğu</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
@@ -395,11 +395,11 @@
         <translation>Ödeme talep et (QR kodu ve argentum URI'si oluşturur)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
+        <source>&amp;About Argentum</source>
         <translation>Argentum Çekirdeği &amp;hakkında</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
+        <source>Modify configuration options for Argentum</source>
         <translation>Argentum Çekirdeği yapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
@@ -419,7 +419,7 @@
         <translation>&amp;Komut satırı seçenekleri</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
         <translation>Argentum komut satırı seçeneklerinin listesini elde etmek için Argentum Çekirdeği yardım mesajını göster</translation>
     </message>
     <message numerus="yes">
@@ -844,7 +844,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>Argentum Çekirdeği hakkında</translation>
     </message>
     <message>
@@ -879,15 +879,15 @@
         <translation>Hoş geldiniz</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
+        <source>Welcome to Argentum.</source>
         <translation>Argentum Çekirdeğine hoş geldiniz.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
         <translation>Bu programı ilk kez başlattığınızdan dolayı Argentum Çekirdeğinin verilerini nereye saklayacağını seçebilirsiniz.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Argentum çekirdeği Argentum blok zincirinin bir kopyasını indirip saklayacaktır. Asgari %1GB bouyutunda veri bu klasörde saklanacak ve zamanla bu boyut artacaktır. Cüzdan da bu klasörde saklanacaktır. </translation>
     </message>
     <message>
@@ -899,7 +899,7 @@
         <translation>Özel bir veri klasörü kullan:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
@@ -981,7 +981,7 @@
         <translation>Pencere kapatıldığında uygulamadan çıkmak yerine uygulamayı küçültür. Bu seçenek etkinleştirildiğinde, uygulama sadece menüden çıkış seçildiğinde kapanacaktır.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
         <translation>Kullanıcı arayüzünün dili burada belirtilebilir. Bu ayar Argentum Çekirdeği tekrar başlatıldığında etkinleşecektir.</translation>
     </message>
     <message>
@@ -1009,11 +1009,11 @@
         <translation>&amp;Şebeke</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <source>Automatically start Argentum after logging in to the system.</source>
         <translation>Sistemde oturum açıldığında Argentum Çekirdeğini otomatik olarak başlat.</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
+        <source>&amp;Start Argentum on system login</source>
         <translation>Argentum Çekirdeğini sistem oturumuyla &amp;başlat</translation>
     </message>
     <message>
@@ -1443,7 +1443,7 @@
         <translation>Güncel blok sayısı</translation>
     </message>
     <message>
-        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Güncel veri klasöründen Argentum Çekirdeği hata ayıklama kütük dosyasını açar. Büyük kütük dosyaları için bu birkaç saniye alabilir.</translation>
     </message>
     <message>
@@ -1563,7 +1563,7 @@
         <translation>Konsolu temizle</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
+        <source>Welcome to the Argentum RPC console.</source>
         <translation>Argentum Çekirdeği RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
@@ -2133,7 +2133,7 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
+        <source>Argentum is shutting down...</source>
         <translation>Argentum Çekirdeği kapanıyor...</translation>
     </message>
     <message>
@@ -2283,11 +2283,11 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum Çekirdeği</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
+        <source>The Argentum developers</source>
         <translation>Argentum Çekirdeği geliştiricileri</translation>
     </message>
     <message>
@@ -2837,7 +2837,7 @@
         <translation>Bu yayın öncesi bir deneme sürümüdür - tüm riski siz üstlenmiş olursunuz - argentum oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
         <translation>Bu bilgisayarda %s unsuruna bağlanılamadı. Argentum Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
@@ -3029,7 +3029,7 @@
         <translation>Belirtilen adrese bağlan ve JSON RPC bağlantıları için dinlemeye geç. IPv6 için [makine]:port imlasını kullanınız. Bu seçenek birden çok kez belirtilebilir (varsayılan: tüm arayüzlere bağlan)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
         <translation>%s veri dizininde kilit elde edilemedi. Argentum Çekirdeği muhtemelen hâlihazırda çalışmaktadır.</translation>
     </message>
     <message>
@@ -3125,7 +3125,7 @@ mesela: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>İkaz: -maxtxfee çok yüksek bir değere ayarlanmış! Bu denli yüksek ücretler tek bir muamelede ödenebilir.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum will not work properly.</source>
         <translation>Uyarı: Lütfen bilgisayarınızın saat ve tarihinin doğru olduğunu kontol ediniz! Saatinizde gecikme varsa Argentum Çekirdeği doğru şekilde çalışamaz.</translation>
     </message>
     <message>
@@ -3165,7 +3165,7 @@ mesela: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>SOCKS5 vekil sunucusu vasıtasıyla bağlan</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
         <translation>Telif hakkı 2009-%i Argentum Çekirdeği Geliştiricileri</translation>
     </message>
     <message>
@@ -3173,7 +3173,7 @@ mesela: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>-rpcbind değeri %s şebeke adresi olarak ayrıştırılamadı</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
         <translation>wallet.dat dosyasının yüklenmesinde hata: Cüzdan Argentum Çekirdeğinin daha yeni bir sürümünü gerektirmektedir</translation>
     </message>
     <message>
@@ -3193,7 +3193,7 @@ mesela: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>Bilgi</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
+        <source>Initialization sanity check failed. Argentum is shutting down.</source>
         <translation>Başlatma sınaması başarısız oldu. Argentum Çekirdeği kapatılıyor.</translation>
     </message>
     <message>
@@ -3325,7 +3325,7 @@ mesela: alertnotify=echo %%s | mail -s "Argentum Alert" admin@foo.com
         <translation>JSON-RPC bağlantıları için kullanıcı ismi</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
         <translation>Cüzdanın tekrar yazılması gerekmektedir: tamamlamak için Argentum Çekirdeğini yeniden başlatın</translation>
     </message>
     <message>

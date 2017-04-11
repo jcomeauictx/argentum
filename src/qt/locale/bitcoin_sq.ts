@@ -239,11 +239,11 @@
         <translation>Shiriti i mjeteve</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Berthama Argentum</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
+        <source>&amp;About Argentum</source>
         <translation>Rreth Berthames Bitkoin</translation>
     </message>
     <message>
@@ -378,7 +378,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Berthama Argentum</translation>
     </message>
     <message>
@@ -386,7 +386,7 @@
         <translation>versioni</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>Rreth Berthames Bitkoin</translation>
     </message>
     </context>
@@ -397,11 +397,11 @@
         <translation>Miresevini</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
+        <source>Welcome to Argentum.</source>
         <translation>Miresevini ne Berthamen Argentum</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Berthama Argentum</translation>
     </message>
     <message>
@@ -589,7 +589,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Berthama Argentum</translation>
     </message>
     <message>

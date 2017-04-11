@@ -164,7 +164,7 @@
         <translation>Вы уверены, что хотите зашифровать ваш бумажник?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши биткоины от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -291,8 +291,8 @@
         <translation>Открыть &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core клиент</translation>
+        <source>Argentum client</source>
+        <translation>Argentum клиент</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -343,8 +343,8 @@
         <translation>&amp;Получить</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Показать информацию о Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Показать информацию о Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -383,20 +383,20 @@
         <translation>Панель вкладок</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Запросить платежи (создаёт QR-коды и argentum: ссылки)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;О Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;О Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
-        <translation>Изменить опции конфигурации Argentum Core</translation>
+        <source>Modify configuration options for Argentum</source>
+        <translation>Изменить опции конфигурации Argentum</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -415,8 +415,8 @@
         <translation>&amp;Параметры командной строки</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Показать помощь по Argentum Core и получить список доступных параметров командной строки.</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Показать помощь по Argentum и получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -820,8 +820,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
@@ -832,8 +832,8 @@
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>О Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>О Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -855,16 +855,16 @@
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Добро пожаловать в Argentum Core.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Добро пожаловать в Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
-        <translation>Так как вы впервые запустили программу, вы можете выбрать, где Argentum Core будет хранить данные.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
+        <translation>Так как вы впервые запустили программу, вы можете выбрать, где Argentum будет хранить данные.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Argentum Core скачает и сохранит копию цепи блоков. Как минимум, %1ГБ данных будет храниться в этом каталоге, и со временем он будет расти. Бумажник будет также сохранён в этом каталоге.</translation>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum скачает и сохранит копию цепи блоков. Как минимум, %1ГБ данных будет храниться в этом каталоге, и со временем он будет расти. Бумажник будет также сохранён в этом каталоге.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -875,8 +875,8 @@
         <translation>Использовать другой каталог данных:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -949,8 +949,8 @@
         <translation>Сворачивать вместо закрытия. Если данная опция будет выбрана — приложение закроется только после выбора соответствующего пункта в меню.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Argentum Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Argentum.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -977,12 +977,12 @@
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
-        <translation>Автоматически запускать Argentum Core после входа в систему</translation>
+        <source>Automatically start Argentum after logging in to the system.</source>
+        <translation>Автоматически запускать Argentum после входа в систему</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
-        <translation>&amp;Запускать Argentum Core при входе в систему</translation>
+        <source>&amp;Start Argentum on system login</source>
+        <translation>&amp;Запускать Argentum при входе в систему</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1411,8 +1411,8 @@
         <translation>Текущее число блоков</translation>
     </message>
     <message>
-        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл Argentum Core из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
+        <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл Argentum из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1531,8 +1531,8 @@
         <translation>Очистить консоль</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль Argentum Core.</translation>
+        <source>Welcome to the Argentum RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль Argentum.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2101,8 +2101,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>Argentum Core выключается...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>Argentum выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2251,12 +2251,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Разработчики Argentum Core</translation>
+        <source>The Argentum developers</source>
+        <translation>Разработчики Argentum</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2785,8 +2785,8 @@
         <translation>Это пре-релизная тестовая сборка - используйте на свой страх и риск - не используйте для добычи или торговых приложений</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
-        <translation>Не удалось забиндиться на %s на этом компьютере. Возможно, Argentum Core уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
+        <translation>Не удалось забиндиться на %s на этом компьютере. Возможно, Argentum уже запущен.</translation>
     </message>
     <message>
         <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
@@ -2977,8 +2977,8 @@
         <translation>Привязаться к указанному адресу для прослушивания JSON-RPC подключений. Используйте запись [хост]:порт для IPv6. Эту опцию можно использовать многократно (по умолчанию: привязываться ко всем интерфейсам)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
-        <translation>Не удалось установить блокировку на каталог данных %s. Возможно, Argentum Core уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
+        <translation>Не удалось установить блокировку на каталог данных %s. Возможно, Argentum уже запущен.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3073,8 +3073,8 @@ rpcpassword=%s
         <translation>Внимание: установлено очень большое значение -paytxfee. Такие большие комиссии могут быть уплачены в отдельной транзакции.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
-        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, Argentum Core будет работать некорректно.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum will not work properly.</source>
+        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, Argentum будет работать некорректно.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3113,16 +3113,16 @@ rpcpassword=%s
         <translation>Подключаться через SOCKS5 прокси</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
-        <translation>Все права защищены © 2009-%i Разработчики Argentum Core</translation>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
+        <translation>Все права защищены © 2009-%i Разработчики Argentum</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>Не удалось разобрать значение %s параметра -rpcbind как сетевой адрес</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Argentum Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Argentum</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3145,8 +3145,8 @@ rpcpassword=%s
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
-        <translation>Не удалось проверить чистоту. Argentum Core выключается.</translation>
+        <source>Initialization sanity check failed. Argentum is shutting down.</source>
+        <translation>Не удалось проверить чистоту. Argentum выключается.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3281,8 +3281,8 @@ rpcpassword=%s
         <translation>Имя для подключений JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите Argentum Core для завершения операции.</translation>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите Argentum для завершения операции.</translation>
     </message>
     <message>
         <source>Warning</source>

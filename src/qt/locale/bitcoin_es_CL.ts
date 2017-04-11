@@ -227,8 +227,8 @@
         <translation>Abrir y url...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>cliente argentum core</translation>
+        <source>Argentum client</source>
+        <translation>cliente Argentum</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
@@ -295,7 +295,7 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>bitcoin core</translation>
     </message>
     <message>
@@ -450,7 +450,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>bitcoin core</translation>
     </message>
     <message>
@@ -469,7 +469,7 @@
         <translation>bienvenido</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>bitcoin core</translation>
     </message>
     <message>
@@ -923,7 +923,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>bitcoin core</translation>
     </message>
     <message>

@@ -291,8 +291,8 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core klijent</translation>
+        <source>Argentum client</source>
+        <translation>Argentum klijent</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -343,8 +343,8 @@
         <translation>Pri&amp;mi</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Prikaži informacije o programu Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Prikaži informacije o programu Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -383,19 +383,19 @@
         <translation>Traka kartica</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and argentum: URIs)</source>
         <translation>Zatraži uplatu (stvara QR kod i argentum: URI adresu)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;O programu Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;O programu Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
+        <source>Modify configuration options for Argentum</source>
         <translation>Promijeni postavke programa</translation>
     </message>
     <message>
@@ -415,7 +415,7 @@
         <translation>Opcije &amp;naredbene linije</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
         <translation>Ispis svih opcija naredbene linije programa sa kratkim opisom</translation>
     </message>
     <message numerus="yes">
@@ -744,8 +744,8 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>version</source>
@@ -756,8 +756,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>O programu Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>O programu Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -779,12 +779,12 @@
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Dobrodošli u programu Argentum Core.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Dobrodošli u programu Argentum.</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>Error</source>
@@ -861,11 +861,11 @@
         <translation>&amp;Mreža</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <source>Automatically start Argentum after logging in to the system.</source>
         <translation>Program se automatski pokrene po prijavi u sustav.</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
+        <source>&amp;Start Argentum on system login</source>
         <translation>&amp;Pokreni program kod prijave u sustav</translation>
     </message>
     <message>
@@ -1087,7 +1087,7 @@
         <translation>Očisti konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
+        <source>Welcome to the Argentum RPC console.</source>
         <translation>Dobrodošli u Argentum RPC konzolu.</translation>
     </message>
     <message>
@@ -1391,8 +1391,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
         <source>[testnet]</source>

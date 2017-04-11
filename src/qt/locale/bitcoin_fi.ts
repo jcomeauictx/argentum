@@ -168,8 +168,8 @@
         <translation>Haluatko varmasti salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
-        <translation>Argentum Core sammuu nyt viimeistelläkseen kryptaamisen. Muista että lompakon kryptaaminen ei voi täysin suojata argentumejasi varkaudelta malwaren saastuttamalla tietokoneella.</translation>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Argentum sammuu nyt viimeistelläkseen kryptaamisen. Muista että lompakon kryptaaminen ei voi täysin suojata argentumejasi varkaudelta malwaren saastuttamalla tietokoneella.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,8 +295,8 @@
         <translation>Avaa &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core ohjelma</translation>
+        <source>Argentum client</source>
+        <translation>Argentum ohjelma</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Vastaanota</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Näytä tietoja Argentum Core:sta</translation>
+        <source>Show information about Argentum</source>
+        <translation>Näytä tietoja Argentum:sta</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -387,7 +387,7 @@
         <translation>Välilehtipalkki</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum-ydin</translation>
     </message>
     <message>
@@ -395,11 +395,11 @@
         <translation>Pyydä maksuja (Luo QR koodit ja argentum: URIt)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;Tietoja Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;Tietoja Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
+        <source>Modify configuration options for Argentum</source>
         <translation>Muokkaa kokoonpanoasetuksia Argentum Corelle</translation>
     </message>
     <message>
@@ -419,8 +419,8 @@
         <translation>&amp;Komentorivin valinnat</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Näytä Argentum Core ohjeet saadaksesi listan mahdollisista Argentumin komentorivivalinnoista</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Näytä Argentum ohjeet saadaksesi listan mahdollisista Argentumin komentorivivalinnoista</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Argentum network</source>
@@ -844,7 +844,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum-ydin</translation>
     </message>
     <message>
@@ -856,8 +856,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Tietoja Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Tietoja Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -879,16 +879,16 @@
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Tervetuloa Argentum Core</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Tervetuloa Argentum</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
-        <translation>Tämän on ensimmäinen kerta kun Argentum Core on käynnistetty joten voit valita data-hakemiston paikan.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
+        <translation>Tämän on ensimmäinen kerta kun Argentum on käynnistetty joten voit valita data-hakemiston paikan.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Argentum Core lataa ja tallentaa kopion Argentumin lohkoketjusta. Vähintään %1GB dataa tullaan tallentamaan tähän hakemistoon ja tarve kasvaa ajan myötä. Lomakko tullaan myös tallentamaan tähän hakemistoon.</translation>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Argentum lataa ja tallentaa kopion Argentumin lohkoketjusta. Vähintään %1GB dataa tullaan tallentamaan tähän hakemistoon ja tarve kasvaa ajan myötä. Lomakko tullaan myös tallentamaan tähän hakemistoon.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -899,7 +899,7 @@
         <translation>Määritä oma kansio:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum-ydin</translation>
     </message>
     <message>
@@ -1001,12 +1001,12 @@
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
-        <translation>Käynnistä Argentum Core automaattisesti järjestelmään kirjautumisen jälkeen.</translation>
+        <source>Automatically start Argentum after logging in to the system.</source>
+        <translation>Käynnistä Argentum automaattisesti järjestelmään kirjautumisen jälkeen.</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
-        <translation>&amp;Käynnistä Argentum Core järjestelmään kirjautuessa</translation>
+        <source>&amp;Start Argentum on system login</source>
+        <translation>&amp;Käynnistä Argentum järjestelmään kirjautuessa</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1551,7 +1551,7 @@
         <translation>Tyhjennä konsoli</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
+        <source>Welcome to the Argentum RPC console.</source>
         <translation>Tervetuloa Argentum Coren RPC-konsoliin.</translation>
     </message>
     <message>
@@ -2101,8 +2101,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>Argentum core sulkeutuu...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>Argentum sulkeutuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2243,12 +2243,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Argentum-ydin</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Argentum Core kehittäjät</translation>
+        <source>The Argentum developers</source>
+        <translation>Argentum kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2777,8 +2777,8 @@
         <translation>Tämä on esi-julkaistu testiversio - Käytä omalla riskillä - Ei saa käytää louhimiseen tai kauppasovelluksiin.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
-        <translation>Ei voida yhdistää %s tässä tietokoneessa. Argentum Core on luultavasti jo käynnissä.</translation>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
+        <translation>Ei voida yhdistää %s tässä tietokoneessa. Argentum on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -2937,8 +2937,8 @@
         <translation>Tuodaan lohkoja ulkoisesta blk000??.dat tiedostosta</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
-        <translation>Ei voida lukita data-hakemistoa %s. Argentum Core on luultavasti jo käynnissä.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
+        <translation>Ei voida lukita data-hakemistoa %s. Argentum on luultavasti jo käynnissä.</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
@@ -2981,11 +2981,11 @@
         <translation>Yhdistä SOCKS5 proxin kautta</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
         <translation>Copyright (C) 2009-%i  Argentum kehittäjät</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
         <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version Argentumista</translation>
     </message>
     <message>
@@ -3085,7 +3085,7 @@
         <translation>Käyttäjätunnus JSON-RPC-yhteyksille</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
         <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä Argentum uudelleen</translation>
     </message>
     <message>

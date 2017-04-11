@@ -168,8 +168,8 @@
         <translation>Esteu segur que voleu encriptar el vostre moneder?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
-        <translation>Ara es tancarà el Argentum Core per finalitzar el procés d'encriptació. Tingueu present que encriptar el vostre moneder no garanteix que les vostres argentums no puguin ser robades per programari maliciós que infecti l'ordinador.</translation>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <translation>Ara es tancarà el Argentum per finalitzar el procés d'encriptació. Tingueu present que encriptar el vostre moneder no garanteix que les vostres argentums no puguin ser robades per programari maliciós que infecti l'ordinador.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -295,8 +295,8 @@
         <translation>Obre un &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Client del Argentum Core</translation>
+        <source>Argentum client</source>
+        <translation>Client del Argentum</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Rep</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Mostra informació del Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Mostra informació del Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -387,7 +387,7 @@
         <translation>Barra d'eines de les pestanyes</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Nucli de Argentum</translation>
     </message>
     <message>
@@ -395,12 +395,12 @@
         <translation>Sol·licita pagaments (genera codis QR i argentum: URI)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
-        <translation>&amp;Quant al Argentum Core</translation>
+        <source>&amp;About Argentum</source>
+        <translation>&amp;Quant al Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
-        <translation>Modifica les opcions de configuració del Argentum Core</translation>
+        <source>Modify configuration options for Argentum</source>
+        <translation>Modifica les opcions de configuració del Argentum</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -419,8 +419,8 @@
         <translation>Opcions de la &amp;línia d'ordres</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
-        <translation>Mostra el missatge d'ajuda del Argentum Core per obtenir una llista amb les possibles opcions de línia d'ordres de Argentum</translation>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
+        <translation>Mostra el missatge d'ajuda del Argentum per obtenir una llista amb les possibles opcions de línia d'ordres de Argentum</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Argentum network</source>
@@ -844,7 +844,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Nucli de Argentum</translation>
     </message>
     <message>
@@ -856,8 +856,8 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
-        <translation>Quant al Argentum Core</translation>
+        <source>About Argentum</source>
+        <translation>Quant al Argentum</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -879,16 +879,16 @@
         <translation>Us donem la benviguda</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
-        <translation>Us donem la benvinguda al Argentum Core.</translation>
+        <source>Welcome to Argentum.</source>
+        <translation>Us donem la benvinguda al Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
-        <translation>Atès que és la primera vegada que executeu el programa, podeu triar on emmagatzemarà el Argentum Core les dades.</translation>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
+        <translation>Atès que és la primera vegada que executeu el programa, podeu triar on emmagatzemarà el Argentum les dades.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>El Argentum Core descarregarà i emmagatzemarà una còpia de la cadena de blocs de Argentum. Com a mínim s'emmagatzemaran %1 GB de dades en aquest directori, que seguiran creixent gradualment. També s'hi emmagatzemarà el moneder.</translation>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>El Argentum descarregarà i emmagatzemarà una còpia de la cadena de blocs de Argentum. Com a mínim s'emmagatzemaran %1 GB de dades en aquest directori, que seguiran creixent gradualment. També s'hi emmagatzemarà el moneder.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -899,7 +899,7 @@
         <translation>Utilitza un directori de dades personalitzat:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Nucli de Argentum</translation>
     </message>
     <message>
@@ -981,8 +981,8 @@
         <translation>Minimitza en comptes de sortir de l'aplicació quan la finestra es tanca. Quan s'habilita aquesta opció l'aplicació es tancara només quan se selecciona Surt del menú. </translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
-        <translation>La interfície d'usuari pot definir-se des d'aquí. El paràmetre tindrà efecte després de reiniciar el Argentum Core.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
+        <translation>La interfície d'usuari pot definir-se des d'aquí. El paràmetre tindrà efecte després de reiniciar el Argentum.</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1009,12 +1009,12 @@
         <translation>&amp;Xarxa</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
-        <translation>Inicia el Argentum Core automàticament després d'iniciar una sessió en el sistema.</translation>
+        <source>Automatically start Argentum after logging in to the system.</source>
+        <translation>Inicia el Argentum automàticament després d'iniciar una sessió en el sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
-        <translation>&amp;Inicia el Argentum Core en inciar el sistema</translation>
+        <source>&amp;Start Argentum on system login</source>
+        <translation>&amp;Inicia el Argentum en inciar el sistema</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1443,8 +1443,8 @@
         <translation>Nombre de blocs actuals</translation>
     </message>
     <message>
-        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obre el fitxer de registre de depuració del Argentum Core del directori de dades actual. Pot portar uns quants segons per a fitxers de registre grans.</translation>
+        <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obre el fitxer de registre de depuració del Argentum del directori de dades actual. Pot portar uns quants segons per a fitxers de registre grans.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1563,8 +1563,8 @@
         <translation>Neteja la consola</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
-        <translation>Us donem la benviguda a la consola RPC del Argentum Core.</translation>
+        <source>Welcome to the Argentum RPC console.</source>
+        <translation>Us donem la benviguda a la consola RPC del Argentum.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2137,8 +2137,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
-        <translation>S'està aturant el Argentum Core...</translation>
+        <source>Argentum is shutting down...</source>
+        <translation>S'està aturant el Argentum...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2287,12 +2287,12 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
-        <translation>Argentum Core</translation>
+        <source>Argentum</source>
+        <translation>Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
-        <translation>Els desenvolupadors del Argentum Core</translation>
+        <source>The Argentum developers</source>
+        <translation>Els desenvolupadors del Argentum</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2841,8 +2841,8 @@
         <translation>Aquesta és una versió de pre-llançament - utilitza-la sota la teva responsabilitat - No usar per a minería o aplicacions de compra-venda</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
-        <translation>No es pot enllaçar %s a aquest ordinador. El Argentum Core probablement ja estigui executant-s'hi.</translation>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
+        <translation>No es pot enllaçar %s a aquest ordinador. El Argentum probablement ja estigui executant-s'hi.</translation>
     </message>
     <message>
         <source>WARNING: abnormally high number of blocks generated, %d blocks received in the last %d hours (%d expected)</source>
@@ -3029,8 +3029,8 @@
         <translation>Vincula a l'adreça donada per a escoltar les connexions JSON-RPC. Feu servir la notació [host]:port per a IPv6. Aquesta opció pot ser especificada moltes vegades (per defecte: vincula a totes les interfícies)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
-        <translation>No es pot obtenir un bloqueig del directori de dades %s. El Argentum Core probablement ja s'estigui executant.</translation>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
+        <translation>No es pot obtenir un bloqueig del directori de dades %s. El Argentum probablement ja s'estigui executant.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -3124,8 +3124,8 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Argentum" admin@foo.com</t
         <translation>Avís: s'ha especificat un -maxtxfee molt alt! Comissions tan grans podrien pagar-se en una única transacció.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum Core will not work properly.</source>
-        <translation>Avís: comproveu que la data i hora del vostre ordinador siguin correctes! Si el vostre rellotge no és correcte, el Argentum Core no funcionarà correctament.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum will not work properly.</source>
+        <translation>Avís: comproveu que la data i hora del vostre ordinador siguin correctes! Si el vostre rellotge no és correcte, el Argentum no funcionarà correctament.</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3164,16 +3164,16 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Argentum" admin@foo.com</t
         <translation>Connecta a través del proxy SOCKS5</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
-        <translation>Copyright (C) 2009-%i Els desenvolupadors del Argentum Core</translation>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
+        <translation>Copyright (C) 2009-%i Els desenvolupadors del Argentum</translation>
     </message>
     <message>
         <source>Could not parse -rpcbind value %s as network address</source>
         <translation>No s'ha pogut analitzar el valor -rpcbind %s com una adreça de xarxa</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
-        <translation>Error en carregar wallet.dat: el moneder requereix una versió més nova del Argentum core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
+        <translation>Error en carregar wallet.dat: el moneder requereix una versió més nova del Argentum</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
@@ -3192,8 +3192,8 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Argentum" admin@foo.com</t
         <translation>&amp;Informació</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Argentum Core is shutting down.</source>
-        <translation>Ha fallat la inicialització de la comprovació de validesa. El Argentum Core s'està aturant.</translation>
+        <source>Initialization sanity check failed. Argentum is shutting down.</source>
+        <translation>Ha fallat la inicialització de la comprovació de validesa. El Argentum s'està aturant.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
@@ -3324,8 +3324,8 @@ per exemple: alertnotify=echo %%s | mail -s "Avís de Argentum" admin@foo.com</t
         <translation>Nom d'usuari per a connexions JSON-RPC</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Argentum Core to complete</source>
-        <translation>Cal reescriure el moneder: reiniceu el Argentum Core per completar-ho.</translation>
+        <source>Wallet needed to be rewritten: restart Argentum to complete</source>
+        <translation>Cal reescriure el moneder: reiniceu el Argentum per completar-ho.</translation>
     </message>
     <message>
         <source>Warning</source>

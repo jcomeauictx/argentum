@@ -168,7 +168,7 @@
         <translation>Ste si istí, že si želáte zašifrovať peňaženku?</translation>
     </message>
     <message>
-        <source>Argentum Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
+        <source>Argentum will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your argentums from being stolen by malware infecting your computer.</source>
         <translation>Jadro Argentum sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj, že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred krádežou argentumov pomocou škodlivého software.</translation>
     </message>
     <message>
@@ -295,8 +295,8 @@
         <translation>Otvoriť &amp;URI...</translation>
     </message>
     <message>
-        <source>Argentum Core client</source>
-        <translation>Argentum Core klient</translation>
+        <source>Argentum client</source>
+        <translation>Argentum klient</translation>
     </message>
     <message>
         <source>Importing blocks from disk...</source>
@@ -347,8 +347,8 @@
         <translation>&amp;Prijať</translation>
     </message>
     <message>
-        <source>Show information about Argentum Core</source>
-        <translation>Zobraziť informácie o Argentum Core</translation>
+        <source>Show information about Argentum</source>
+        <translation>Zobraziť informácie o Argentum</translation>
     </message>
     <message>
         <source>&amp;Show / Hide</source>
@@ -387,7 +387,7 @@
         <translation>Lišta záložiek</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Jadro Argentum</translation>
     </message>
     <message>
@@ -395,11 +395,11 @@
         <translation>Vyžiadať platby (vygeneruje QR kódy a argentum: URI)</translation>
     </message>
     <message>
-        <source>&amp;About Argentum Core</source>
+        <source>&amp;About Argentum</source>
         <translation>O jadre Argentum</translation>
     </message>
     <message>
-        <source>Modify configuration options for Argentum Core</source>
+        <source>Modify configuration options for Argentum</source>
         <translation>Upraviť možnosti nastavenia pre Jadro Argentum</translation>
     </message>
     <message>
@@ -419,7 +419,7 @@
         <translation>Možnosti príkazového riadku</translation>
     </message>
     <message>
-        <source>Show the Argentum Core help message to get a list with possible Argentum command-line options</source>
+        <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
         <translation>Zobraziť pomocnú správu od Argentum Jadra pre získanie zoznamu dostupných možností príkazového riadku</translation>
     </message>
     <message numerus="yes">
@@ -844,7 +844,7 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Jadro Argentum</translation>
     </message>
     <message>
@@ -856,7 +856,7 @@
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Argentum Core</source>
+        <source>About Argentum</source>
         <translation>O jadre Argentum</translation>
     </message>
     <message>
@@ -879,15 +879,15 @@
         <translation>Vitajte</translation>
     </message>
     <message>
-        <source>Welcome to Argentum Core.</source>
+        <source>Welcome to Argentum.</source>
         <translation>Vitajte v jadre Argentum.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Argentum Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
         <translation>Keďže spúštate program prvý krát, môžte si vybrať kde bude Argentum Jadro ukladať svoje dáta.</translation>
     </message>
     <message>
-        <source>Argentum Core will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>Jadro Argentum stiahne zo siete a uloží kópiu Argentum blockchain. Aspoň %1GB dát bude uložených v tomto priečinku a časom porastie. Peňaženka bude tiež uložená v tomto priečinku.</translation>
     </message>
     <message>
@@ -899,7 +899,7 @@
         <translation>Použiť vlastný dátový adresár:</translation>
     </message>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Jadro Argentum</translation>
     </message>
     <message>
@@ -981,7 +981,7 @@
         <translation>Minimalizovať namiesto ukončenia aplikácie keď sa okno zavrie. Keď je zvolená táto možnosť, aplikácia sa zavrie len po zvolení Ukončiť v menu.</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Argentum Core.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
         <translation>Tu sa dá nastaviť jazyk užívateľského rozhrania. Toto nastavenie bude účinné po reštartovaní Jadra Argentum.</translation>
     </message>
     <message>
@@ -1009,11 +1009,11 @@
         <translation>Sieť</translation>
     </message>
     <message>
-        <source>Automatically start Argentum Core after logging in to the system.</source>
+        <source>Automatically start Argentum after logging in to the system.</source>
         <translation>Automaticky spustiť Jadro Argentum po prihlásení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Argentum Core on system login</source>
+        <source>&amp;Start Argentum on system login</source>
         <translation>&amp;Spustiť Argentum pri spustení systému správy okien</translation>
     </message>
     <message>
@@ -1443,7 +1443,7 @@
         <translation>Aktuálny počet blokov</translation>
     </message>
     <message>
-        <source>Open the Argentum Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Otvoriť Argentum log súbor pre ladenie z aktuálneho dátového adresára. Toto môže trvať niekoľko sekúnd pre veľké súbory.</translation>
     </message>
     <message>
@@ -1563,7 +1563,7 @@
         <translation>Vymazať konzolu</translation>
     </message>
     <message>
-        <source>Welcome to the Argentum Core RPC console.</source>
+        <source>Welcome to the Argentum RPC console.</source>
         <translation>Vitajte v RPC konzole pre Jadro Argentum.</translation>
     </message>
     <message>
@@ -2129,7 +2129,7 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Argentum Core is shutting down...</source>
+        <source>Argentum is shutting down...</source>
         <translation>Jadro Argentum sa ukončuje...</translation>
     </message>
     <message>
@@ -2267,11 +2267,11 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Argentum Core</source>
+        <source>Argentum</source>
         <translation>Jadro Argentum</translation>
     </message>
     <message>
-        <source>The Argentum Core developers</source>
+        <source>The Argentum developers</source>
         <translation>Vývojári jadra Argentum</translation>
     </message>
     <message>
@@ -2805,7 +2805,7 @@
         <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu argentum ani obchodovanie.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Argentum Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Argentum is probably already running.</source>
         <translation>Nepodarilo sa pripojiť na %s na tomto počítači. Argentum Jadro je už pravdepodobne spustené.</translation>
     </message>
     <message>
@@ -2979,7 +2979,7 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Spojiť s danou adresou pre počúvanie JSON-RPC spojení. Použite zápis [host]:port pre IPv6. Táto možnosť môže byt zadaná niekoľko krát (predvolené: spojiť so všetkými rozhraniami)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Argentum Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Argentum is probably already running.</source>
         <translation>Neviem uzamknúť data adresár %s. Jadro Argentum je pravdepodobne už spustené.</translation>
     </message>
     <message>
@@ -3059,7 +3059,7 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Pripojiť cez proxy server SOCKS5</translation>
     </message>
     <message>
-        <source>Copyright (C) 2009-%i The Argentum Core Developers</source>
+        <source>Copyright (C) 2009-%i The Argentum Developers</source>
         <translation>Autorské práva (C) 2009-%i Vývojári jadra Argentum</translation>
     </message>
     <message>
@@ -3067,7 +3067,7 @@ The network does not appear to fully agree! Some miners appear to be experiencin
         <translation>Nedá sa analyzovať -rpcbind hodnota %s ako sieťová adresa</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Argentum Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Argentum</source>
         <translation>Chyba pri čítaní wallet.dat: Peňaženka vyžaduje vyššiu verziu Jadra Argentum</translation>
     </message>
     <message>
