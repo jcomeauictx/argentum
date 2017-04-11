@@ -111,6 +111,13 @@ can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of what locks
 are held, and adds warning to the debug.log file if inconsistencies are detected.
 
+## Argentum Version 3.11.2
+- Update the code base to Bitcoin version 11.2
+- Hard fork for coinbase maturity at Block 2,422,000. New coinbase maturiy will be 100 confirmations
+- Up to date Gitian build scripts and setup guide
+- BIP65 Soft Fork when ~>78% of nodes have upgraded
+- Minimum protocol version is 1050000
+
 ## General
 - Scrypt & SHA256D
 - AUXPoW (Merged Mining)
@@ -131,8 +138,6 @@ are held, and adds warning to the debug.log file if inconsistencies are detected
 Use this to set the algorithm to SHA256D for mining (add to argentum.conf)  
 
 algo=sha256d
-
-## Argentum 3.11.2 adds BIP65 (OP_CHECKLOCKTIMEVERIFY)
 
 ## Add nodes to argentum.conf
 addnode=144.76.71.141
