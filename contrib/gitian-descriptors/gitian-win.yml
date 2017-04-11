@@ -21,13 +21,13 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/protonn/argentum.git"
+- "url": "https://github.com/argentumproject/argentum.git"
   "dir": "argentum"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped
   HOSTS="x86_64-w64-mingw32 i686-w64-mingw32"
-  CONFIGFLAGS="--disable-tests --enable-reduce-exports --disable-gui-tests"
+  CONFIGFLAGS="--disable-tests --enable-reduce-exports --disable-tests"
   FAKETIME_HOST_PROGS="g++ ar ranlib nm windres strip"
   FAKETIME_PROGS="date makensis zip"
   HOST_CFLAGS="-O2 -g"
