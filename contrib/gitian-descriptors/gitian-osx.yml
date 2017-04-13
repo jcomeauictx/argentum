@@ -1,5 +1,5 @@
 ---
-name: "argentum-osx-0.15"
+name: "argentum-osx-3.11.2"
 enable_cache: true
 suites:
 - "trusty"
