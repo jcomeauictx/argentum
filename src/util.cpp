@@ -403,13 +403,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Argentum-Core
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Argentum-Core
-    // Mac: ~/Library/Application Support/Argentum-Core
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Argentum
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Argentum
+    // Mac: ~/Library/Application Support/Argentum
     // Unix: ~/.argentum
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Argentum-Core";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Argentum";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -421,7 +421,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Argentum-Core";
+    return pathRet / "Argentum";
 #else
     // Unix
     return pathRet / ".argentum";

@@ -421,7 +421,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Show the Argentum help message to get a list with possible Argentum command-line options</source>
-        <translation>Visa Argentum Cores hjälpmeddelande för att få en lista med möjliga Argentum-kommandoradsalternativ.</translation>
+        <translation>Visa Argentums hjälpmeddelande för att få en lista med möjliga Argentum-kommandoradsalternativ.</translation>
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Argentum network</source>

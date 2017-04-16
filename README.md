@@ -18,7 +18,7 @@ out collectively by the network. Argentum is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately usable, binary version of
-the Argentum-Core Core software, see http://www.argentum.io/
+the Argentum software, see http://www.argentum.io/
 
 License
 -------

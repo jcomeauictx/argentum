@@ -1440,7 +1440,7 @@
     </message>
     <message>
         <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Argentum Cores fejlsøgningslogfil fra den aktuelle datamappe. Dette kan tage nogle få sekunder for store logfiler.</translation>
+        <translation>Åbn Argentums fejlsøgningslogfil fra den aktuelle datamappe. Dette kan tage nogle få sekunder for store logfiler.</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1560,7 +1560,7 @@
     </message>
     <message>
         <source>Welcome to the Argentum RPC console.</source>
-        <translation>Velkommen til Argentum Cores RPC-konsol.</translation>
+        <translation>Velkommen til Argentums RPC-konsol.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
