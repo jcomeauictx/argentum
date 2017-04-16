@@ -16,7 +16,12 @@ Then install [Homebrew](http://brew.sh).
 Dependencies
 ----------------------
 
-    brew install automake berkeley-db4 libtool boost --c++11 miniupnpc openssl pkg-config protobuf --c++11 qt5 libevent
+    brew install automake libtool boost --c++11 miniupnpc openssl pkg-config protobuf --c++11 qt5 libevent
+
+    cd /usr/local/include 
+    ln -s ../opt/openssl/include/openssl
+
+    brew doctor (just to be sure nothing is wrong)
 
 In case you want to build the disk image with `make deploy` (.dmg / optional), you need RSVG
 
@@ -31,6 +36,10 @@ Build Argentum
 
         git clone https://github.com/argentumproject/argentum
         cd argentum
+
+To build Berkeley DB 5.1.29
+
+    brew install /Users/(whatever your user account is)/argentum/depends/packages/bdb-5.1.29.rb
 
 2.  Build argentum:
 
