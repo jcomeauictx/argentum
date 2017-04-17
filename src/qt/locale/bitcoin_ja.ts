@@ -884,11 +884,11 @@
     </message>
     <message>
         <source>As this is the first time the program is launched, you can choose where Argentum will store its data.</source>
-        <translation>これはプログラム最初の起動です。Argentum Coreがデータを保存する場所を選択して下さい。</translation>
+        <translation>これはプログラム最初の起動です。Argentumがデータを保存する場所を選択して下さい。</translation>
     </message>
     <message>
         <source>Argentum will download and store a copy of the Argentum block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Argentum Coreは、ビットコインのブロックチェーンのコピーを、ダウンロードして保存します。少なくとも%1ギガバイトのデータが、このディレクトリに保存されます。そしてそれは時間と共に増加します。またウォレットもこのディレクトリに保存されます。</translation>
+        <translation>Argentumは、ビットコインのブロックチェーンのコピーを、ダウンロードして保存します。少なくとも%1ギガバイトのデータが、このディレクトリに保存されます。そしてそれは時間と共に増加します。またウォレットもこのディレクトリに保存されます。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -982,7 +982,7 @@
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting Argentum.</source>
-        <translation>ユーザ・インタフェイス言語はここで設定できます。この設定はArgentum Coreの再起動後に有効となります。</translation>
+        <translation>ユーザ・インタフェイス言語はここで設定できます。この設定はArgentumの再起動後に有効となります。</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1010,11 +1010,11 @@
     </message>
     <message>
         <source>Automatically start Argentum after logging in to the system.</source>
-        <translation>システムにログインした際、自動的にArgentum Coreを起動する。</translation>
+        <translation>システムにログインした際、自動的にArgentumを起動する。</translation>
     </message>
     <message>
         <source>&amp;Start Argentum on system login</source>
-        <translation>システムへログインした際にArgentum Coreを起動する (&amp;S)</translation>
+        <translation>システムへログインした際にArgentumを起動する (&amp;S)</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
@@ -1444,7 +1444,7 @@
     </message>
     <message>
         <source>Open the Argentum debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>現在のデータディレクトリからArgentum Coreのデバッグ用ログファイルを開きます。ログファイルが巨大な場合、数秒かかることがあります。</translation>
+        <translation>現在のデータディレクトリからArgentumのデバッグ用ログファイルを開きます。ログファイルが巨大な場合、数秒かかることがあります。</translation>
     </message>
     <message>
         <source>Received</source>
@@ -1564,7 +1564,7 @@
     </message>
     <message>
         <source>Welcome to the Argentum RPC console.</source>
-        <translation>Argentum CoreのRPCコンソールへようこそ。</translation>
+        <translation>ArgentumのRPCコンソールへようこそ。</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2142,7 +2142,7 @@
     <name>ShutdownWindow</name>
     <message>
         <source>Argentum is shutting down...</source>
-        <translation>Argentum Coreをシャットダウンしています。</translation>
+        <translation>Argentumをシャットダウンしています。</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3135,7 +3135,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Argentum will not work properly.</source>
-        <translation>警告： あなたのPCの日付と時刻が正しいことを確認して下さい！ もしあなたの時計が正しくなければArgentum Coreが正確に動作しません。</translation>
+        <translation>警告： あなたのPCの日付と時刻が正しいことを確認して下さい！ もしあなたの時計が正しくなければArgentumが正確に動作しません。</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
@@ -3207,7 +3207,7 @@ rpcpassword=%s
     </message>
     <message>
         <source>Initialization sanity check failed. Argentum is shutting down.</source>
-        <translation>初期化時の健全性チェックに失敗しました。Argentum Coreを終了します。</translation>
+        <translation>初期化時の健全性チェックに失敗しました。Argentumを終了します。</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>

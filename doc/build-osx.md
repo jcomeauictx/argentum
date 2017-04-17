@@ -16,7 +16,7 @@ Then install [Homebrew](http://brew.sh).
 Dependencies
 ----------------------
 
-    brew install automake libtool boost --c++11 miniupnpc openssl pkg-config protobuf --c++11 qt5 libevent
+    brew install automake libtool boost --c++11 miniupnpc openssl pkg-config protobuf260 --c++11 qt5 libevent
 
     cd /usr/local/include 
     ln -s ../opt/openssl/include/openssl

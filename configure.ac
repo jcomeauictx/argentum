@@ -286,9 +286,9 @@ case $host in
          dnl add default macports paths
          CPPFLAGS="$CPPFLAGS -isystem /opt/local/include"
          LIBS="$LIBS -L/opt/local/lib"
-         if test -d /opt/local/include/db48; then
-           CPPFLAGS="$CPPFLAGS -I/opt/local/include/db48"
-           LIBS="$LIBS -L/opt/local/lib/db48"
+         if test -d /opt/local/include/db51; then
+           CPPFLAGS="$CPPFLAGS -I/opt/local/include/db51"
+           LIBS="$LIBS -L/opt/local/lib/db51"
          fi
        fi
 
@@ -301,8 +301,10 @@ case $host in
          dnl the user (--without-wallet or --without-gui for example).
 
          openssl_prefix=`$BREW --prefix openssl 2>/dev/null`
-         bdb_prefix=`$BREW --prefix berkeley-db 2>/dev/null`
+         bdb_prefix=`$BREW --prefix bdb-5.1.29 2>/dev/null`
          qt5_prefix=`$BREW --prefix qt5 2>/dev/null`
+         protobuf_prefix=`$BREW --prefix protobuf@2.6 2>/dev/null`
+         protoc_bin_path=`$BREW --prefix protobuf@2.6 2>/dev/null`
          if test x$openssl_prefix != x; then
            PKG_CONFIG_PATH="$openssl_prefix/lib/pkgconfig:$PKG_CONFIG_PATH"
            export PKG_CONFIG_PATH
@@ -314,6 +316,14 @@ case $host in
          if test x$qt5_prefix != x; then
            PKG_CONFIG_PATH="$qt5_prefix/lib/pkgconfig:$PKG_CONFIG_PATH"
            export PKG_CONFIG_PATH
+         fi
+         if test x$protobuf_prefix != x; then
+           PKG_CONFIG_PATH="$protobuf_prefix/lib/pkgconfig:$PKG_CONFIG_PATH"
+           export PKG_CONFIG_PATH
+         fi
+         if test x$$protoc_bin_path != x; then
+           protoc_bin_path="$protobuf_prefix/bin:$protoc_bin_path"
+           export $protoc_bin_path
          fi
        fi
      else

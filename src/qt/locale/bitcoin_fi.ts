@@ -400,7 +400,7 @@
     </message>
     <message>
         <source>Modify configuration options for Argentum</source>
-        <translation>Muokkaa kokoonpanoasetuksia Argentum Corelle</translation>
+        <translation>Muokkaa kokoonpanoasetuksia Argentumlle</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1552,7 +1552,7 @@
     </message>
     <message>
         <source>Welcome to the Argentum RPC console.</source>
-        <translation>Tervetuloa Argentum Coren RPC-konsoliin.</translation>
+        <translation>Tervetuloa Argentumn RPC-konsoliin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
