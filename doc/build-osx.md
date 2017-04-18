@@ -48,7 +48,7 @@ To build Berkeley DB 5.1.29
     You can disable the GUI build by passing `--without-gui` to configure.
 
         ./autogen.sh
-        ./configure
+        CFLAGS="-O2 -fPIC -DUSE_SSE2" CPPFLAGS="-O2 -fPIC -DUSE_SSE2" ./configure --disable-tests
         make
 
 3.  It is recommended to build and run the unit tests:
@@ -66,7 +66,7 @@ Argentum is now available at `./src/argentumd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=bitcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Argentum/argentum.conf"
+    echo -e "rpcuser=bitcoinrpc\nrpcpassword=$(xxd -l 16 -p /user/urandom)" > "/Users/${USER}/Library/Application Support/Argentum/argentum.conf"
 
     chmod 600 "/Users/${USER}/Library/Application Support/Argentum/argentum.conf"
 
