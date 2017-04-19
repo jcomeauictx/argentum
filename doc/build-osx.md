@@ -48,7 +48,7 @@ To build Berkeley DB 5.1.29
     You can disable the GUI build by passing `--without-gui` to configure.
 
         ./autogen.sh
-        ./configure --disable-tests
+        CFLAGS="-O2 -fPIC -DUSE_SSE2" CPPFLAGS="-O2 -fPIC -DUSE_SSE2" ./configure --disable-tests
         make
 
 3.  It is recommended to build and run the unit tests:
