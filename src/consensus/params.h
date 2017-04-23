@@ -38,7 +38,7 @@ struct Params {
     //int64_t nBlockAlgoNormalisedWorkStart;
     //int64_t nBlockAlgoNormalisedWorkDecayStart1;
     //int64_t nBlockAlgoNormalisedWorkDecayStart2;
-    //int64_t nGeoAvgWork_Start;
+    int64_t nGeoAvgWork_Start;
     int64_t nMultiAlgoFork;
     int64_t nDGW3StartBlock;
     int64_t nCoinbaseMaturityV2Start;
