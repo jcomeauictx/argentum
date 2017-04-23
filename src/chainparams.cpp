@@ -60,7 +60,7 @@ public:
         //consensus.nBlockAlgoNormalisedWorkStart = 740000; // block where algo combined weight starts
         //consensus.nBlockAlgoNormalisedWorkDecayStart1 = 866000; // block where weight decay starts
         //consensus.nBlockAlgoNormalisedWorkDecayStart2 = 932000; // block where weight decay starts
-        consensus.nGeoAvgWork_Start = 2389061;
+        consensus.nGeoAvgWork_Start = 2389062;
         consensus.nDGW3StartBlock = 1635000; 
         consensus.nMultiAlgoFork = 1930000; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
         consensus.nCoinbaseMaturityV2Start = 2389061;

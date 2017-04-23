@@ -670,7 +670,7 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
     {
         bnTarget = GetGeometricMeanPrevWork(block);
     }
-    if (nHeight >= chainparams.GetConsensus().nMultiAlgoFork)
+    else if (nHeight >= chainparams.GetConsensus().nMultiAlgoFork)
     {
         arith_uint256 nBlockWork = GetBlockProofBase(block);
         for (int algo = 0; algo < NUM_ALGOS; algo++)
