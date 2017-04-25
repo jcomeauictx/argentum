@@ -15,7 +15,7 @@ static const int PROTOCOL_VERSION = 1070000;
 static const int INIT_PROTO_VERSION = 209;
 
 //! disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION = 1060000;
+static const int MIN_PEER_PROTO_VERSION = 1070000;
 
 // disconnect from peers older than this client sub version
 static const std::string MIN_PEER_CLIENT_VERSION = "2.4.1";
