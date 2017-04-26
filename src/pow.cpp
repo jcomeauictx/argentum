@@ -610,7 +610,7 @@ arith_uint256 GetPrevWorkForAlgo(const CBlockIndex& block, int algo)
     return arith_uint256(0);
 } */
     
-/*arith_uint256 GetPrevWorkForAlgoWithDecay3(const CBlockIndex& block, int algo)
+arith_uint256 GetPrevWorkForAlgoWithDecay3(const CBlockIndex& block, int algo)
 {
     int nDistance = 0;
     arith_uint256 nWork;
@@ -632,9 +632,9 @@ arith_uint256 GetPrevWorkForAlgo(const CBlockIndex& block, int algo)
         nDistance++;
     }
     return arith_uint256(0);
-}*/
+}
 
-/*arith_uint256 GetGeometricMeanPrevWork(const CBlockIndex& block) // TODO Argentum
+arith_uint256 GetGeometricMeanPrevWork(const CBlockIndex& block)
 {
     //arith_uint256 bnRes;
     arith_uint256 nBlockWork = GetBlockProofBase(block);
@@ -654,12 +654,9 @@ arith_uint256 GetPrevWorkForAlgo(const CBlockIndex& block, int algo)
     // Compute the geometric mean
     CBigNum bnRes = bnBlockWork.nthRoot(NUM_ALGOS);
     
-    // Scale to roughly match the old work calculation
-    bnRes <<= 7;
-    
     //return bnRes;
     return UintToArith256(bnRes.getuint256());
-}*/
+}
 
 arith_uint256 GetBlockProof(const CBlockIndex& block)
 {
@@ -669,11 +666,11 @@ arith_uint256 GetBlockProof(const CBlockIndex& block)
     int nHeight = block.nHeight;
     int nAlgo = block.GetAlgo();
     
-    /*if (nHeight > chainparams.GetConsensus().nGeoAvgWork_Start) // TODO Argentum
+    if (nHeight >= chainparams.GetConsensus().nGeoAvgWork_Start)
     {
         bnTarget = GetGeometricMeanPrevWork(block);
-    }*/
-    if (nHeight >= chainparams.GetConsensus().nMultiAlgoFork)
+    }
+    else if (nHeight >= chainparams.GetConsensus().nMultiAlgoFork)
     {
         arith_uint256 nBlockWork = GetBlockProofBase(block);
         for (int algo = 0; algo < NUM_ALGOS; algo++)

@@ -60,10 +60,10 @@ public:
         //consensus.nBlockAlgoNormalisedWorkStart = 740000; // block where algo combined weight starts
         //consensus.nBlockAlgoNormalisedWorkDecayStart1 = 866000; // block where weight decay starts
         //consensus.nBlockAlgoNormalisedWorkDecayStart2 = 932000; // block where weight decay starts
-        //consensus.nGeoAvgWork_Start = 4000000; // TODO
+        consensus.nGeoAvgWork_Start = 2387838;
         consensus.nDGW3StartBlock = 1635000; 
         consensus.nMultiAlgoFork = 1930000; // Block where multi-algo difficulty adjustment and 45 second blocktime starts
-        consensus.nCoinbaseMaturityV2Start = 2422000;
+        consensus.nCoinbaseMaturityV2Start = 2387838;
 
         /** 
          * The message start string is designed to be unlikely to occur in normal data.
@@ -149,11 +149,12 @@ public:
             (  1924401, uint256S("0x2267dd4753f9e8fa088cdc4d257355b0a118ccd43a2f366c68de1aa260c4ba22"))
             (  1934707, uint256S("0xe4527742cb236f24b355156213775e44da0e728ea453fae712fa672b18ce5f84"))
             (  2050260, uint256S("0xbc55838e026131fab334f1c87de9fea3218d076f4de03dc19f94d4f12da7d6c1"))
-            (  2365716, uint256S("0x947827b4599512a675fc3789ac8778b3187277705ffda7b6e3cf6adaa31dac10")),
+            (  2365716, uint256S("0x947827b4599512a675fc3789ac8778b3187277705ffda7b6e3cf6adaa31dac10"))
+            (  2387838, uint256S("0x00000000000000254214c9f9fbdd39c07072b43df52f35a910509f4c5406c272")),
         1491891115, // * UNIX timestamp of last checkpoint block
-        2604836,    // * total number of transactions between genesis and last checkpoint
+        2629957,    // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
-        2000        // * estimated number of transactions per day after checkpoint
+        3000        // * estimated number of transactions per day after checkpoint
         };
     }
 };
