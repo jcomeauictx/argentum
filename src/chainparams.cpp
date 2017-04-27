@@ -45,7 +45,7 @@ public:
         // Allow AuxPow blocks from this height
         consensus.nStartAuxPow = 1825000; // 
         consensus.nAuxpowChainId = 0x004A3; 
-        consensus.fStrictChainId = true;
+        consensus.fStrictChainId = false;
         consensus.nLocalDifficultyAdjustment = 12; // 12%
         consensus.nMaxAdjustDown = 22; //22% adjustment down
         consensus.nMaxAdjustUp = 14; // 14% adjustment up
