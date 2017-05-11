@@ -511,6 +511,29 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
     return true;
 }
 
+bool CheckProofOfWorkB(uint256 hash, unsigned int nBits, const Consensus::Params& params)
+{
+    bool fNegative;
+    bool fOverflow;
+    arith_uint256 bnTarget;
+
+    bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
+
+    // Check range
+    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit))
+        return error("CheckProofOfWork(): nBits below minimum work");
+
+    // Check proof of work matches claimed amount
+    /*if (nHeight > params.nCoinbaseMaturityV2Start){
+        if (UintToArith256(hash) > bnTarget)
+            return error("CheckProofOfWork(): hash doesn't match nBits");}*/
+
+        /*if (UintToArith256(hash) > bnTarget)
+            return error("CheckProofOfWork(): hash doesn't match nBits");*/
+
+    return true;
+}
+
 arith_uint256 GetBlockProofBase(const CBlockIndex& block)
 {
     arith_uint256 bnTarget;
@@ -696,9 +719,6 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
        the chain ID is correct.  Legacy blocks are not allowed since
        the merge-mining start, which is checked in AcceptBlockHeader
        where the height is known.  */
-    LOCK(cs_main);
-    int nHeight = chainActive.Height();
-    if (nHeight >= params.nStartAuxPow){
         if (!block.nVersion.IsLegacy() && params.fStrictChainId && block.nVersion.GetChainId() != params.nAuxpowChainId)
             return error("%s : block does not have our chain ID"
                          " (got %d, expected %d, full nVersion %d)",
@@ -707,7 +727,6 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
                          params.nAuxpowChainId,
                          block.nVersion.GetFullVersion());
         /* If there is no auxpow, just check the block hash.  */
-    }
         if (!block.auxpow) {
             if (block.nVersion.IsAuxpow())
                 return error("%s : no auxpow on block with auxpow version",
@@ -746,6 +765,67 @@ bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& 
         }
         
         if (!CheckProofOfWork(block.auxpow->getParentBlockPoWHash(algo), block.nBits, params))
+        {
+            return error("%s : AUX proof of work failed", __func__);
+        }
+
+    return true;
+}
+
+bool CheckAuxPowProofOfWorkB(const CBlockHeader& block, const Consensus::Params& params)
+{
+    int algo = block.GetAlgo();
+    /* Except for legacy blocks with full version 1, ensure that
+       the chain ID is correct.  Legacy blocks are not allowed since
+       the merge-mining start, which is checked in AcceptBlockHeader
+       where the height is known.  */
+
+        if (!block.nVersion.IsLegacy() && params.fStrictChainId && block.nVersion.GetChainId() != params.nAuxpowChainId)
+            return error("%s : block does not have our chain ID"
+                         " (got %d, expected %d, full nVersion %d)",
+                         __func__,
+                         block.nVersion.GetChainId(),
+                         params.nAuxpowChainId,
+                         block.nVersion.GetFullVersion());
+        /* If there is no auxpow, just check the block hash.  */
+        if (!block.auxpow) {
+            if (block.nVersion.IsAuxpow())
+                return error("%s : no auxpow on block with auxpow version",
+                             __func__);
+
+            if (!CheckProofOfWorkB(block.GetPoWHash(algo), block.nBits, params))
+                return error("%s : non-AUX proof of work failed", __func__);
+        
+            return true;
+        }
+
+        /* We have auxpow.  Check it.  */
+
+        if (!block.nVersion.IsAuxpow())
+            return error("%s : auxpow on block with non-auxpow version", __func__);
+
+        if (!block.auxpow->check(block.GetHash(), block.nVersion.GetChainId(), params))
+            return error("%s : AUX POW is not valid", __func__);
+
+        if(fDebug)
+        {
+            bool fNegative;
+            bool fOverflow;
+            arith_uint256 bnTarget;
+            bnTarget.SetCompact(block.nBits, &fNegative, &fOverflow);
+            
+            LogPrintf("DEBUG: proof-of-work submitted  \n  parent-PoWhash: %s\n  target: %s  bits: %08x \n",
+            block.auxpow->getParentBlockPoWHash(algo).ToString().c_str(),
+            bnTarget.ToString().c_str(),
+            bnTarget.GetCompact());
+        }
+        
+        if (!(algo == ALGO_SHA256D || algo == ALGO_SCRYPT) )
+        {
+            return error("%s : AUX POW is not allowed on this algo", __func__);
+        }
+        
+        if (!CheckProofOfWorkB(block.auxpow->getParentBlockPoWHash(algo), block.nBits, params))
         {
             return error("%s : AUX proof of work failed", __func__);
         }
