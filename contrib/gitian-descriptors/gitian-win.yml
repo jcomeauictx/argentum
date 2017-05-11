@@ -1,5 +1,5 @@
 ---
-name: "argentum-win-3.11.2"
+name: "argentum-win-3.11.4"
 enable_cache: true
 suites:
 - "trusty"
