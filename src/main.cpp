@@ -1326,7 +1326,7 @@ static bool ReadBlockOrHeader(T& block, const CDiskBlockPos& pos)
 
     // Check the header
     // AuxPow: We don't necessarily have block height, so we depend on using the base parameters
-    if (!CheckAuxPowProofOfWork(block, Params().GetConsensus()))
+    if (!CheckAuxPowProofOfWorkB(block, Params().GetConsensus()))
         return error("ReadBlockFromDisk: Errors in block header at %s", pos.ToString());
 
     return true;

@@ -25,6 +25,7 @@ unsigned int GetNextWorkRequired_Legacy(const CBlockIndex* pindexLast, const CBl
 
 /** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
 bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&);
+bool CheckProofOfWorkB(uint256 hash, unsigned int nBits, const Consensus::Params&);
 arith_uint256 GetBlockProof(const CBlockIndex& block);
 
 /**
@@ -34,6 +35,7 @@ arith_uint256 GetBlockProof(const CBlockIndex& block);
  * @return True iff the PoW is correct.
  */
 bool CheckAuxPowProofOfWork(const CBlockHeader& block, const Consensus::Params& params);
+bool CheckAuxPowProofOfWorkB(const CBlockHeader& block, const Consensus::Params& params);
 
 /** Return the time it would take to redo the work difference between from and to, assuming the current hashrate corresponds to the difficulty at tip, in seconds. */
 int64_t GetBlockProofEquivalentTime(const CBlockIndex& to, const CBlockIndex& from, const CBlockIndex& tip, const Consensus::Params&);
