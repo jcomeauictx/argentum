@@ -161,3 +161,10 @@ addnode=92.3.45.249
 addnode=92.3.46.51
 addnode=95.218.175.59
 addnode=95.218.215.95
+
+## Bootstrap
+https://electrum-arg.org/bootstrap.dat
+sha256 checksum 940f0a958ad79c311c90c899b1907c61668e23b9034f698e1174191a10428718
+
+May 15 2017
+Block 2,400,684
