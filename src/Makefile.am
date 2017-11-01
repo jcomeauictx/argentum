@@ -3,12 +3,7 @@ DIST_SUBDIRS = secp256k1
 AM_LDFLAGS = $(PTHREAD_CFLAGS) $(LIBTOOL_LDFLAGS) $(HARDENED_LDFLAGS)
 AM_CXXFLAGS = $(HARDENED_CXXFLAGS)
 AM_CPPFLAGS = $(HARDENED_CPPFLAGS)
-
-if EMBEDDED_LEVELDB
-LEVELDB_CPPFLAGS += -I$(srcdir)/leveldb/include
-LEVELDB_CPPFLAGS += -I$(srcdir)/leveldb/helpers/memenv
-LIBLEVELDB += $(builddir)/leveldb/libleveldb.a
-LIBMEMENV  += $(builddir)/leveldb/libmemenv.a
+EXTRA_LIBRARIES =
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race
 $(LIBLEVELDB): $(LIBMEMENV)
@@ -39,7 +34,7 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
-EXTRA_LIBRARIES = \
+EXTRA_LIBRARIES += \
   crypto/libbitcoin_crypto.a \
   libbitcoin_util.a \
   libbitcoin_common.a \
@@ -458,6 +453,10 @@ endif
 %.pb.cc %.pb.h: %.proto
 	@test -f $(PROTOC)
 	$(AM_V_GEN) $(PROTOC) --cpp_out=$(@D) --proto_path=$(<D) $<
+
+if EMBEDDED_LEVELDB
+include Makefile.leveldb.include
+endif
 
 if ENABLE_TESTS
 include Makefile.test.include
