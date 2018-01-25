@@ -134,7 +134,7 @@ bool AreInputsStandard(const CTransaction& tx, const CCoinsViewCache& mapInputs)
         // get the scriptPubKey corresponding to this input:
         const CScript& prevScript = prev.scriptPubKey;
         if (!Solver(prevScript, whichType, vSolutions)) {
-            LogPrintf("AreInputsStandard fails at prev.scriptPubKey at input %d\n", i);
+            LogPrintf("AreInputsStandard fails at prev.scriptPubKey at input %d: %s\n", i, HexStr(prev.scriptPubKey));
             return false;
         }
 
